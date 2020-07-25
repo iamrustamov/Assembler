@@ -120,7 +120,7 @@ typedef struct	s_all
 	t_tokens		*temp;
 	t_error			*errors;
 	char			*source;
-}				t_all;
+}                   t_all;
 
 void			readfile(t_all *all, char *file_name);
 

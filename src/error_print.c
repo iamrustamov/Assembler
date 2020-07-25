@@ -1,8 +1,8 @@
 #include "../includes/asm.h"
 
-void        error_print(void)
+void        error_print(char *str)
 {
-    printf("ERROR *.s file\n");
+    printf("%s\n", str);
     exit(0);
 }
 

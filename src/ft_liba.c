@@ -14,7 +14,6 @@ char        *ft_move_text(char *str1, char *str2)
         return (NULL);
     res = ft_strcpy(res, str1);
     res = ft_strcat(res, str2);
-    free(str2);
     free(str1);
     return (res);
 }

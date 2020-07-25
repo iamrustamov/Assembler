@@ -78,9 +78,11 @@ void		readfile(t_all *all, char *file_name)
 	char	flags[2];
 
 	ft_bzero(&flags, 2);
+
 	all->magic = COREWAR_EXEC_MAGIC;
 	while (!flags[0] || !flags[1])
 	{
+	    //
 		checkform(all);
 		!SPLIT ? ft_error(all, Semantic, Bad_CMD_declaration) : 0;
 		if (check_name_and_comment(all, 0) && !flags[0])

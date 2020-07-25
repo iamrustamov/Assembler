@@ -57,11 +57,15 @@ char			**cw_strsplit(char *champ)
 	size_t	line_q;
 
 	i = -1;
+//Если текста нет, то нулл.
 	if (!champ)
 		return (NULL);
+	//подсчёт линий.
 	line_q = lines_quantity(champ);
+	//выделил память для строк равное количеству линий.
 	SECURE_MALLOC(str = ft_memalloc(sizeof(char*) * (line_q + 1)));
 	while (++i < line_q)
+	    //и заполняет каждую ячейку строки
 		str[i] = line_record(champ);
 	return (str);
 }

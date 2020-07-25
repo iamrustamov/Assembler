@@ -12,96 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3db04e-cb60-4e7e-b99f-7d1f83732990" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/.idea/DELETE IT! GB-ASM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/error_print.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_liba.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/asm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/42.cor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/42.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/Backward.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/Car.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/Death.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/Gagnant.cor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/Gagnant.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/Octobre_Rouge_V4.2.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/Survivor.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/Torpille.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/barriere.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/bguy/sam_2.0.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/bjacob/doge.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/brandazz/Rainbow_dash.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/cdivry/youforkmytralala.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/clafleur/big_feet.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/dcohen/loose.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/ekocevar/mandragore.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/esusseli/gedeon.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/evlasova/terminator.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/fcorre/ultimate-surrender.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gbir/_.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gjestin/salamahenagalabadoun.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gleger/Machine-gun.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gmange/corelol.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gpetrov/MarineKing.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gudepard/Kappa.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/hmichals/Wall.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/hmoutaou/Misaka_Mikoto.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/kelickel/Varimathras.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/kmonrose/justin_bee.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/ldesgoui/_honeybadger.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/lseguin/skynet.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/lsirigna/live.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/mbacoux/meowluigi.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/mconraux/dubo.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/rabid-on/jinx.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/results.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/rmasse/THUNDER.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/sbuono/Asombra.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/srabah-m/littlepuppy.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/tdemay/champ.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/vrey/darksasuke.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2014/ybouvet/casimir.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2017/adenis/Explosive_Kitty.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2017/agregoir/Kittystrophic.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2017/gnebie/ultima.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2017/iburel/gateau.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2017/jaustry/mise_a_jour_windows95.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2017/nolivier/run_Kitty_RUN.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2017/pzarmehr/overwatch.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2017/tbillard/Douceur_power.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2018/asm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/championships/2018/corewar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/ex.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/examples/bee_gees.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/examples/bigzork.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/examples/fluttershy.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/examples/helltrain.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/examples/turtle.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/examples/zork.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/jumper.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/lde.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/leeloo.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/mat.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/maxidef.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/mortel.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/new.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/sebc.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/slider2.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/tdc2.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/tdc3.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/tdc4.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/champs/toto.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vm_champs/corewar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/assembler.c" beforeDir="false" afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/assembler.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/cw_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/cw_strsplit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/parser_tools.c" beforeDir="false" afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/parser_tools.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/asm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/op.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/op.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/error_print.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/error_print.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_liba.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_liba.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/op.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/op.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,9 +55,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
-    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="mirror.s" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assembler" TARGET_NAME="Assembler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assembler" RUN_TARGET_NAME="Assembler">
+    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;ex.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/vm_champs/champs" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assembler" TARGET_NAME="Assembler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assembler" RUN_TARGET_NAME="Assembler">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -158,6 +79,9 @@
       <workItem from="1595584279661" duration="1463000" />
       <workItem from="1595660548489" duration="371000" />
       <workItem from="1595661057620" duration="3593000" />
+      <workItem from="1595665781774" duration="258000" />
+      <workItem from="1595666041234" duration="3396000" />
+      <workItem from="1595673885123" duration="4202000" />
     </task>
     <servers />
   </component>
@@ -165,30 +89,46 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595584262409">
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595668249021">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595584262409" />
-    <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1595584191381">
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595668249021" />
+    <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1595666085371">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595584191381" />
-    <state width="1358" height="271" key="GridCell.Tab.0.bottom" timestamp="1595586017784">
+    <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595666085371" />
+    <state width="1202" height="372" key="GridCell.Tab.0.bottom" timestamp="1595675537460">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="1358" height="271" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595586017784" />
-    <state width="1358" height="271" key="GridCell.Tab.0.center" timestamp="1595586017784">
+    <state width="1202" height="372" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595675537460" />
+    <state width="1202" height="372" key="GridCell.Tab.0.center" timestamp="1595675537459">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="1358" height="271" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595586017784" />
-    <state width="1358" height="271" key="GridCell.Tab.0.left" timestamp="1595586017783">
+    <state width="1202" height="372" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595675537459" />
+    <state width="1202" height="372" key="GridCell.Tab.0.left" timestamp="1595675537459">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="1358" height="271" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595586017783" />
-    <state width="1358" height="271" key="GridCell.Tab.0.right" timestamp="1595586017784">
+    <state width="1202" height="372" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595675537459" />
+    <state width="1202" height="372" key="GridCell.Tab.0.right" timestamp="1595675537460">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="1358" height="271" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595586017784" />
+    <state width="1202" height="372" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595675537460" />
+    <state width="1202" height="328" key="GridCell.Tab.1.bottom" timestamp="1595675368206">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="1202" height="328" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595675368206" />
+    <state width="1202" height="328" key="GridCell.Tab.1.center" timestamp="1595675368205">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="1202" height="328" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595675368205" />
+    <state width="1202" height="328" key="GridCell.Tab.1.left" timestamp="1595675368205">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="1202" height="328" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595675368205" />
+    <state width="1202" height="328" key="GridCell.Tab.1.right" timestamp="1595675368205">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="1202" height="328" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595675368205" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1595661053167">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -197,13 +137,29 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1595661053166" />
-    <state x="1005" y="483" key="refactoring.ChangeSignatureDialog" timestamp="1595584545328">
+    <state x="1005" y="483" key="refactoring.ChangeSignatureDialog" timestamp="1595669178032">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1005" y="483" key="refactoring.ChangeSignatureDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595584545328" />
+    <state x="1005" y="483" key="refactoring.ChangeSignatureDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595669178032" />
     <state x="416" y="425" width="670" height="676" key="search.everywhere.popup" timestamp="1595664932535">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="416" y="425" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1595664932535" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>33</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="split[0]" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
