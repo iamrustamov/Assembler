@@ -18,45 +18,52 @@ void error()
     exit(1);
 }
 
+int write_name(char *str, char *name, short *ac, int c)
+{
+    int i;
+
+    i = 0;
+    while (str[i] != '\0')
+    {
+        if (str[i] == '\"' && *ac == true) {
+            *ac = false;
+            i++;
+            if (check_comment(&str[i]))
+                error();
+        }
+        if (*ac == true) {
+            name[c] = str[i];
+            c++;
+            if (c > PROG_NAME_LENGTH)
+                error_print("ERROR");
+        }
+        if (str[i] == '\"' && *ac == false && c == 0)
+            *ac = true;
+        i++;
+    }
+    return (c);
+}
 
 void                        record_name(t_all *all)
 {
     short active;
-    int c;
+    int len;
 
+    len = 0;
     all->name = ft_memalloc(PROG_NAME_LENGTH);
-    c = 0;
     active = false;
     while (all->split_text[all->line])
     {
-        while (all->split_text[all->line][all->sym] != '\0')
-        {
-            if (all->split_text[all->line][all->sym] == '\"' && active == true)
-            {
-                active = false;
-                all->sym++;
-                if (check_comment(&all->split_text[all->line][all->sym]))
-                    error();
-            }
-            if (active == true)
-            {
-                all->name[c] = all->split_text[all->line][all->sym];
-                c++;
-                if (c > PROG_NAME_LENGTH)
-                    error();
-            }
-            active = all->split_text[all->line][all->sym] == '\"' && active == false && c == 0 ? true : active;
-            all->sym++;
-        }
+        len = write_name(all->split_text[all->line], all->name, &active, len);
         all->sym = 0;
-        if(active == true)
+        if (active == true)
             all->line++;
-        else{
-            printf("%s",all->name);
-            exit(1);
-        }
-
-        }
+        else
+            break;
+    }
+    all->name[len] = '\0';
+    printf("%s", all->name);
+    exit(23);
 }
 
 void                        record_name_comm(t_all *all, int flag)
