@@ -15,19 +15,12 @@
 void		*ft_memalloc(size_t size)
 {
 	char				*mem;
-	size_t				i;
 
 	if (size == SIZE_MAX)
 		return (NULL);
-	i = 0;
 	mem = malloc(size);
 	if (mem == NULL)
 		return (NULL);
-	else
-		while (size > i)
-		{
-			mem[i] = 0;
-			i++;
-		}
+	ft_bzero(mem, size);
 	return (mem);
 }
