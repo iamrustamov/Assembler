@@ -62,6 +62,7 @@ void        ft_gen_parsing(char *file_name)
 
     all = (t_all *)ft_memalloc(sizeof(t_all));
     all->fd = 0;
+    all->line = 0;
     all->fd = open(file_name, O_RDONLY);
     if (all->fd == -1)
         error_print("ERROR: File did not open.");

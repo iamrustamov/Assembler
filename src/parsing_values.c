@@ -23,6 +23,10 @@ int write_name(char *str, char *name, short *ac, int c)
     int i;
 
     i = 0;
+    while (str[i] == ' ' || str[i] == '\t')
+        i++;
+    if (str[i] != '\"')
+        error_print("Нет ковычек\n");
     while (str[i] != '\0')
     {
         if (str[i] == '\"' && *ac == true) {
@@ -35,7 +39,7 @@ int write_name(char *str, char *name, short *ac, int c)
             name[c] = str[i];
             c++;
             if (c > PROG_NAME_LENGTH)
-                error_print("ERROR");
+                error_print("ERROR NAME");
         }
         if (str[i] == '\"' && *ac == false && c == 0)
             *ac = true;
@@ -52,18 +56,17 @@ void                        record_name(t_all *all)
     len = 0;
     all->name = ft_memalloc(PROG_NAME_LENGTH);
     active = false;
+    all->split_text[all->line] = &all->split_text[all->line][5];
     while (all->split_text[all->line])
     {
         len = write_name(all->split_text[all->line], all->name, &active, len);
-        all->sym = 0;
         if (active == true)
             all->line++;
         else
             break;
     }
     all->name[len] = '\0';
-    printf("%s", all->name);
-    exit(23);
+    printf("%s\n", all->name);
 }
 
 void                        record_name_comm(t_all *all, int flag)
@@ -142,6 +145,7 @@ int             valid_name_comm(t_all *all, int x, int y, int flag)
 
 int            miss_void(t_all *all)
 {
+    // TODO обратить внимание на check_comment одно и то же
     all->line= 0;
     all->sym = 0;
 
@@ -150,7 +154,7 @@ int            miss_void(t_all *all)
         while (all->split_text[all->line][all->sym])
         {
             if (all->split_text[all->line][all->sym] == COMMENT_CHAR ||
-                all->split_text[all->line][all->sym] ||
+                all->split_text[all->line][all->sym] == ALT_COMMENT_CHAR ||
                 all->split_text[all->line][all->sym] == '\n')
                 break;
             if (all->split_text[all->line][all->sym] == ' ' ||
@@ -179,27 +183,84 @@ int            miss_void(t_all *all)
  * Далее проверяем имя и комментарии.
  */
 
+int write_comment(char *str, char *comment, short *ac, int c)
+{
+    int i;
+//TODO слишком длиннно
+    i = 0;
+    while (str[i] == ' ' || str[i] == '\t')
+        i++;
+    if (str[i] != '\"')
+        error_print("Нет ковычек\n");
+    while (str[i] != '\0')
+    {
+        if (str[i] == '\"' && *ac == true) {
+            *ac = false;
+            i++;
+            if (check_comment(&str[i]))
+                error();
+        }
+        if (*ac == true) {
+            comment[c] = str[i];
+            c++;
+            if (c > COMMENT_LENGTH)
+                error_print("ERROR COMMENT");
+        }
+        if (str[i] == '\"' && *ac == false && c == 0)
+            *ac = true;
+        i++;
+    }
+    return (c);
+}
+
+void                        record_comment(t_all *all)
+{
+    short active;
+    int len;
+
+    len = 0;
+    all->comment = ft_memalloc(COMMENT_LENGTH);
+    active = false;
+    all->split_text[all->line] = &all->split_text[all->line][8];
+    while (all->split_text[all->line])
+    {
+        len = write_comment(all->split_text[all->line], all->comment, &active, len);
+        if (active == true)
+            all->line++;
+        else
+            break;
+    }
+    all->comment[len] = '\0';
+    printf("%s", all->comment);
+}
+
+
 void            parsing_text(t_all *all)
 {
+    // TODO создать структуру если комента нет то выдаем ошибку
+    // Предусмотреть отсутсвие ковычек
     int         flag_name;
     int         flag_comm;
     int         runner;
 
     flag_comm = 0;
     flag_name = 0;
-    while (!flag_name || !flag_comm)
+//TODO разбить все функции на отдельные файлы.
+    while (flag_name + flag_comm != 2)
     {
-        miss_void(all);
+        //miss_void(all);
         if (!all->split_text)
             error_print("ERROR: text is not valid\n");
-        if (!ft_strncmp(all->split_text[0], NAME_CMD_STRING, 5))
+        if (!flag_name && !ft_strncmp(all->split_text[all->line], NAME_CMD_STRING, 5))
         {
             flag_name = 1;
             record_name(all);
         }
-        else if (ft_strncmp(all->split_text[0], COMMENT_CMD_STRING, 8))
+        else if (!flag_comm && !ft_strncmp(all->split_text[all->line], COMMENT_CMD_STRING, 8))
         {
             flag_comm = 1;
+            record_comment(all);
         }
+        all->line++;
     }
 }

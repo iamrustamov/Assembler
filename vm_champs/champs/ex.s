@@ -1,9 +1,9 @@
-.name "zor
+.name "a
 
-sfasfas
-fafasfasfak" # gjsdgjsgdsdg
 
-.comment "just a basic living prog"
+" # gjsdgjsgdsdg
+
+.comment  # gkjdfgfg
 		
 l2:	sti	r1,%:live,%0
 	and	r1,%0,r1
