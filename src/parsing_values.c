@@ -238,7 +238,7 @@ void                        record_comment(t_all *all)
 void            parsing_text(t_all *all)
 {
     // TODO создать структуру если комента нет то выдаем ошибку
-    // Предусмотреть отсутсвие ковычек
+    // TODO Предусмотреть отсутсвие ковычек
     int         flag_name;
     int         flag_comm;
     int         runner;
@@ -246,6 +246,7 @@ void            parsing_text(t_all *all)
     flag_comm = 0;
     flag_name = 0;
 //TODO разбить все функции на отдельные файлы.
+//TODO Написать тесты для проверки функций записи name и comment
     while (flag_name + flag_comm != 2)
     {
         //miss_void(all);
