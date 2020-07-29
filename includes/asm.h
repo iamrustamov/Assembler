@@ -23,8 +23,13 @@ typedef struct s_all
 
 void        error_print(char *str);
 char        *ft_move_text(char *str1, char *str2);
+
 void        ft_gen_parsing(char *file_name);
 void        parsing_text(t_all *all);
+void        record_name(t_all *all);
+int         check_comment(const char* str);
+void        record_comment(t_all *all);
+
 
 
 #endif //ASSEMBLER_ASM_H

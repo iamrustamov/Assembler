@@ -1,6 +1,6 @@
 #include <../includes/asm.h>
 
-int check_comment(const char* str)
+int                         check_comment(const char* str)
 {
     int i;
     i = 0;
@@ -10,85 +10,6 @@ int check_comment(const char* str)
     if (str[i] == COMMENT_CHAR || str[i] == ALT_COMMENT_CHAR || str[i] == '\0')
         return (0);
     return (1);
-}
-
-void error()
-{
-    printf("ERROR!");
-    exit(1);
-}
-
-int write_name(char *str, char *name, short *ac, int c)
-{
-    int i;
-
-    i = 0;
-    while (str[i] == ' ' || str[i] == '\t')
-        i++;
-    if (str[i] != '\"')
-        error_print("Нет ковычек\n");
-    while (str[i] != '\0')
-    {
-        if (str[i] == '\"' && *ac == true) {
-            *ac = false;
-            i++;
-            if (check_comment(&str[i]))
-                error();
-        }
-        if (*ac == true) {
-            name[c] = str[i];
-            c++;
-            if (c > PROG_NAME_LENGTH)
-                error_print("ERROR NAME");
-        }
-        if (str[i] == '\"' && *ac == false && c == 0)
-            *ac = true;
-        i++;
-    }
-    return (c);
-}
-
-void                        record_name(t_all *all)
-{
-    short active;
-    int len;
-
-    len = 0;
-    all->name = ft_memalloc(PROG_NAME_LENGTH);
-    active = false;
-    all->split_text[all->line] = &all->split_text[all->line][5];
-    while (all->split_text[all->line])
-    {
-        len = write_name(all->split_text[all->line], all->name, &active, len);
-        if (active == true)
-            all->line++;
-        else
-            break;
-    }
-    all->name[len] = '\0';
-    printf("%s\n", all->name);
-}
-
-void                        record_name_comm(t_all *all, int flag)
-{
-    int     len;
-    int     i;
-
-    i = 0;
-    if (flag)
-        len = PROG_NAME_LENGTH;
-    else
-        len = COMMENT_LENGTH;
-    while (all->split_text[len][i] && (all->split_text[len][i] == ' ' ||
-                                       all->split_text[len][i] == '\t'))
-        i++;
-    if (all->split_text[len][i] && all->split_text[len][i] != '"')
-    {
-        error_print("ERROR: Wrong name\n");
-        return ;
-    }
-    all->sym++;
-//    while (i < len && all->split_text[len][i])
 }
 
 /*
@@ -128,130 +49,42 @@ int             valid_name_comm(t_all *all, int x, int y, int flag)
     return (0);
 }
 
-/*
- * Суть функции пропустить всё лишнее в виде комментариев и пустот.
- * Начинаем читать строки из сплита посимвольно.
- * Для этого открываем два цикла. Первый выдаёт одну линию текста
- * Второй цикл читает эту линию посимвольно.
- * Если это комментарий либо каретка со след. строкой, то выходит
- * из второго цикла и проходит сразу к следующей линии. Т.к. это нам
- * ни о чём не говорит. Парсить нечего.
- * А если встречает пустоты в виде пробелов и табуляций, то пропускает
- * их. А если уже находит что-то иное, а это может уже быть символ,
- * тогда выходит.
- * В all->pos сохраняются позиции, на которых они остановились, чтобы
- * в следующей функции мы знали от какой функции надо начинать парсить.
- */
 
-int            miss_void(t_all *all)
-{
-    // TODO обратить внимание на check_comment одно и то же
-    all->line= 0;
-    all->sym = 0;
-
-    while (all->split_text[all->line])
-    {
-        while (all->split_text[all->line][all->sym])
-        {
-            if (all->split_text[all->line][all->sym] == COMMENT_CHAR ||
-                all->split_text[all->line][all->sym] == ALT_COMMENT_CHAR ||
-                all->split_text[all->line][all->sym] == '\n')
-                break;
-            if (all->split_text[all->line][all->sym] == ' ' ||
-                all->split_text[all->line][all->sym] == '\t')
-                all->sym++;
-            else
-                return (1);
-        }
-        all->line++;
-        all->sym = 0;
-    }
-    all->line = 0;
-    return (0);
-}
+//TODO разбить все функции на отдельные файлы.
+//TODO Написать тесты для проверки функций записи name и comment
+// TODO создать структуру если комента нет то выдаем ошибку
+// TODO Предусмотреть отсутсвие ковычек
 
 /*
- * Все весь текст помещён в сплит,
- * теперь можно начинать парсинг и валидацию текста.
- * Создаётся массив f, под каждой ячейкой которого подразумеваются
- * флаги.
- * Для начала пропускаем все комментарии типа # и ;
- * и все лишние пробелы, табуляции и каретки перевода
- * в следующую строку. в функции miss_voids.
- * Если на этом файл закончился, значит это неполная карта и нужно
- * выводить ошибку.
- * Далее проверяем имя и комментарии.
+ * flag_name and flag_comm are indicate that they are filled.
+ * In cycle we are starting search of name and comment.
+ * First condition - when text complete, but did not find name
+ * and comment - printing error.
+ *
  */
-
-int write_comment(char *str, char *comment, short *ac, int c)
-{
-    int i;
-//TODO слишком длиннно
-    i = 0;
-    while (str[i] == ' ' || str[i] == '\t')
-        i++;
-    if (str[i] != '\"')
-        error_print("Нет ковычек\n");
-    while (str[i] != '\0')
-    {
-        if (str[i] == '\"' && *ac == true) {
-            *ac = false;
-            i++;
-            if (check_comment(&str[i]))
-                error();
-        }
-        if (*ac == true) {
-            comment[c] = str[i];
-            c++;
-            if (c > COMMENT_LENGTH)
-                error_print("ERROR COMMENT");
-        }
-        if (str[i] == '\"' && *ac == false && c == 0)
-            *ac = true;
-        i++;
-    }
-    return (c);
-}
-
-void                        record_comment(t_all *all)
-{
-    short active;
-    int len;
-
-    len = 0;
-    all->comment = ft_memalloc(COMMENT_LENGTH);
-    active = false;
-    all->split_text[all->line] = &all->split_text[all->line][8];
-    while (all->split_text[all->line])
-    {
-        len = write_comment(all->split_text[all->line], all->comment, &active, len);
-        if (active == true)
-            all->line++;
-        else
-            break;
-    }
-    all->comment[len] = '\0';
-    printf("%s", all->comment);
-}
-
+// TODO не парсит имя, в котором каждая буква слова на следующей строке
+/*
+ * Пример:
+ * .name "t
+ * e
+ * s
+ * t
+ * "
+ * Причина в том, что сталкивается с концом строки и на этом заканчивает.
+ */
 
 void            parsing_text(t_all *all)
 {
-    // TODO создать структуру если комента нет то выдаем ошибку
-    // TODO Предусмотреть отсутсвие ковычек
     int         flag_name;
     int         flag_comm;
-    int         runner;
 
     flag_comm = 0;
     flag_name = 0;
-//TODO разбить все функции на отдельные файлы.
-//TODO Написать тесты для проверки функций записи name и comment
+
     while (flag_name + flag_comm != 2)
     {
-        //miss_void(all);
-        if (!all->split_text)
-            error_print("ERROR: text is not valid\n");
+        if (all->split_text[all->line] == NULL)
+            error_print("ERROR: text have not valid name or comment.\n");
         if (!flag_name && !ft_strncmp(all->split_text[all->line], NAME_CMD_STRING, 5))
         {
             flag_name = 1;
@@ -264,4 +97,6 @@ void            parsing_text(t_all *all)
         }
         all->line++;
     }
+    printf("It's name    --->   %s\n", all->name);
+    printf("It's comment --->   %s\n", all->comment);
 }
