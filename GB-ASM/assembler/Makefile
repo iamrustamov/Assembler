@@ -6,11 +6,11 @@
 #    By: jwillem- <jwillem-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/28 19:06:18 by jwillem-          #+#    #+#              #
-#    Updated: 2020/07/30 17:00:12 by dpenney          ###   ########.fr        #
+#    Updated: 2019/06/15 02:59:55 by gabshire         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ./asm
+NAME = ../asm
 
 CC = gcc
 FLAGS = -Wall -Wextra -Werror -g
@@ -23,15 +23,15 @@ FILES = main	assembler	error	op	parseng		tokens	cw_strsplit		\
 	parser_tools2	global_free		error_tools		argument_check
 OBJ = $(addprefix $(OBJDIR),$(addsuffix .o,$(FILES)))
 
-LIBFT = ./libft/libftprintf.a
+LIBFT = ../libft/libftprintf.a
 INCDIR = -I ./includes
-LIBLINK = -L ./libft -lftprintf
-LIBINC = -I ./libft/includes
+LIBLINK = -L ../libft -lftprintf
+LIBINC = -I ../libft/includes
 
 all: $(LIBFT) $(NAME)
 
 $(LIBFT):
-	@make -C ./libft
+	@make -C ../libft
 
 $(OBJDIR):
 	@echo "Creating object files directories..."
@@ -47,7 +47,7 @@ $(NAME): $(OBJ)
 	@echo "Assembler is compiled!"
 
 libclean:
-	@make clean -C ./libft
+	@make clean -C ../libft
 
 clean: libclean
 	@echo "Deleting Assembler object files..."
