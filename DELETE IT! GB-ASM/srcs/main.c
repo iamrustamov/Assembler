@@ -25,7 +25,7 @@ static void	copy_text(t_all *all)
 		buffer[bytes_read] = '\0';
 		champ = ft_strjoin_free(champ, buffer, 1);
 	}
-    if (!(all->split = cw_strsplit(champ)))
+	if (!(all->split = cw_strsplit(champ)))
 	{
 		ft_printf("File is empty\n");
 		exit(1);

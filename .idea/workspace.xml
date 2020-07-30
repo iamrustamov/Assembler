@@ -15,13 +15,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3db04e-cb60-4e7e-b99f-7d1f83732990" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/parsing_comm.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parsing_name.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/asm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parsing_values.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsing_values.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.cor" beforeDir="false" afterPath="$PROJECT_DIR$/vm_champs/champs/ex.cor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.s" beforeDir="false" afterPath="$PROJECT_DIR$/vm_champs/champs/ex.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/asm" beforeDir="false" afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/assembler.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/includes/asm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/includes/op.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/argument_check.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/assembler.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/calc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/cw_strsplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/error.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/error_tools.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/global_free.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/lable_distanse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/op.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/operation_to_bytecode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/parseng.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/parser_tools.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/parser_tools2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/tokens.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +106,8 @@
       <workItem from="1595843306833" duration="7218000" />
       <workItem from="1595935935883" duration="14000" />
       <workItem from="1595935951396" duration="1025000" />
-      <workItem from="1596021230000" duration="4902000" />
+      <workItem from="1596021230000" duration="5583000" />
+      <workItem from="1596116401780" duration="954000" />
     </task>
     <servers />
   </component>
@@ -110,61 +129,61 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="346" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595935943625" />
-    <state width="2508" height="247" key="GridCell.Tab.0.bottom" timestamp="1596026467668">
+    <state width="1259" height="157" key="GridCell.Tab.0.bottom" timestamp="1596116410763">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2006" height="245" key="GridCell.Tab.0.bottom/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489802" />
     <state width="897" height="279" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1595853087035" />
-    <state width="2508" height="247" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1596026467668" />
+    <state width="1259" height="157" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1596116410763" />
     <state width="1806" height="331" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936433946" />
-    <state width="2508" height="247" key="GridCell.Tab.0.center" timestamp="1596026467667">
+    <state width="1259" height="157" key="GridCell.Tab.0.center" timestamp="1596116410761">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2006" height="245" key="GridCell.Tab.0.center/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489801" />
     <state width="897" height="279" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1595853087034" />
-    <state width="2508" height="247" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1596026467667" />
+    <state width="1259" height="157" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1596116410761" />
     <state width="1806" height="331" key="GridCell.Tab.0.center/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936433946" />
-    <state width="2508" height="247" key="GridCell.Tab.0.left" timestamp="1596026467666">
+    <state width="1259" height="157" key="GridCell.Tab.0.left" timestamp="1596116410761">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2006" height="245" key="GridCell.Tab.0.left/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489800" />
     <state width="897" height="279" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1595853087034" />
-    <state width="2508" height="247" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1596026467666" />
+    <state width="1259" height="157" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1596116410761" />
     <state width="1806" height="331" key="GridCell.Tab.0.left/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936433946" />
-    <state width="2508" height="247" key="GridCell.Tab.0.right" timestamp="1596026467667">
+    <state width="1259" height="157" key="GridCell.Tab.0.right" timestamp="1596116410762">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2006" height="245" key="GridCell.Tab.0.right/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489802" />
     <state width="897" height="279" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1595853087035" />
-    <state width="2508" height="247" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1596026467667" />
+    <state width="1259" height="157" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1596116410762" />
     <state width="1806" height="331" key="GridCell.Tab.0.right/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936433946" />
-    <state width="2508" height="247" key="GridCell.Tab.1.bottom" timestamp="1596026467669">
+    <state width="2508" height="247" key="GridCell.Tab.1.bottom" timestamp="1596028851823">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2006" height="245" key="GridCell.Tab.1.bottom/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489804" />
     <state width="897" height="409" key="GridCell.Tab.1.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331683" />
-    <state width="2508" height="247" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1596026467669" />
+    <state width="2508" height="247" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1596028851823" />
     <state width="1806" height="331" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434294" />
-    <state width="2508" height="247" key="GridCell.Tab.1.center" timestamp="1596026467668">
+    <state width="2508" height="247" key="GridCell.Tab.1.center" timestamp="1596028851823">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2006" height="245" key="GridCell.Tab.1.center/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489803" />
     <state width="897" height="409" key="GridCell.Tab.1.center/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331682" />
-    <state width="2508" height="247" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1596026467668" />
+    <state width="2508" height="247" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1596028851823" />
     <state width="1806" height="331" key="GridCell.Tab.1.center/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434293" />
-    <state width="2508" height="247" key="GridCell.Tab.1.left" timestamp="1596026467668">
+    <state width="2508" height="247" key="GridCell.Tab.1.left" timestamp="1596028851823">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2006" height="245" key="GridCell.Tab.1.left/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489803" />
     <state width="897" height="409" key="GridCell.Tab.1.left/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331682" />
-    <state width="2508" height="247" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1596026467668" />
+    <state width="2508" height="247" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1596028851823" />
     <state width="1806" height="331" key="GridCell.Tab.1.left/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434293" />
-    <state width="2508" height="247" key="GridCell.Tab.1.right" timestamp="1596026467668">
+    <state width="2508" height="247" key="GridCell.Tab.1.right" timestamp="1596028851823">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2006" height="245" key="GridCell.Tab.1.right/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489803" />
     <state width="897" height="409" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331683" />
-    <state width="2508" height="247" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1596026467668" />
+    <state width="2508" height="247" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1596028851823" />
     <state width="1806" height="331" key="GridCell.Tab.1.right/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434294" />
     <state width="480" height="161" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1595935947590">
       <screen x="0" y="27" width="1920" height="1053" />
@@ -194,15 +213,6 @@
     <state x="416" y="425" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1595664932535" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/parsing_name.c</url>
-          <line>16</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="all-&gt;split_text[all-&gt;line]" />
