@@ -73,7 +73,7 @@ int             valid_name_comm(t_all *all, int x, int y, int flag)
  * Причина в том, что сталкивается с концом строки и на этом заканчивает.
  */
 
-void            parsing_text(t_all *all)
+void            parsing_name_comm(t_all *all)
 {
     int         flag_name;
     int         flag_comm;

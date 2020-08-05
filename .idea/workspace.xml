@@ -4,9 +4,7 @@
     <option name="SPLITTER_PROPORTION" value="0.57560354" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="Assembler" targetName="Assembler" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -16,30 +14,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fb3db04e-cb60-4e7e-b99f-7d1f83732990" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/asm" beforeDir="false" afterPath="$PROJECT_DIR$/DELETE IT! GB-ASM/asm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/assembler.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/includes/asm.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/includes/op.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/argument_check.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/assembler.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/calc.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/cw_strsplit.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/error.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/error_tools.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/global_free.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/lable_distanse.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/op.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/operation_to_bytecode.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/parseng.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/parser_tools.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/parser_tools2.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DELETE IT! GB-ASM/assembler/srcs/tokens.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/op.c" beforeDir="false" afterPath="$PROJECT_DIR$/GB-ASM/assembler/srcs/op.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" beforeDir="false" afterPath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsing_values.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsing_values.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/record_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/record_text.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.cor" beforeDir="false" afterPath="$PROJECT_DIR$/vm_champs/champs/ex.cor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +57,7 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
-    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;ex.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/vm_champs/champs" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assembler" TARGET_NAME="Assembler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assembler" RUN_TARGET_NAME="Assembler">
+    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;ex.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/vm_champs/champs" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assembler" RUN_TARGET_NAME="Assembler" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -108,6 +88,8 @@
       <workItem from="1595935951396" duration="1025000" />
       <workItem from="1596021230000" duration="5583000" />
       <workItem from="1596116401780" duration="954000" />
+      <workItem from="1596618332566" duration="30000" />
+      <workItem from="1596618364052" duration="1063000" />
     </task>
     <servers />
   </component>
@@ -115,11 +97,15 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596024741723">
+    <state x="1088" y="506" key="#Assembler" timestamp="1596618391289">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1088" y="506" key="#Assembler/0.23.2560.1337@0.23.2560.1337" timestamp="1596618391289" />
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596618344252">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="595" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1595849506304" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1596024741723" />
+    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1596618344252" />
     <state x="558" y="287" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936975613" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1595666085371">
       <screen x="0" y="23" width="2560" height="1337" />

@@ -23,8 +23,6 @@ int        count_rows_num(char *str)
     return (count);
 }
 
-
-
 // TODO в нашем split в конце строк ничего не стоит, а там он ставит коретку переноса строки
 
 void        record_to_lines(char *text, t_all *all)
@@ -68,6 +66,7 @@ void        ft_gen_parsing(char *file_name)
         error_print("ERROR: File did not open.");
     record_to_lines(record_text(all), all);
     close(all->fd);
-    parsing_text(all);
+    parsing_name_comm(all);
+    parsing_
 }
 
