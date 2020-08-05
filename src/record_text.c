@@ -67,6 +67,6 @@ void        ft_gen_parsing(char *file_name)
     record_to_lines(record_text(all), all);
     close(all->fd);
     parsing_name_comm(all);
-    parsing_
+    parsing_operations(all);
 }
 

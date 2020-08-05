@@ -1,10 +1,5 @@
 #include <../includes/asm.h>
 
-void                    pass_voids(char **str, int *i)
-{
-
-}
-
 int                     write_name(char *str, char *name, short *ac, int c)
 {
     int                 i;
@@ -14,6 +9,7 @@ int                     write_name(char *str, char *name, short *ac, int c)
     while (str[i] == ' ' || str[i] == '\t')
         i++;
     if (str[i] != '\"')
+        //TODO изменить здесь комментарий на адекватный
         error_print("Нет ковычек\n");
     while (str[i] != '\0')
     {
