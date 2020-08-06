@@ -14,8 +14,10 @@
 
 int		bad_lbl_char_manage(t_all *all, int f, int *incorrect_lbl, int i)
 {
+    // Если это ":", то просто пропускаем это.
 	if (!f && SPLIT[all->i] == LABEL_CHAR)
 		++all->i;
+	//Если это знаки разделители, комментарии либо что-то подобное, то возв-ем 1.
 	else if ((SPLIT[all->i] == SEPARATOR_CHAR
 		|| SPLIT[all->i] == ALT_COMMENT_CHAR
 		|| SPLIT[all->i] == COMMENT_CHAR || SPLIT[all->i] == '\n'
@@ -51,6 +53,7 @@ void	ft_parseng(t_all *all, t_op a, t_operation op)
 
 int		instr_not_found(t_all *all, int *i, int *incorrect_lbl, t_op *a)
 {
+    //Почему он здесь отправляет LABEL?
 	checkmet(all, LABEL, 0, incorrect_lbl);
 	(*i) = -1;
 	quick_pass(all);
@@ -88,12 +91,16 @@ void	tokens(t_all *all)
 	int			size;
 	int			incorrect_lbl;
 
+	//пропускаем все пробелы и табуляции.
 	quick_pass(all);
 	i = -1;
+	//парсим операцию
 	a = operations(all, &i);
+	// Если имя операции не нашлось в строке, то
 	if (!a.cmd[0])
 	{
-		size = all->i;
+		size = all->i; //записывает в size итератор символа, где остановился.
+		// а в instr_not_found
 		if (!instr_not_found(all, &i, &incorrect_lbl, &a))
 			return ;
 	}
@@ -116,12 +123,16 @@ void	tokens(t_all *all)
 void	parseng(t_all *all)
 {
 	size_t	last_line_len;
-
+//пропускаем все пробелы и табуляции, а также строки с комментариями
+//А когда встречаются просто символы, то запоминаем позицию для продолжения чтения
 	while (checkform(all))
 	{
+	    //Если ещё остались строки, то продолжаем
 		if (SPLIT)
 		{
+		    //пропускаем все пробелы и табуляции
 			quick_pass(all);
+			//приступаем к операциям
 			tokens(all);
 			all->temp ? ft_lstpush(&all->parsing, ft_lstnew_ptr(all->temp)) : 0;
 			all->temp = NULL;

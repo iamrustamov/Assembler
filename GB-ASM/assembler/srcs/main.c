@@ -52,7 +52,9 @@ static void	assembler(char *file_name)
 	all.st = -1;
 	all.fd = ft_read_file(file_name);
 	copy_text(&all);
+	//все данные записали и закинули в сплит
 	readfile(&all, file_name);
+	// ищём
 	parseng(&all);
 	if (all.errors)
 		print_errors(&all, file_name);

@@ -41,14 +41,52 @@ void            pass_voids(t_all *all)
 }
 
 
-void                        check_next_sym(t_oper *oper, t_all *all, int *i)
+int              check_comment2(t_all *all)
 {
-
+    while (all->split_text[all->line])
+    {
+        all->sym = 0;
+        while (all->split_text[all->line][all->sym])
+        {
+            if (all->split_text[all->line][all->sym] == COMMENT_CHAR ||
+                    all->split_text[all->line][all->sym] == ALT_COMMENT_CHAR ||
+                    all->split_text[all->line][all->sym] == '\n')
+                break ;
+            if (all->split_text[all->line][all->sym] == ' ' || all->split_text[all->line][all->sym] == '\t')
+                all->sym++;
+            else
+                return (1);
+        }
+        all->line++;
+    }
+    return (0);
 }
 
-//
+void            check_next_sym(t_all *all, t_oper *oper, int *i)
+{
+    if (oper->name[0]) //слишком похоже гарибшо
+    {
+        {
+            if (all->split_text[all->sym + ft_strlen(oper->name)] != '\t'
+                    && all->split_text[all->sym + ft_strlen(oper->name)] != ' ')
+            {
+                ft_bzero(oper, sizeof(t_oper));
+                i[0] = -1;
+            }
+        }
+    }
+}
+/*
+ * Здесь парсится имя операции;
+ * varibales:
+ * i - в виде числа указывает на какой строке операции, которую нашёл, остановился.
+ * x - для поиска имени из глобальной переменной global_oper;
+ * y - для чтение строки из глобальной переменной global_oper;
+ * В цикле ставится 17, чтобы убедиться - пока все типы операций не исследованы;
+ * Далее посимвольно в цикле сравниваются строки
+ */
 
-t_oper                      parse_name(t_all *all, int *i, int x, int y)
+t_oper                      parse_name(t_all *all, int *i, int x, int y) //operations
 {
     t_oper      oper;
     char        *str;
@@ -58,13 +96,13 @@ t_oper                      parse_name(t_all *all, int *i, int x, int y)
     ft_bzero(&oper, sizeof(oper));
     while (x < 17)
     {
-        all->sym = j - 1;
+        all->sym = 0;
         y = 0;
         str = (char *)global_oper[x].name;
         //TODO вот здесь заменить сравнение на ft_strcmp.
         while (all->split_text[all->line][all->sym] &&
                 str[y] &&
-                all->split_text[all->line][all->sym] == str[y])
+                all->split_text[all->line][all->sym++] == str[y])
         {
             all->sym++;
             y++;
@@ -76,31 +114,37 @@ t_oper                      parse_name(t_all *all, int *i, int x, int y)
         }
         x++;
     }
-    check_next_sym(&oper, all, i);
+    check_next_sym(all, &oper, i);
     return (oper);
 }
 
-void                        parse_op(t_all *all, int run, int size, int lbl_error)
+void                        operations_find(t_oper *oper ,t_all *all, int *i, int *lbl_error)
 {
-    t_oper       *oper;
-    t_tokens     *token; // изменить имя.
 
-    pass_voids(all);
-
-    oper = parse_name(all, &run, 0, 0);
 }
 
-void            parsing_operations(t_all *all)
+void                        parse_op(t_all *all, int i, int size, int lbl_error) //tokens
 {
-    t_oper      *oper;
+    t_oper       oper;
+    t_tokens     *token; // изменить имя.
 
-    all->sym  = 0;
-    while (check_comment(all->split_text[all->line]))
+    oper = parse_name(all, &i, 0, 0);
+    if (!oper.name[0])
     {
-        if (all->split_text[all->line])
-        {
+        size = all->sym;
+        if (!operations_find(&oper ,all, &i, &lbl_error))
+            return ;
+    }
+}
+
+void            parsing_operations(t_all *all) //parseng
+{
+    all->sym  = 0;
+    while (check_comment2(all))
+    {
+        if (all->split_text[all->line]) {
             pass_voids(all);
-            parse_op(all, 0, 0, 0);
+            parse_op(all, -1, 0, 0);
         }
     }
 }

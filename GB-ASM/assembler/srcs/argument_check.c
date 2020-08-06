@@ -109,18 +109,22 @@ void	checkmet(t_all *all, t_type tp, char size, int *incorrect_lbl)
 	unsigned		i;
 	t_tokens		*token;
 	int				f;
-
+    // Если там LABEL, то 0. Иначе 1.
 	f = tp == LABEL ? 0 : 1;
 	i = all->i;
+	//проверяем это не символ ":" ? Иначе ошибка
 	if (f && SPLIT[all->i] != LABEL_CHAR)
 		ft_error(all, Syntactic, No_colon_before);
+	//Если это тот символ, то отлично, пропускаем его
 	else if ((f && SPLIT[all->i] == LABEL_CHAR))
 	{
 		++all->i;
 		i = all->i;
 	}
+	//Дальше читаем эту строку до конца
 	while (SPLIT[all->i] && SPLIT[all->i] != '\n')
 	{
+	    // Если это допускаемый символ И
 		if (!scan_met(all) && bad_lbl_char_manage(all, f, incorrect_lbl, i))
 			break ;
 		++all->i;

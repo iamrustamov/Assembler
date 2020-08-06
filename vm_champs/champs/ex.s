@@ -1,11 +1,7 @@
 
-
-
 .name "name test"
 
-
-
-.comment "comment test"# gkjdfgfg
+.comment "comment test" # gkjdfgfg
 		
 l2:	sti	r1,%:live,%0
 	and	r1,%0,r1
