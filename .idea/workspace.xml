@@ -18,6 +18,7 @@
       <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/GB-ASM/assembler/srcs/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/op.c" beforeDir="false" afterPath="$PROJECT_DIR$/GB-ASM/assembler/srcs/op.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" beforeDir="false" afterPath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parser_tools2.c" beforeDir="false" afterPath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parser_tools2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parsing_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsing_operations.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.s" beforeDir="false" afterPath="$PROJECT_DIR$/vm_champs/champs/ex.s" afterDir="false" />
     </list>

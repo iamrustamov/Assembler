@@ -64,7 +64,7 @@ int		instr_not_found(t_all *all, int *i, int *incorrect_lbl, t_op *a)
 		return (0);
 	}
 	(*a) = operations(all, i);
-	return (1);
+	return (1);д
 }
 /*
  * В токенс уже создаёт две структуры данных. t_op и t_tokens.
