@@ -112,8 +112,8 @@ void        parsing_name_comm(t_all *all);
 void        record_name(t_all *all);
 int         check_comment(const char* str);
 void        record_comment(t_all *all);
-
-void        parsing_operations(t_all *all);
-
-
+void        pass_void(t_all *all);
+void        parser(t_all *all);
+t_oper      parse_operation(t_all *all, int *i);
+int         parse_lbl(int *i, int *lbl_flag, t_oper *op, t_all *all);
 #endif //ASSEMBLER_ASM_H

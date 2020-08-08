@@ -53,7 +53,7 @@ void	ft_parseng(t_all *all, t_op a, t_operation op)
 
 int		instr_not_found(t_all *all, int *i, int *incorrect_lbl, t_op *a)
 {
-    //Почему он здесь отправляет LABEL?
+    //Checkmet это проверка метки.
 	checkmet(all, LABEL, 0, incorrect_lbl);
 	(*i) = -1;
 	quick_pass(all);
@@ -64,7 +64,7 @@ int		instr_not_found(t_all *all, int *i, int *incorrect_lbl, t_op *a)
 		return (0);
 	}
 	(*a) = operations(all, i);
-	return (1);д
+	return (1);
 }
 /*
  * В токенс уже создаёт две структуры данных. t_op и t_tokens.
@@ -100,7 +100,7 @@ void	tokens(t_all *all)
 	if (!a.cmd[0])
 	{
 		size = all->i; //записывает в size итератор символа, где остановился.
-		// а в instr_not_found
+		// а в instr_not_found мы ищём метку (лейбл)
 		if (!instr_not_found(all, &i, &incorrect_lbl, &a))
 			return ;
 	}

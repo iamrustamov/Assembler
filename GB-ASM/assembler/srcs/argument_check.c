@@ -113,18 +113,22 @@ void	checkmet(t_all *all, t_type tp, char size, int *incorrect_lbl)
 	f = tp == LABEL ? 0 : 1;
 	i = all->i;
 	//проверяем это не символ ":" ? Иначе ошибка
+	//Потому что после каждой метки должны стоять доеточия.
 	if (f && SPLIT[all->i] != LABEL_CHAR)
 		ft_error(all, Syntactic, No_colon_before);
 	//Если это тот символ, то отлично, пропускаем его
 	else if ((f && SPLIT[all->i] == LABEL_CHAR))
 	{
+	    //если это символ двоеточия, то тогда двигаем итератор символов
 		++all->i;
+		// запоминаем где остановились.
 		i = all->i;
 	}
 	//Дальше читаем эту строку до конца
 	while (SPLIT[all->i] && SPLIT[all->i] != '\n')
 	{
-	    // Если это допускаемый символ И
+	    // в scan_met проверяем, что в метке допустимые символы из алфавита нижнего регистра и цифры
+	    // а в bad_lbl_char_manage проверяем, что кроме двоеточия
 		if (!scan_met(all) && bad_lbl_char_manage(all, f, incorrect_lbl, i))
 			break ;
 		++all->i;
