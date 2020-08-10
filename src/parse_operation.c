@@ -37,8 +37,8 @@ void            check_oper_next_sym(int *i, t_oper *operation, t_all *all)
 {
     if (operation->name[0])
     {
-        if (all->split_text[all->line][all->sym] + ft_strlen(operation->name) != ' ' &&
-            all->split_text[all->line][all->sym] != '\t')
+        if (all->split_text[all->line][all->sym + ft_strlen(operation->name)] != ' ' &&
+            all->split_text[all->line][all->sym + ft_strlen(operation->name)] != '\t')
         {
             ft_bzero(operation, sizeof(t_oper));
             *i = -1;
@@ -68,7 +68,7 @@ t_oper          parse_operation(t_all *all, int *i)
             z++;
         // Если перечисление операций не закончилось, а строка с совпадениями закончилась,
         // значит мы нашли операцию.
-        if (16 >= y && oper_name[z] == '\0')
+        if (16 > y && !oper_name[z])
         {
             oper = global_oper[y];
             *i = y;

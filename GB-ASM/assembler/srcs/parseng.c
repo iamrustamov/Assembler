@@ -14,15 +14,25 @@
 
 int		bad_lbl_char_manage(t_all *all, int f, int *incorrect_lbl, int i)
 {
-    // Если это ":", то просто пропускаем это.
-	if (!f && SPLIT[all->i] == LABEL_CHAR)
+/*
+ * Если проверяется метка И настоящий символ это двоеточие,
+ * то пропускаем его и смотрим дальше
+ */
+    if (!f && SPLIT[all->i] == LABEL_CHAR)
 		++all->i;
-	//Если это знаки разделители, комментарии либо что-то подобное, то возв-ем 1.
+    /*
+     * ИНАЧЕ Если наст. символ это запятая ИЛИ знаки комментария
+     * ИЛИ табуляция либо пробел ИЛИ символ след. строки
+     * И проверяется не строка с меткой, то возв-ем единицу
+     */
 	else if ((SPLIT[all->i] == SEPARATOR_CHAR
 		|| SPLIT[all->i] == ALT_COMMENT_CHAR
 		|| SPLIT[all->i] == COMMENT_CHAR || SPLIT[all->i] == '\n'
 		|| SPLIT[all->i] == '\t' || SPLIT[all->i] == ' ') && f)
 		return (1);
+	/*
+	 * Проверяется строка с меткой до конца
+	 */
 	else if ((*incorrect_lbl = check_label_colon(all, i)))
 	{
 		ft_error(all, Lexical, Wrong_lchar);
