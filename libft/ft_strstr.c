@@ -3,35 +3,52 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/18 16:01:06 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/23 03:14:47 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/22 13:33:24 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 20:16:09 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			*ft_strstr(const char *str1, const char *str2)
+static size_t	check_str(char *b, char *l, size_t i, size_t n)
 {
-	size_t		i;
-	size_t		j;
+	while (b[i] == l[n])
+	{
+		if (b[i + 1] == '\0' && l[n + 1] == '\0')
+			return (0);
+		i++;
+		n++;
+	}
+	if (l[n] == '\0')
+		return (0);
+	else
+		return (1);
+}
+
+char			*ft_strstr(const char *big, const char *little)
+{
+	size_t	i;
+	size_t	n;
+	char	*b;
+	char	*l;
 
 	i = 0;
-	j = 0;
-	if (str2[0] == '\0')
-		return ((char *)str1);
-	while (str1[i] != '\0')
+	b = (char *)big;
+	l = (char *)little;
+	if (l[i] == '\0')
+		return (b);
+	while (b[i] != '\0')
 	{
-		if (str1[i] == str2[0])
+		n = 0;
+		if (b[i] == l[n])
 		{
-			j = 1;
-			while (str2[j] != '\0' && str1[i + j] == str2[j])
-				j++;
-			if (str2[j] == '\0')
-				return ((char *)str1 + i);
+			n = check_str(b, l, i, n);
+			if (!n)
+				return (b + i);
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

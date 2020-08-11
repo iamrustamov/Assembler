@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   doing_ft_bzero.c                                   :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/16 19:10:41 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/22 19:12:46 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/21 15:59:36 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 19:44:47 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;
+	unsigned char	*d;
 
 	i = 0;
-	while (n > i)
+	d = (unsigned char *)s;
+	if (n > 0)
 	{
-		((char *)s)[i] = '\0';
-		i++;
+		while (i < n)
+		{
+			d[i] = '\0';
+			i++;
+		}
 	}
 }

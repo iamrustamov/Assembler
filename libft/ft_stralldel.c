@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlastn.c                                      :+:      :+:    :+:   */
+/*   ft_stralldel.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/30 07:56:04 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/30 07:58:15 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/28 17:06:02 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 17:40:13 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list			*ft_lstlastn(t_list *head)
+void	ft_stralldel(char **str, size_t n)
 {
-	t_list		*tmp;
+	size_t i;
 
-	if (!head)
-		return (NULL);
-	else
-		tmp = head;
-	while (tmp->next)
-		tmp = tmp->next;
-	return (tmp);
+	i = 0;
+	if (str)
+	{
+		while (i < n)
+		{
+			free(str[i]);
+			str[i] = NULL;
+			i++;
+		}
+	}
 }

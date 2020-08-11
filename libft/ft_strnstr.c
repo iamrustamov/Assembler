@@ -3,34 +3,53 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/18 17:04:04 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/25 17:31:14 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/22 13:50:36 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 20:17:21 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strnstr(const char *s1, const char *s2, size_t len)
+static size_t	check(char *b, char *l, size_t i, size_t n)
 {
-	size_t		i;
-	size_t		j;
-
-	j = 0;
-	i = 0;
-	if (s2[0] == '\0')
-		return ((char *)s1);
-	if (len == 0)
-		return (0);
-	while (len > (i + j) && s1[i] != '\0')
+	while (b[i] == l[n])
 	{
-		j = 0;
-		while ((s2[j] != '\0') && (s1[i + j] == s2[j]) && (i + j) < len)
-			j++;
-		if (s2[j] == '\0')
-			return ((char *)s1 + i);
+		if (b[i + 1] == '\0' && l[n + 1] == '\0')
+			return (0);
 		i++;
+		n++;
+	}
+	if (l[n] == '\0')
+		return (0);
+	else
+		return (1);
+}
+
+char			*ft_strnstr(const char *big, const char *little, size_t len)
+{
+	size_t	i;
+	size_t	n;
+	char	*b;
+	char	*l;
+
+	i = 0;
+	b = (char *)big;
+	l = (char *)little;
+	if (l[i] == '\0')
+		return (b);
+	while (b[i] != '\0' && len && ft_strlen(l) <= len)
+	{
+		n = 0;
+		if (b[i] == l[n])
+		{
+			n = check(b, l, i, n);
+			if (!n)
+				return (b + i);
+		}
+		i++;
+		len--;
 	}
 	return (NULL);
 }

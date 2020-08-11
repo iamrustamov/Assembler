@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_power.c                                         :+:      :+:    :+:   */
+/*   ft_count_words.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/30 08:34:54 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/03 11:29:09 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/28 18:33:20 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 18:38:04 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_power(int n, unsigned int pow)
+size_t		ft_count_words(char *str, char c)
 {
-	int			res;
+	size_t i;
+	size_t n;
 
-	if (!n || !pow)
-		return (0);
-	if (pow == 0)
-		return (1);
-	res = 1;
-	while (pow--)
-		res = res * n;
-	if (res > 2147483647)
-		return (0);
-	return (res);
+	i = 0;
+	n = 0;
+	while (str[i] != '\0')
+	{
+		while (str[i] == c && str[i] != '\0')
+			i++;
+		if (str[i] == '\0')
+			break ;
+		n++;
+		while (str[i] != '\0' && str[i] != c)
+			i++;
+	}
+	return (n);
 }

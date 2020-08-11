@@ -3,97 +3,87 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/19 00:51:13 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/03 23:37:03 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/26 10:41:23 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 20:24:16 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char			*ft_free(char **for_free, size_t count)
+static int		count_letters(char *g, int i, char c)
 {
-	size_t			i;
+	int l;
 
-	i = 0;
-	while (count > i)
+	l = 0;
+	while (g[i] != '\0' && g[i] != c)
 	{
-		free(for_free[i]);
 		i++;
+		l++;
 	}
-	free(for_free);
-	for_free = NULL;
-	return (NULL);
+	return (l);
 }
 
-static	int			num_word(char const *s, char c)
+static void		ft_wordscpy(char *d, char *g, size_t i, size_t l)
 {
-	int				i;
-	int				num;
+	size_t n;
 
-	i = 0;
-	num = 0;
-	while (s[i] != '\0')
+	n = 0;
+	while (n < l)
 	{
-		while (s[i] == c)
-			i++;
-		if (s[i] != '\0')
-			num++;
-		while (s[i] != '\0' && s[i] != c)
-			i++;
+		d[n] = g[i];
+		i++;
+		n++;
 	}
-	return (num);
+	d[n] = '\0';
 }
 
-static	char		*ft_memword(char const *s, size_t mem)
+static char		**ft_split(char **d, char *g, char c, size_t i)
 {
-	char			*ptr;
+	size_t k;
+	size_t l;
 
-	if (!(ptr = (char *)malloc(sizeof(char) * mem + 1)))
-		return (NULL);
-	ptr = ft_strncpy(ptr, s, mem);
-	ptr[mem] = '\0';
-	return (ptr);
+	k = 0;
+	l = 0;
+	while (g[i] != '\0')
+	{
+		while (g[i] == c && g[i] != '\0')
+			i++;
+		if (g[i] == '\0')
+			break ;
+		l = (count_letters(g, i, c));
+		d[k] = (char *)malloc(sizeof(char) * (l + 1));
+		if (d[k] == NULL)
+		{
+			ft_stralldel(d, k);
+			return (NULL);
+		}
+		ft_bzero(d[k], (l + 1));
+		ft_wordscpy(d[k], g, i, l);
+		i = i + l;
+		k++;
+	}
+	d[k] = 0;
+	return (d);
 }
 
-static	char		**ft_fill(const char *s, char c, size_t count)
+char			**ft_strsplit(char const *s, char c)
 {
-	size_t			j;
-	size_t			n;
-	size_t			i;
-	char			**next;
+	size_t	i;
+	size_t	n;
+	char	*g;
+	char	**d;
 
 	i = 0;
 	n = 0;
-	if (!(next = (char **)malloc(sizeof(char *) * (count + 1))))
-		return (NULL);
-	while (s[i] != '\0')
-	{
-		while (s[i] == c)
-			i++;
-		j = i;
-		while (s[i] && s[i] != c)
-			i++;
-		if (i > j)
-			if (!(next[n++] = ft_memword(s + j, i - j)))
-			{
-				ft_free(next, count);
-				return (NULL);
-			}
-	}
-	next[n] = 0;
-	return (next);
-}
-
-char				**ft_strsplit(char const *s, char c)
-{
-	size_t			count;
-
-	if (!s || !c)
-		return (NULL);
+	g = (char *)s;
 	if (s == NULL)
 		return (NULL);
-	count = num_word(s, c);
-	return (ft_fill(s, c, count));
+	n = ft_count_words(g, c);
+	d = (char **)malloc(sizeof(char *) * (n + 1));
+	if (d == NULL)
+		return (NULL);
+	d = ft_split(d, g, c, i);
+	return (d);
 }

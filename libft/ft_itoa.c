@@ -3,60 +3,76 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <opavliuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/22 22:19:25 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/04 00:05:24 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/26 13:40:25 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/05/06 19:27:27 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int			ft_sym(int n)
+size_t			ft_count(intmax_t n, short int base)
 {
-	if (n < 0)
-		return (-n);
-	else
-		return (n);
-}
+	size_t c;
 
-static	int			ft_counter(int n)
-{
-	int		c;
-
-	if (n <= 0)
+	if (n == -2147483648)
+		return (11);
+	if (n >= 0)
 		c = 1;
-	else
-		c = 0;
-	while (n)
+	else if (n < 0)
+		c = 2;
+	while (n / base != 0)
 	{
-		n = n / 10;
+		n = n / base;
 		c++;
 	}
 	return (c);
 }
 
-char				*ft_itoa(int n)
+static char		*ft_string(char *str, int n, size_t c)
 {
-	int				len;
-	char			*res;
+	int		i;
+	int		k;
 
-	len = ft_counter(n);
-	if (!(res = malloc(sizeof(char) * (len + 1))))
-		return (NULL);
-	if (n == -2147483648)
-		return (ft_strcpy(res, "-2147483648"));
-	if (n == 0)
-		res[0] = '0';
+	k = 0;
+	i = c - 1;
 	if (n < 0)
-		res[0] = '-';
-	res[len] = '\0';
-	len--;
-	while (n)
 	{
-		res[len] = ft_sym(n % 10) + '0';
-		n = n / 10;
-		len--;
+		n = n * (-1);
+		str[0] = '-';
+		k++;
 	}
-	return (res);
+	while (k <= i)
+	{
+		if (n / 10 == 0)
+			str[i] = (n + 48);
+		else
+			str[i] = (n % 10 + 48);
+		i--;
+		n = n / 10;
+	}
+	return (str);
+}
+
+char			*ft_itoa(int n)
+{
+	size_t	c;
+	char	*str;
+
+	c = 0;
+	c = ft_count(n, 10);
+	str = (char *)malloc(sizeof(char) * (c + 1));
+	if (str == NULL)
+		return (NULL);
+	ft_bzero(str, (c + 1));
+	if (n == -2147483648)
+	{
+		str = ft_string(str, n + 1, c);
+		str[10] = '8';
+	}
+	else
+		str = ft_string(str, n, c);
+	str[c + 1] = '\0';
+	return (str);
 }

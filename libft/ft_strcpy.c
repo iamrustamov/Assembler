@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/13 20:12:38 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/25 17:36:21 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/21 14:55:24 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 19:47:04 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	size_t		i;
+	size_t i;
 
 	i = 0;
 	while (src[i] != '\0')

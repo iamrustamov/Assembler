@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nwords.c                                        :+:      :+:    :+:   */
+/*   ft_lstprint.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/23 04:02:57 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/23 05:20:56 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/28 14:22:17 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 21:22:23 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static	int			num_word(char const *s, char c)
+#include "libft.h"
+
+void	ft_lstprint(t_list *list)
 {
-	int		i;
-	int		num;
+	size_t i;
 
 	i = 0;
-	num = 0;
-	while (s[i] != '\0')
+	if (list)
 	{
-		while (s[i] == c)
+		while (list)
+		{
+			ft_putstr(ft_itoa(i));
+			ft_putchar(':');
+			ft_putstr((char *)(list->content));
+			ft_putchar('\n');
+			list = list->next;
 			i++;
-		if (s[i] != '\0')
-			num++;
-		while (s[i] != '\0' && s[i] != c)
-			i++;
+		}
 	}
-	return (num);
 }

@@ -3,46 +3,53 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/25 18:02:38 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/03 23:47:11 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/28 11:13:20 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 20:53:57 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void				ft_lstclear(t_list *root)
+static void		ft_lstdelete(t_list **alst)
 {
-	t_list				*tmp;
+	t_list *ping;
 
-	while (root != NULL)
+	ping = *alst;
+	if (alst != NULL && *alst != NULL)
 	{
-		tmp = root->next;
-		free(tmp);
-		root = tmp;
+		while (ping)
+		{
+			free(ping);
+			ping = ping->next;
+		}
+		*alst = NULL;
 	}
 }
 
-t_list					*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list				*head;
-	t_list				*car;
+	t_list *ping;
+	t_list *tmp;
 
-	if (!lst || !f)
-		return (NULL);
-	car = f(lst);
-	head = car;
-	while (lst->next != NULL)
+	if (lst && (*f))
 	{
-		lst = lst->next;
-		if (!(car->next = f(lst)))
-		{
-			ft_lstclear(car);
+		if (!(ping = f(lst)))
 			return (NULL);
+		tmp = ping;
+		lst = lst->next;
+		while (lst)
+		{
+			if (!(ping->next = f(lst)))
+			{
+				ft_lstdelete(&tmp);
+				return (NULL);
+			}
+			ping = ping->next;
+			lst = lst->next;
 		}
-		else
-			car = car->next;
+		return (tmp);
 	}
-	return (head);
+	return (NULL);
 }

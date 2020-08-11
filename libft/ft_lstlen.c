@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnum.c                                        :+:      :+:    :+:   */
+/*   ft_lstlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/03 11:03:51 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/03 20:01:37 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/28 14:14:38 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 15:05:51 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list			*ft_lstnum(t_list *alst, size_t num)
+size_t	ft_lstlen(t_list *list)
 {
-	size_t		i;
+	size_t i;
 
-	if (!alst || !num)
-		return (NULL);
-	if (num == 0)
-		return (alst);
 	i = 0;
-	while (num > i)
+	if (!list)
+		return (0);
+	while (list)
 	{
-		alst = alst->next;
+		list = list->next;
 		i++;
 	}
-	return (alst);
+	return (i);
 }

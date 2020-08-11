@@ -3,25 +3,40 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/24 10:57:00 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/24 10:57:25 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/28 18:43:31 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/03/28 19:10:21 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_sqrt(int n)
+size_t		ft_sqrt(size_t n)
 {
-	int		i;
+	size_t i;
 
-	i = 1;
-	if (n == 0)
+	i = 2;
+	if (n == 0 || n == 2 || n == 3)
 		return (0);
-	while (i * i < n)
+	if (n == 1)
+		return (1);
+	if (n % 2 == 0)
+		while (n > i)
+		{
+			if (n / i == i && n % i == 0)
+				return (i);
+			i += 2;
+		}
+	else
+	{
 		i++;
-	if ((n % i) == 0)
-		return (i);
+		while (n > i)
+		{
+			if (n / i == i && n % i == 0)
+				return (i);
+			i += 2;
+		}
+	}
 	return (0);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   oformi_i_uznay_ft_memset.c                         :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: opavliuk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/17 13:10:23 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/03 12:56:15 by dpenney          ###   ########.fr       */
+/*   Created: 2018/03/21 15:34:14 by opavliuk          #+#    #+#             */
+/*   Updated: 2018/04/13 22:13:17 by opavliuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char	*temp;
 	size_t			i;
+	unsigned char	*d;
 
 	i = 0;
-	temp = (unsigned char *)b;
-	while (len > i)
+	d = (unsigned char *)b;
+	while (i < len)
 	{
-		temp[i] = c;
+		d[i] = (unsigned char)c;
 		i++;
 	}
-	return (b);
+	return (d);
 }
