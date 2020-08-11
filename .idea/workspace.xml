@@ -13,12 +13,147 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3db04e-cb60-4e7e-b99f-7d1f83732990" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/asm.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" beforeDir="false" afterPath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parse_lbl.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_lbl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parse_operation.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_operation.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.cor" beforeDir="false" afterPath="$PROJECT_DIR$/vm_champs/champs/ex.cor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.s" beforeDir="false" afterPath="$PROJECT_DIR$/vm_champs/champs/ex.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BZH-ASM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/.idea/GB-ASM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/.idea/assembler.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/includes/asm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/includes/op.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/argument_check.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/assembler.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/calc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/cw_strsplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/error.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/error_tools.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/global_free.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/lable_distanse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/op.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/operation_to_bytecode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parser_tools.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parser_tools2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/tokens.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/includes/ft_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/includes/libft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstadd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstdelone.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstiter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstnew_ptr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_lst/ft_lstpush.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_bzero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_memalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_memdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_mem/ft_uniswap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/flagidiux.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/float.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/floatlong.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/floatob.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/ft_char.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/ft_printstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/ft_printx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/over.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/parseng.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/printnbr_logik.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/printtnbr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/spec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/unicod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_printf/unicod_str.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_atoi_base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_close_file.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_freesplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_intlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_isalnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_itoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_itoa_base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_power.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putchar.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putchar_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putendl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putendl_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putnbr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putnbr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putstr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_putstrc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_range.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_read_file.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_sqrt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strclr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_striter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_striteri.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strjoin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strjoin_free.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strmapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strncat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strncpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strnequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strpbrk.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strsplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strsplit_len.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strsub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strtoupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_strtrim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_swap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/ft_uitoa_base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB-ASM/libft/srcs/ft_str/get_next_line.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/error_print.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_liba.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_comm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_lbl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_name.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_operation.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_values.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/record_text.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +188,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/includes" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;ex.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/vm_champs/champs" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assembler" RUN_TARGET_NAME="Assembler" EXPLICIT_BUILD_TARGET_NAME="all">
@@ -97,6 +237,13 @@
       <workItem from="1596725319206" duration="835000" />
       <workItem from="1596897803531" duration="9304000" />
       <workItem from="1597081013773" duration="6371000" />
+      <workItem from="1597112174510" duration="7000" />
+      <workItem from="1597112188167" duration="13000" />
+      <workItem from="1597112335737" duration="811000" />
+      <workItem from="1597113150803" duration="347000" />
+      <workItem from="1597113532571" duration="45000" />
+      <workItem from="1597114128012" duration="329000" />
+      <workItem from="1597114553814" duration="12000" />
     </task>
     <servers />
   </component>
@@ -178,25 +325,25 @@
     <state width="897" height="409" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331683" />
     <state width="1085" height="405" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1597089765796" />
     <state width="1806" height="331" key="GridCell.Tab.1.right/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434294" />
-    <state width="480" height="161" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1595935947590">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1597113149097">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1595661053167" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1597113149097" />
     <state width="480" height="161" key="ImportCMakeProjectWizard.bottomPanel/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595935947590" />
-    <state width="480" height="375" key="ImportCMakeProjectWizard.topPanel" timestamp="1595935947590">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1597113149096">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1595661053166" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1597113149096" />
     <state width="480" height="375" key="ImportCMakeProjectWizard.topPanel/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595935947590" />
     <state x="465" y="257" key="RollbackChangesDialog" timestamp="1595848457844">
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state x="465" y="257" key="RollbackChangesDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1595848457844" />
-    <state x="410" y="175" key="SettingsEditor" timestamp="1596705894631">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state x="513" y="342" key="SettingsEditor" timestamp="1597114302598">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="410" y="175" key="SettingsEditor/0.23.2048.1049@0.23.2048.1049" timestamp="1596705894631" />
-    <state x="513" y="342" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1596022865221" />
+    <state x="513" y="342" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1597114302598" />
     <state x="1005" y="483" key="refactoring.ChangeSignatureDialog" timestamp="1595669178032">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -207,20 +354,6 @@
     <state x="416" y="425" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1595664932535" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/parse_lbl.c</url>
-          <line>72</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/parse_lbl.c</url>
-          <line>40</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="all-&gt;split_text[all-&gt;line][all-&gt;sym]" />
