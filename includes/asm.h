@@ -7,6 +7,9 @@
 #include "stdio.h" // remove it
 #include "../libft/libft.h"
 
+#define TRUE 1
+#define FALSE 0
+
 typedef struct      s_array
 {
     char            arg[3];
@@ -22,7 +25,7 @@ typedef struct      s_op_list
     char            lbl_size;
 }                   t_op_list;
 
-typedef enum
+typedef enum types
 {
     LABEL = 1,
     COMMAND
@@ -37,12 +40,19 @@ typedef  struct     s_arg
     struct s_arg    *next;
 }                   t_arg;
 
+typedef struct          s_lbls
+{
+    char                *str;
+    int                 strlen;
+    struct s_lbls       *next;
+}                       t_lbls;
+
 typedef  struct         s_operation
 {
     char                *name;
     char                *op_code;
     int                 byte;
-    t_list              *lbl;
+    t_lbls              *lbl;
     t_arg               *args;
     struct s_operation  *next;
 }                       t_operation;
@@ -54,6 +64,7 @@ typedef  struct     s_asm
     char            *name;
     char            *comment;
     char            *line;
+    int             sym;
     int             line_len;
     int             cor_fd;
     t_operation     *oper;
@@ -62,8 +73,21 @@ typedef  struct     s_asm
 /*
  * Functions
  */
-void                error_printf(t_asm *bler, char *text, char *line);
 void                parser(t_asm *bler);
 void                parse_name_comm(t_asm *bler);\
 void                parse_commands(t_asm *bler);
+t_operation         *init_op_list(t_asm *bler);
+
+int                 check_label(t_asm *bler);
+void                add_lbls(t_asm *bler, t_operation *oper, int *i);
+
+int                 check_op(t_asm *bler);
+
+/*
+ * Instruments
+ */
+void                pass_comments(char *str);
+void                pass_voids(t_asm *bler);
+void                error_printf(t_asm *bler, char *text, char *line);
+
 #endif
