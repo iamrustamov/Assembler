@@ -7,9 +7,9 @@
 #include "stdio.h" // remove it
 #include "../libft/libft.h"
 
-#define TRUE 1
-#define FALSE 0
-
+# define TRUE 1
+# define FALSE 0
+# define ERROR_LINE "ERROR: This line have not valid parameters\n"
 typedef struct      s_array
 {
     char            arg[3];
@@ -50,7 +50,7 @@ typedef struct          s_lbls
 typedef  struct         s_operation
 {
     char                *name;
-    char                *op_code;
+    int                 op_code; // у него установлено char.
     int                 byte;
     t_lbls              *lbl;
     t_arg               *args;
@@ -79,10 +79,10 @@ void                parse_commands(t_asm *bler);
 t_operation         *init_op_list(t_asm *bler);
 
 int                 check_label(t_asm *bler);
-void                add_lbls(t_asm *bler, t_operation *oper, int *i);
+void                add_lbls(t_asm *bler, t_operation *oper);
 
 int                 check_op(t_asm *bler);
-
+void                add_op(t_asm *bler, t_operation *oper);
 /*
  * Instruments
  */

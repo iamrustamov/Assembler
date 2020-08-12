@@ -1,4 +1,5 @@
 #include "asm.h"
+#define GNLINE bler->line[bler->sym]
 
 t_op_list  op_tab[16] = {
         {"live", 1, {{{0, 1, 0}}, {{0, 0, 0}}, {{0, 0, 0}}}, 1, 0, 4},
@@ -47,11 +48,12 @@ int             find_oper(char *str, int len)
 int             check_op(t_asm *bler)
 {
     int         i;
-
-    i = 0;
+ВОТ ЗДЕСЬ ОСТАНОВИЛСЯ
+    i = 0; // TODO пропускает первую операцию. Почему?
     pass_voids(bler);
     if (check_label(bler))
         bler->line = ft_strchr(bler->line, ':') + 1;
+    pass_voids(bler);
     while (bler->line[i] && ft_isalpha(bler->line[i]))
         i++;
     if (i > 0 && find_oper(bler->line, i) != -1) //TODO не находит в функции find_oper операцию.
@@ -60,7 +62,32 @@ int             check_op(t_asm *bler)
         return (FALSE);
 }
 
+/*
+ * GNLINE is (bler->line[bler->sym])
+ */
+
+void             parse_op(t_asm *bler, t_operation *oper)
+{
+    int         start;
+
+    start = bler->sym;
+	while (GNLINE && GNLINE != '-' && GNLINE != '\t' &&
+			GNLINE != ' ' && GNLINE != '%' && !ft_isdigit(GNLINE))
+		bler->sym++;
+	if (GNLINE != ' ' && GNLINE != '\t' &&
+		GNLINE != '%' && GNLINE != '-')
+		error_printf(bler, ERROR_LINE, bler->line);
+	oper->name = ft_strsub(bler->line, start, bler->sym);
+	oper->op_code = find_oper(oper->name, ft_strlen(oper->name));
+}
+
 void             add_op(t_asm *bler, t_operation *oper)
 {
-
+    if (check_op(bler))
+    {
+        parse_op(bler, oper);
+        //parse_args(bler, oper);
+    }
+    else
+        return ;
 }

@@ -54,7 +54,7 @@ void            add_new_lbl(t_asm *bler, int *lbl_end)
  * i - это итератор, который читает строку.
  */
 
-void            add_lbls(t_asm *bler, t_operation *oper, int *i)
+void            add_lbls(t_asm *bler, t_operation *oper)
 {
     char        *str;
 

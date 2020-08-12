@@ -47,20 +47,23 @@ t_operation     *init_op_list(t_asm *bler)
     return (new_op);
 }
 
+/*
+ * Сначала проверяем нашлись ли команда либо метка.
+ * Если да, то сначала создаём переменную для хранения операций.
+ * Далее добавляем метку. Если её нет, то ничего страшного, внутри проводится
+ * ещё одна проверка.
+ * Далее проверяем на операции.
+ */
+
 void            parse_lbl_op(t_asm *bler) // TODO get_lca
 {
     t_operation *oper;
-    int         i;
 
-    i = 0;
     if (check_label(bler) || check_op(bler))
     {
         oper = init_op_list(bler);
-        add_lbls(bler, oper, &i);
-        if (check_op(bler))
-        {
-            add_op(bler, oper);
-        }
+        add_lbls(bler, oper);
+        add_op(bler, oper);
     }
 }
 
