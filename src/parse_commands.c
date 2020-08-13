@@ -19,16 +19,11 @@ void            pass_comments(char *str)
         ft_bzero(str, ft_strlen(str));
 }
 
-
 void            pass_voids(t_asm *bler)
 {
     while (bler->line[bler->sym] && (bler->line[bler->sym] == ' ' || bler->line[bler->sym] == '\t'))
         bler->sym++;
 }
-
-
-
-
 
 t_operation     *init_op_list(t_asm *bler)
 {

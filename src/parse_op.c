@@ -48,15 +48,15 @@ int             find_oper(char *str, int len)
 int             check_op(t_asm *bler)
 {
     int         i;
-ВОТ ЗДЕСЬ ОСТАНОВИЛСЯ
+
     i = 0; // TODO пропускает первую операцию. Почему?
-    pass_voids(bler);
     if (check_label(bler))
         bler->line = ft_strchr(bler->line, ':') + 1;
-    pass_voids(bler);
+	while (*bler->line == ' ' || *bler->line == '\t')
+		bler->line++;
     while (bler->line[i] && ft_isalpha(bler->line[i]))
         i++;
-    if (i > 0 && find_oper(bler->line, i) != -1) //TODO не находит в функции find_oper операцию.
+    if (i > 0 && find_oper(bler->line, i) != -1)
         return (TRUE);
     else
         return (FALSE);
@@ -65,7 +65,7 @@ int             check_op(t_asm *bler)
 /*
  * GNLINE is (bler->line[bler->sym])
  */
-
+//FIXME должен с правильной точки начать копировать имя, иначе имя теряется и не находитс имя операции.
 void             parse_op(t_asm *bler, t_operation *oper)
 {
     int         start;
