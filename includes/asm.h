@@ -10,6 +10,8 @@
 # define TRUE 1
 # define FALSE 0
 # define ERROR_LINE "ERROR: This line have not valid parameters\n"
+# define ERROR_ARGS "ERROR: This line have not valid arguments\n"
+
 typedef struct      s_array
 {
     char            arg[3];
@@ -64,6 +66,7 @@ typedef  struct     s_asm
     char            *name;
     char            *comment;
     char            *line;
+    char            *free_line; //TODO эта переменная понадобится, если line до конца не очищается.
     int             sym;
     int             line_len;
     int             cor_fd;
@@ -77,6 +80,7 @@ void                parser(t_asm *bler);
 void                parse_name_comm(t_asm *bler);\
 void                parse_commands(t_asm *bler);
 t_operation         *init_op_list(t_asm *bler);
+void                parse_args(t_asm *bler, t_operation *oper);
 
 int                 check_label(t_asm *bler);
 void                add_lbls(t_asm *bler, t_operation *oper);

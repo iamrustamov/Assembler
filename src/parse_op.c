@@ -64,13 +64,15 @@ int             check_op(t_asm *bler)
 
 /*
  * GNLINE is (bler->line[bler->sym])
+ * Пропускаем, пока не встретим особые символы.
+ * Если пропускаем символы
  */
 //FIXME должен с правильной точки начать копировать имя, иначе имя теряется и не находитс имя операции.
 void             parse_op(t_asm *bler, t_operation *oper)
 {
     int         start;
 
-    start = bler->sym;
+    bler->sym = 0;
 	while (GNLINE && GNLINE != '-' && GNLINE != '\t' &&
 			GNLINE != ' ' && GNLINE != '%' && !ft_isdigit(GNLINE))
 		bler->sym++;
@@ -81,12 +83,18 @@ void             parse_op(t_asm *bler, t_operation *oper)
 	oper->op_code = find_oper(oper->name, ft_strlen(oper->name));
 }
 
+/*
+ * Парсим операцию.
+ * Если операция нашлась, то парсим в parse_op имя операции и его код;
+ * Далее парсим аргументы операциии.
+ */
+
 void             add_op(t_asm *bler, t_operation *oper)
 {
     if (check_op(bler))
     {
         parse_op(bler, oper);
-        //parse_args(bler, oper);
+        parse_args(bler, oper);
     }
     else
         return ;
