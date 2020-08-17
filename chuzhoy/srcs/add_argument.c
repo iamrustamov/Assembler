@@ -145,7 +145,7 @@ void				add_argument(t_command *command, char type,
 	}
 	else if (flag == UINT_VAL)
 	{
-		new->num_value = ((int *)data)[0];
+		new->num_value = ((int *)data)[0]; //TODO почему ячейку передает?
 		free(data);
 	}
 	new->type = type;

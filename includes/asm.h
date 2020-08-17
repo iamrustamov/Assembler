@@ -18,6 +18,11 @@
 # define NEARLY_MAX_UINT 429496729
 # define WRONG_TYPE -1
 
+typedef enum {
+	NUM_VAL = 1,
+	STRING_VAL
+};
+
 typedef struct      s_array
 {
     char            arg[3];
@@ -41,12 +46,13 @@ typedef enum types
 
 typedef  struct     s_arg
 {
-    char            *s_val;
-    int             n_val;
+    char            *str_val;
+    int             num_val;
+    int             detector;
     char            *args_size;
     char            *type;
     struct s_arg    *next;
-}                   t_arg;
+}                   t_argument;
 
 typedef struct          s_lbls
 {
@@ -61,7 +67,7 @@ typedef  struct         s_operation
     int                 op_code; // у него установлено char.
     int                 byte;
     t_lbls              *lbl;
-    t_arg               *args;
+    t_argument          *args;
     struct s_operation  *next;
 }                       t_operation;
 
