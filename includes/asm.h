@@ -9,8 +9,14 @@
 
 # define TRUE 1
 # define FALSE 0
-# define ERROR_LINE "ERROR: This line have not valid parameters\n"
-# define ERROR_ARGS "ERROR: This line have not valid arguments\n"
+# define ERROR_LINE "ERROR: This line have not valid parameters.\n"
+# define ERROR_ARGS "ERROR: This line have not valid arguments.\n"
+# define ERROR_ALLOCATE "ERROR: Didn't allocate memory.\n"
+# define ERROR_ARGS_TYPE "ERROR: Some argument have wrong type.\n"
+
+# define MAX_UINT 4294967295
+# define NEARLY_MAX_UINT 429496729
+# define WRONG_TYPE -1
 
 typedef struct      s_array
 {
