@@ -210,7 +210,7 @@ void                join_argument(t_operation *oper, void *arg, int type, int de
 	}
 	else if (detector == NUM_VAL)
 	{
-		new_arg->num_val = (int *)arg; // TODO не присваивает указатель на аргумент
+		new_arg->num_val = arg;
 	}
 }
 /*
