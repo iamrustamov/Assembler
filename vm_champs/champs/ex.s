@@ -1,4 +1,6 @@
-.name "zork"
+.name "zo
+                
+            rk"
 .comment "just a basic living prog"
 
 l2:
