@@ -196,6 +196,9 @@ void                join_arg_to_oper(t_operation *oper, t_argument *new_arg)
  * Если строка, то указывается во флаге 2. Если цифры, то указ-ся 1.
  */
 
+
+//TODO разбить функцию, плавлено
+
 void                join_argument(t_operation *oper, void *arg, int type, int detector)
 {
 	t_argument     *new_arg;
@@ -210,7 +213,8 @@ void                join_argument(t_operation *oper, void *arg, int type, int de
 	}
 	else if (detector == NUM_VAL)
 	{
-		new_arg->num_val = arg;
+		new_arg->num_val = ((int *)arg)[0]; // неправильно записывается.
+		free(arg);
 	}
 }
 /*

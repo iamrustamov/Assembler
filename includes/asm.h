@@ -47,7 +47,7 @@ typedef enum types
 typedef  struct     s_arg
 {
     char            *str_val;
-    int             *num_val;
+    int             num_val;
     int             detector;
     char            *args_size;
     char            *type;
