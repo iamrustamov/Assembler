@@ -1,7 +1,8 @@
-.name "zo
-                
-            rk"
-.comment "just a basic living prog"
+.name "ijokoiuytfghvbjnkmloiuytfghvbjnkmloiuygfhsedxfcgvhbjnkmol,p.,okijuhygtfrde4sdrftgyhujikolpokijuhygt6fr5d4es3we4drftgyhuijkolkiuh"
+.comment "COREWAR
+
+
+          ""TEAM"
 
 l2:
 
