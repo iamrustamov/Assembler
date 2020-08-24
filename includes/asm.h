@@ -71,6 +71,14 @@ typedef  struct         s_operation
     struct s_operation  *next;
 }                       t_operation;
 
+typedef  struct         s_write
+{
+	char                *final; // конечная строка
+	int             	cor_fd; // фд нового файла
+	int                 itter; 		// у него установлено char.
+	int					exec_size;
+}                       t_write;
+
 typedef  struct     s_asm
 {
     int             fd;
@@ -81,7 +89,7 @@ typedef  struct     s_asm
     char            *free_line; //TODO эта переменная понадобится, если line до конца не очищается.
     int             sym;
     int             line_len;
-    int             cor_fd;
+    t_write 		write;
     t_operation     *oper;
 }                   t_asm;
 

@@ -1,3 +1,4 @@
+#include <fcntl.h>
 #include "../includes/asm.h"
 
 /*
@@ -49,7 +50,7 @@ void record(t_asm *bler, int code, int *c, int i)
 		bler->comment[*c] = bler->line[i];
 	*c = *c + 1;
 	if (code < 2 && *c > PROG_NAME_LENGTH)
-		error("Длина именни больше!");
+		error("Длина name больше!");
 	else if (code > 1 && *c > COMMENT_LENGTH)
 		error("Длина комментария больше!");
 }
@@ -88,13 +89,32 @@ int                     write_name(t_asm *bler, int *c ,int *code, int i)
  * Здесь начинается весь путь программы маллоки нужно куда нибудь засунуть.
  */
 
+int			bytecode_conversion(char *src, int data, int size, int cur)
+{
+	int8_t		i;
+	int			dup;
+
+	i = 0;
+	dup = size;
+	while (dup > 0)
+	{
+		src[cur + dup - 1] = (char)((data >> i) & 0xFF);
+		dup--;
+		i += 8;
+	}
+	return (size);
+}
+
 void            parse_name_comm(t_asm *bler)
 {
     int         flag;
     int         len;
+    int			cur;
+	int 		fd;
 
-    bler->name = ft_memalloc(PROG_NAME_LENGTH);
-    bler->comment = ft_memalloc(COMMENT_LENGTH);
+    cur = 0;
+    bler->name = ft_strnew(PROG_NAME_LENGTH);
+    bler->comment = ft_strnew(COMMENT_LENGTH);
     flag = 0;
     while(get_next_line(bler->fd, &bler->line) > 0 && flag < 4)
     {
@@ -109,7 +129,22 @@ void            parse_name_comm(t_asm *bler)
     }
     if (flag != 4)
     	error("Файл не валиден");
+	//bler->name = "ijokoiuytfghvbjnkmloiuytfghvbjnkmloiuygfhsedxfcgvhbjnkmol,p.,okijuhygtfrde4sdrftgyhujikolpokijuhygt6fr5d4es3we4drftgyhuijkolkiuh";
+	//bler->comment = "COREWAR TEAM";
+	fd = open("111111.cor", O_WRONLY | O_TRUNC | O_CREAT, 0644);
+	len = COMMENT_LENGTH + 16 + PROG_NAME_LENGTH;
+    if (!(bler->write.final = ft_strnew(len)))
+		error("Не выделилась память под строку!");
+	cur += bytecode_conversion(bler->write.final, COREWAR_EXEC_MAGIC, 4, cur);
+	ft_memcpy(&bler->write.final[cur], bler->name, ft_strlen(bler->name));
+	cur += PROG_NAME_LENGTH + 4;
+	bler->write.exec_size = 23;
+	cur += bytecode_conversion(bler->write.final, bler->write.exec_size, 4, cur);
+	ft_memcpy(&bler->write.final[cur], bler->comment, ft_strlen(bler->comment));
+	cur += COMMENT_LENGTH + 4;
+	write(fd, bler->write.final, len);
+	printf("CUR: %d\n", cur);
     printf("name: %s\n", bler->name);
     printf("commment: %s\n", bler->comment);
-    exit(141);
+    exit(12);
 }
