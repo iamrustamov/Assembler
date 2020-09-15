@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   oformi_i_isprav_ft_strncat.c                       :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bgian <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/16 19:11:43 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/25 17:42:25 by dpenney          ###   ########.fr       */
+/*   Created: 2019/09/21 18:32:20 by bgian             #+#    #+#             */
+/*   Updated: 2019/09/21 18:32:25 by bgian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+char	*ft_strncat(char *dest, const char *src, size_t n)
 {
-	size_t		i;
-	size_t		j;
+	char	*tmp;
+	size_t	i;
 
-	j = 0;
 	i = 0;
-	while (s1[i] != '\0')
-		i++;
-	while ((s2[j] != '\0') && (n > j))
+	tmp = dest;
+	while (*dest)
+		dest++;
+	while (src[i] && i < n)
 	{
-		s1[i + j] = s2[j];
-		j++;
+		dest[i] = src[i];
+		i++;
 	}
-	s1[i + j] = '\0';
-	return (s1);
+	dest[i] = 0;
+	return (tmp);
 }

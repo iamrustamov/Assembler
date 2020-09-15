@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   doing_ft_strlcat.c                                 :+:      :+:    :+:   */
+/*   strlcat.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bgian <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/17 13:06:18 by dpenney           #+#    #+#             */
-/*   Updated: 2019/09/23 03:13:38 by dpenney          ###   ########.fr       */
+/*   Created: 2019/09/21 15:35:33 by bgian             #+#    #+#             */
+/*   Updated: 2019/09/25 16:19:20 by bgian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,19 @@
 
 size_t			ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t		i;
-	size_t		j;
-	size_t		c;
+	size_t	len_src;
+	size_t	len_dst;
 
-	i = 0;
-	j = 0;
-	c = 0;
-	while (dst[i])
-		i++;
-	while (src[j])
-		j++;
-	if (size <= i)
-		j = j + size;
+	len_src = ft_strlen(src);
+	len_dst = ft_strlen(dst);
+	if (len_dst >= size)
+		return (size + len_src);
+	if (len_src + len_dst < size)
+		ft_memcpy(dst + len_dst, src, len_src + 1);
 	else
-		j = j + i;
-	while (src[c] != '\0' && i + 1 < size)
 	{
-		dst[i] = src[c];
-		c++;
-		i++;
+		ft_memcpy(dst + len_dst, src, size - len_dst - 1);
+		dst[size - 1] = 0;
 	}
-	dst[i] = '\0';
-	return (j);
+	return (len_dst + len_src);
 }

@@ -3,40 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bgian <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/19 00:02:40 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/01 15:39:07 by dpenney          ###   ########.fr       */
+/*   Created: 2019/09/23 16:11:24 by bgian             #+#    #+#             */
+/*   Updated: 2019/09/23 16:36:10 by bgian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char					*ft_strtrim(const char *s)
+static int	ft_isspace(char c)
 {
-	unsigned	int		start;
-	unsigned	int		end;
-	char				*ptr;
-	unsigned	int		print;
+	if (c == ' ' || c == '\n' || c == '\t')
+		return (1);
+	return (0);
+}
 
-	print = 0;
-	start = 0;
-	if (!s)
-		return (0);
-	end = ft_strlen(s) - 1;
-	while (s[start] == ' ' || s[start] == '\n' || s[start] == '\t')
-		start++;
-	if (s[start] == '\0')
-		return (ft_strcpy(ft_memalloc(sizeof(char)), ""));
-	while (s[end] == ' ' || s[end] == '\n' || s[end] == '\t')
-		end--;
-	if (!(ptr = (char *)malloc(sizeof(char) * (end - start + 2))))
-		return (NULL);
-	while (print < end - start + 1)
-	{
-		ptr[print] = s[start + print];
-		print++;
-	}
-	ptr[print] = '\0';
-	return (ptr);
+char		*ft_strtrim(char const *s)
+{
+	char	*end_of_text;
+
+	while (*s && ft_isspace(*s))
+		s++;
+	end_of_text = (char *)s;
+	while (*end_of_text)
+		end_of_text++;
+	while (ft_isspace(*(--end_of_text)))
+		;
+	return (ft_strsub(s, 0, (end_of_text >= s ? end_of_text - s + 1 : 0)));
 }

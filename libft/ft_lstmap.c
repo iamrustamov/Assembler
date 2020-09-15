@@ -3,46 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bgian <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/25 18:02:38 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/03 23:47:11 by dpenney          ###   ########.fr       */
+/*   Created: 2019/09/23 16:43:56 by bgian             #+#    #+#             */
+/*   Updated: 2019/09/25 19:42:48 by bgian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void				ft_lstclear(t_list *root)
+static t_list	*add_to_end(t_list *l, t_list *new)
 {
-	t_list				*tmp;
+	t_list	*start;
 
-	while (root != NULL)
-	{
-		tmp = root->next;
-		free(tmp);
-		root = tmp;
-	}
+	if (!l)
+		return (new);
+	start = l;
+	while (l->next)
+		l = l->next;
+	l->next = new;
+	return (start);
 }
 
-t_list					*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list				*head;
-	t_list				*car;
+	t_list	*new;
 
-	if (!lst || !f)
-		return (NULL);
-	car = f(lst);
-	head = car;
-	while (lst->next != NULL)
+	new = 0;
+	while (lst)
 	{
+		new = add_to_end(new, f(lst));
 		lst = lst->next;
-		if (!(car->next = f(lst)))
-		{
-			ft_lstclear(car);
-			return (NULL);
-		}
-		else
-			car = car->next;
 	}
-	return (head);
+	return (new);
 }

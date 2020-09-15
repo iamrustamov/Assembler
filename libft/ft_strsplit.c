@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: bgian <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/19 00:51:13 by dpenney           #+#    #+#             */
-/*   Updated: 2019/10/03 23:37:03 by dpenney          ###   ########.fr       */
+/*   Created: 2019/09/23 17:25:27 by bgian             #+#    #+#             */
+/*   Updated: 2019/09/25 19:32:45 by bgian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 static char			*ft_free(char **for_free, size_t count)
 {
 	size_t			i;

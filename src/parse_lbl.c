@@ -1,124 +1,123 @@
-#include "../includes/asm.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parse_lbl.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dpenney <dpenney@student.21-school.ru>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/15 06:21:51 by dpenney           #+#    #+#             */
+/*   Updated: 2020/09/15 06:44:56 by dpenney          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int         check_line_of_label(t_all *all, int i)
-{
-    int     run;
-
-    run = all->sym;
-    /*
-     * Если в строке двоеточие, то возвращаем единицу
-     */
-    if (i > 0 && all->split_text[all->line][i] == LABEL_CHAR)
-        return (true);
-    while (all->split_text[all->line][run])
-    {
-        if (all->split_text[all->line][run] == LABEL_CHAR)
-            return (true);
-        run++;
-    }
-    return (0);
-}
+#include "asm.h"
 
 /*
- *
+ * Пропуск комментариев решетки и точки с запятой
+ * Далее смотрим - есть ли строка и не встретилась ли ещё двоеточие.
+ * Если нет, то проверяем на соответствие обычным буквам. Если у строки все буквы
+ * в соответствии с требованиями к метке], то проверяем сразу после окончания букв
+ * есть ли двоеточие, которое всегда должно быть после метки. Если есть, значит
+ * мы нашли метку.
  */
 
-int         check_lbl_sym(t_all *all)
+int             check_label(t_asm *bler)
 {
-    int     i;
+    int         i;
 
     i = 0;
-    while (LABEL_CHARS[i])
+    pass_voids(bler);
+    while (bler->line[i] && bler->line[i] != ':')
     {
-        if (LABEL_CHARS[i] != all->split_text[all->line][all->sym])
-            i++;
-        else
-            return (true);
+        if (!ft_strchr(LABEL_CHARS, bler->line[i]))
+	        return (0);
+        i++;
     }
-    return (false);
-}
-
-int         check_lbls_char(t_all *all, int flag, int *lbl_flag, int i) //всё скопировано
-{
-    if (all->split_text[all->line][all->sym] == LABEL_CHAR)
-        all->sym++;
-    else if ((all->split_text[all->line][all->sym] == ' ' ||
-            all->split_text[all->line][all->sym] == '\t' ||
-            all->split_text[all->line][all->sym] == COMMENT_CHAR ||
-            all->split_text[all->line][all->sym] == ALT_COMMENT_CHAR ||
-            all->split_text[all->line][all->sym] == SEPARATOR_CHAR) && flag)
-        return (true);
-    /*
-     *  Ищем второе двоеточие в линии с меткой. Если она есть, то выдаем ошибку.
-     *  TODO а зачем в цикле дальше идём.
-     */
-    else if ((*lbl_flag = check_line_of_label(all, i)))
-    {
-        error_print("ERROR\nInvalid labels");
-        while (all->split_text[all->line][all->sym] &&
-                all->split_text[all->line][all->sym] != ',' &&
-                all->split_text[all->line][all->sym] != ' ' &&
-                all->split_text[all->line][all->sym] != '\t')
-            all->sym++;
-    }
-    return (true);
+    if (i > 0 && bler->line[i] == ':')
+        return (TRUE);
+    else
+	    return (FALSE);
 }
 
 /*
- * Т.к. мы не нашли операцию, здесь проверяем на наличие метки.
- * Сначала смотрим - на что идёт проверка?
- * Если на LABEL, тогда придаем f значение 0.
+ * At first keeping current lbl in tmp.
+ * Allocating memory for new laberl (new_lbl)
+ * Saving string to new_lbl.
+ * Looking for last label of operation. If last label exist - keeping to pointer of next
+ * new label. If don't exist - keeping pointer like first label.
  */
 
-void        check_lbl(int size, int *lbl_flag, t_types type ,t_all *all) //checkmet
+void            add_lbl_list(t_operation *oper, char *str)
 {
-        unsigned int    i;
-        t_tokens        *token;
-        int             flag;
-        // эта функция вызывается несколько раз. В первый раз проверка делается на метку.
-        if (type == LABEL)
-            flag = 0;
-        else
-            flag = 1;
-        i = all->sym;
-        // Если там не стоит двоеточие, то выбрасывает ошибку.
-        if (all->split_text[all->line][all->sym] != LABEL_CHAR && flag)
-            error_print("ERROR\n");
-        // Проверяем является ли это символом :. Если да, то пропускаем.
-        // На всякий случай сохраняем эту позицию в переменной i.
-        else if (all->split_text[all->line][all->sym] == LABEL_CHAR && flag)
-        {
-            //если это символ двоеточия, то тогда двигаем итератор символов
-            all->sym++;
-            // запоминаем где остановились.
-            i = all->sym;
-        }
-        // FIXME Анализируем строку дальше после двоеточия, пока не наступила новая строка
-        while (all->split_text[all->line][all->sym] &&
-                all->split_text[all->line][all->sym] != '\n')
-        {
-            // в check_lbl_sym проверяем, что в метке допустимые символы из алфавита нижнего регистра и цифры
-            // а в bad_lbl_char_manage проверяем, что кроме двоеточия
-            if (!check_lbl_sym(all) && check_lbls_char(all, flag, lbl_flag, i))
-                break ;
-            all->sym++;
-        }
-        if (all->sym > 0) {
-            if (!flag && all->split_text[all->line][all->sym - 1] == LABEL_CHAR)
-                flag = all->sym - i - 1;
-            else
-                flag = all->sym - i;
-        }
-        token = create_token(all, type, -1, size);
+    t_lbls      *new_lbl;
 
+    if (!(new_lbl = (t_lbls *)ft_memalloc(sizeof(t_lbls))))
+        return ;
+	new_lbl->str = ft_strdup(str);
+	new_lbl->strlen = ft_strlen(str);
+    oper->lbl = new_lbl;
 }
 
 /*
- * Проверяем метку
+ * At first checking string and finding string which completing with ':'
+ * In lbl_end we are keeping position of end of the string.
+ * After it copy string with start and end by lbl_end.
+ * When we find our string - sending to addition to operation list.
+ * lbl_end incrementing than to parse in next
  */
 
-int         parse_lbl(int *i, int *lbl_flag, t_oper *op, t_all *all)
+void            add_new_lbl(t_asm *bler, int *lbl_end, t_operation *oper)
 {
-    check_lbl(0, lbl_flag, LABEL, all);
-    return (true);
+    int         start;
+    char        *res;
+
+	start = *lbl_end;
+    while (bler->line[*lbl_end] && bler->line[*lbl_end] != ':')
+        (*lbl_end)++;
+    res = ft_strsub(bler->line, start, *lbl_end);
+	(*lbl_end)++;
+    add_lbl_list(oper, res);
+    free(res);
 }
+
+
+
+/*
+ * Если есть строка, то очищаем её.
+ * Далее перемещаем fd дескриптор назад на кол-во символов (байтов).
+ * Считываем заново.
+ */
+
+/*
+ * Here we are missing all comments and voids like tabs and spaces.
+ * Aftre it checking label. If label exist - we are adding this label
+ * like new list to operation list. And after it checking next line unitl
+ * won't find new string with operations or lablers.
+ */
+
+void            add_lbls(t_asm *bler, t_operation *oper)
+{
+	t_operation *new_oper;
+
+	new_oper = oper;
+    while (bler->line)
+    {
+        pass_comments(bler->line);
+        pass_voids(bler);
+        if (check_label(bler))
+        {
+        	new_oper->lbl ? new_oper = init_op_list(bler) : 0;
+	        add_new_lbl(bler, &bler->sym, new_oper);
+        }
+        pass_voids(bler);
+        if (bler->line[bler->sym] != '\0')
+            return ;
+        bler->line ? ft_strdel(&bler->line) : 0; // применил вместо ft_strdel
+        if (get_next_line(bler->fd, &bler->line) > 0 && bler->line)
+        {
+        	bler->line_len = ft_strlen(bler->line);
+        	bler->sym = 0;
+        }
+    }
+}
+
