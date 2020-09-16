@@ -204,5 +204,5 @@ void					read_binary(t_asm *asmb);
 char					write_t_reg(t_command *command, int i, int fd);
 char					write_t_dir(t_command *command, int i, int fd);
 char					write_t_ind(t_command *command, int i, int fd);
-
+void            		print_operations(t_command *command);
 #endif

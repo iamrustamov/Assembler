@@ -54,6 +54,46 @@ static void		action(t_asm *asmb)
 		create_binary(asmb, asmb->command);
 }
 
+void            		print_operations(t_command *command)
+{
+	t_command    *oper;
+	int          i = 1;
+	t_arg     *args;
+
+	oper = command;
+	args = oper->args;
+	ft_printf("\nString: \n\n");
+	ft_printf("Operation name: %s\n", oper->name);
+	ft_printf("Operation size: %d byte.\n", oper->bytes);
+	ft_printf("Code type size: %d byte.\n", oper->opcode);
+	ft_printf("OPCODE: %.2x.\n", oper->opcode);
+	ft_printf("addr:\n");
+	if (oper->labels)
+		ft_printf("Label name: %s\n", (char *)oper->labels->content);
+	else
+		ft_printf("\n");
+	while (args)
+	{
+		ft_printf("ARG #%d ", i);
+		if (args->flag == UINT_VAL)
+			ft_printf("Value: %lld\n", args->num_value);
+		else if (args->flag == STRING_VAL)
+			ft_printf("Value: %s\n", args->str_value);
+		if (args->type == T_REG)
+			ft_printf("                Type:%s", "T_REG");
+		else if (args->type == T_DIR)
+			ft_printf("                Type:%s", "T_DIR");
+		else if (args->type == T_IND)
+			ft_printf("                Type:%s", "T_IND");
+		ft_printf("\nARG SIZE: %d byte\n", args->arg_size);
+		args = args->next;
+		i++;
+		ft_printf("\n");
+	}
+	ft_printf("\n--------------------------------------\n");
+
+}
+
 int				main(int ac, char **av)
 {
 	t_asm	*asmb;

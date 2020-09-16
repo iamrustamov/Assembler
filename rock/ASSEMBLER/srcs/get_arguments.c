@@ -33,6 +33,7 @@ static	void	foreach_arg(char **arr, t_command *command)
 		add_argument(command, type, get_data(type, arr[i], &flag), flag);
 		i++;
 	}
+	print_operations(command);
 }
 
 static	void	check_arguments(t_command *command)

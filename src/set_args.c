@@ -86,7 +86,7 @@ int                 check_t_ind(char *str)
 	if (str[i] == ':')
 	{
 		i++;
-		if (!ft_strchr(str, ':'))
+		if (!ft_strchr(str + i, ':'))
 			return (TRUE);
 	}
 	else if (str[i] != '\0')
