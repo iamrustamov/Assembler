@@ -52,7 +52,7 @@ void                clear_bler(t_asm *bler)
 void                error_printf(t_asm *bler, char *text, char *line)
 {
     text ? ft_printf("%s\n", text) : 0;
-    line ? ft_printf("%s\n", line) : 0;
+    line ? ft_printf("Pay attention to this line of file: %s\n", line) : 0;
 	if (bler)
 		clear_bler(bler);
     exit(0);

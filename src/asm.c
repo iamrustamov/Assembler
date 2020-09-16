@@ -34,10 +34,7 @@ void            check_extension(const char *str)
 
 //TODO провести по двум чекерам в FAQ 21
 
-//FIXME Bekha, когда много запятых между аргументами, то продолжает работать. Оригинал выдаёт ошибку.
-
 //FIXME Daler, есть различие в бинарных файлах с игроком Death.s из vm_champs/champs.
-//FIXME когда вконце много новых линий, то наш выводит ошибку, а оригинал читает и переводит. (mortel.s)
 //FIXME Daler, имя игрока barriere.s парсит с ошибкой, хотя там все норм. оригинал работает.
 //FIXME Daler, Bekha, игрок mat.s использует r0, а оригинальный читает нормально. В T_REG от 0 до 16 или от 1 до 16?
 //FIXME Binary files 111111.cor and ./vm_champs/champs/slider2.cor differ
