@@ -141,5 +141,4 @@ void                parse_args(t_asm *bler, t_operation *oper)
 	}
 	set_args(bler, oper, arguments);
 	free_split(arguments);
-	bler->line ? ft_strdel(&bler->line) : 0;
 }
