@@ -65,13 +65,10 @@ void            check_end_line(t_asm *bler)
 			return;
 		}
 	}
-	lseek(bler->fd, -1, SEEK_END);
-	read(bler->fd, &sym, bler->line_len);
+	lseek(bler->fd, -1, SEEK_CUR);
+	read(bler->fd, &sym, 1);
 	if (sym == '\n')
-	{
-		ft_strdel(&bler->line);
 		return;
-	}
 	else
 		error_printf(bler, ERROR_END_LINE, NULL);
 }
