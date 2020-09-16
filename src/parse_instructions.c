@@ -116,29 +116,31 @@ void            parse_lbl_op(t_asm *bler)
     }
 }
 
-void            check_end_line(t_asm *bler) {
-	int lpos;
+void            check_end_line(t_asm *bler)
+{
 	char sym;
-	int fd_res;
 
-	//FIXME Когда в конце комментарий вместо символа следующей строки, то это валидный файл. А у нас выдаёт ошибку, так как в настоящей функции проверяет каждый раз присутствие символа следующей строки у комментария.
-
-	fd_res = -42;
 	lseek(bler->fd, -bler->line_len, SEEK_CUR);
-	get_next_line(bler->fd, &bler->line);
-	if (bler->line[0] == '#' || bler->line[0] == ';') {
-		free(bler->line);
-		return;
-	} else {
-		lpos = lseek(bler->fd, -1, SEEK_END);
-		fd_res = read(bler->fd, &sym, bler->line_len);
-		if (sym == '\n')
+	if (get_next_line(bler->fd, &bler->line) > 0)
+	{
+		if (bler->line[0] == '#' || bler->line[0] == ';')
+		{
+			ft_strdel(&bler->line);
 			return;
-		else {
-			error_printf(bler, ERROR_END_LINE, NULL);
 		}
 	}
-	//FIXME А как очистить выделенную память под bler-line в GNL???
+	else
+		{
+		lseek(bler->fd, -1, SEEK_END);
+		read(bler->fd, &sym, bler->line_len);
+		if (sym == '\n')
+		{
+			ft_strdel(&bler->line);
+			return;
+		}
+		else
+			error_printf(bler, ERROR_END_LINE, NULL);
+	}
 }
 	//	if (!check_op(bler))
 //	lpos = 0;

@@ -112,7 +112,7 @@ void            add_lbls(t_asm *bler, t_operation *oper)
         pass_voids(bler);
         if (bler->line[bler->sym] != '\0')
             return ;
-        bler->line ? ft_strdel(&bler->line) : 0; // применил вместо ft_strdel
+        bler->line ? ft_strdel(&bler->line) : 0;
         if (get_next_line(bler->fd, &bler->line) > 0 && bler->line)
         {
         	bler->line_len = ft_strlen(bler->line);

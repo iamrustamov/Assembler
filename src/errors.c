@@ -46,6 +46,7 @@ void                clear_bler(t_asm *bler)
 	//bler->files_name != NULL ? free(bler->files_name) : 0;
 	bler->name ? free(bler->name) : 0;
 	bler->comment ? free(bler->comment) : 0;
+	bler->line ? ft_strdel(&bler->line) : 0;
     clear_operations(bler->oper);
 }
 
