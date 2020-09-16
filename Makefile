@@ -7,7 +7,7 @@ SRC = ./src/asm.c\
         ./src/join_args_to_oper.c\
         ./src/parse_args.c\
         ./src/parse_data.c\
-        ./src/parse_instruments.c\
+        ./src/parse_instructions.c\
         ./src/parse_lbl.c\
         ./src/parse_name.c\
         ./src/parse_op.c\

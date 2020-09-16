@@ -33,12 +33,12 @@ void            check_extension(const char *str)
 }
 
 //TODO провести по двум чекерам в FAQ 21
+//TODO  Daler, Bekha, aff_no_OCP когда в конце комментарии и нет следующей строки, то вывзвается ошибка. Оригинал читает нормально.
+//FIXME Daler, Bekha, игрок mat.s использует r0, а оригинальный читает нормально. В T_REG от 0 до 16 или от 1 до 16?
 
 //FIXME Daler, есть различие в бинарных файлах с игроком Death.s из vm_champs/champs.
 //FIXME Daler, имя игрока barriere.s парсит с ошибкой, хотя там все норм. оригинал работает.
-//FIXME Daler, Bekha, игрок mat.s использует r0, а оригинальный читает нормально. В T_REG от 0 до 16 или от 1 до 16?
 //FIXME Binary files 111111.cor and ./vm_champs/champs/slider2.cor differ
-//TODO  Daler, Bekha, aff_no_OCP когда в конце комментарии и нет следующей строки, то вывзвается ошибка. Оригинал читает нормально.
 
 int             main(int argc, char **argv)
 {
