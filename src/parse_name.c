@@ -96,6 +96,7 @@ int                     write_name(t_asm *bler, int *c ,int *code, int i)
 //FIXME Если комментарий перед именем и комментом, то выводится ошибка! Игрок Car из vm_champs/champs
 //FIXME Когда нет коммента, то выводит, что длина слишком большая.
 //FIXME неправильная реакция на файлы zother tests/unit_tests/error/
+
 void            parse_name_comm(t_asm *bler)
 {
 	int flag;
