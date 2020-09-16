@@ -142,18 +142,6 @@ void            check_end_line(t_asm *bler)
 			error_printf(bler, ERROR_END_LINE, NULL);
 	}
 }
-	//	if (!check_op(bler))
-//	lpos = 0;
-//	lpos = lseek(bler->fd, -(bler->line_len - 1), SEEK_END);
-//	fd_res = read(bler->fd, &sym, bler->line_len);
-//	if (sym == '#' || sym == ';' || sym == '\n')
-//		return;
-	//	lpos = lseek(bler->fd, -1, SEEK_END);
-//	fd_res = read(bler->fd, &sym, 1);
-//	if (sym == '\n' || bler->line_len)
-//		return ;
-//	else
-//		error_printf(bler, ERROR_END_LINE, NULL);
 
 void            parse_instructions(t_asm *bler)
 {
