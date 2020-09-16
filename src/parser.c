@@ -25,7 +25,6 @@ int             check_lbl_dupl(t_asm *bler)
 	t_operation *tmp2_oper;
 
 	tmp_oper = bler->oper;
-	tmp2_oper = bler->oper->next;
 	while (tmp_oper)
 	{
 		tmp2_oper = tmp_oper->next;

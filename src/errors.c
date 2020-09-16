@@ -46,13 +46,14 @@ void                clear_bler(t_asm *bler)
 	//bler->files_name != NULL ? free(bler->files_name) : 0;
 	bler->name ? free(bler->name) : 0;
 	bler->comment ? free(bler->comment) : 0;
-	bler->line ? ft_strdel(&bler->line) : 0;
+	if (bler->line && bler->line[0])
+		ft_strdel(&bler->line);
     clear_operations(bler->oper);
 }
 
 void                error_printf(t_asm *bler, char *text, char *line)
 {
-    text ? ft_printf("%s\n", text) : 0;
+    text ? ft_printf("%s", text) : 0;
     line ? ft_printf("Pay attention to this line of file: %s\n", line) : 0;
 	if (bler)
 		clear_bler(bler);

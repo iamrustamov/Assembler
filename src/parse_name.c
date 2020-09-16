@@ -51,9 +51,9 @@ void record(t_asm *bler, int code, int *c, char s)
 		bler->comment[*c] = s;
 	*c = *c + 1;
 	if (code < 2 && *c > PROG_NAME_LENGTH)
-		error_printf(bler, ERROR_NAME_LEN, bler->line);
+		error_printf(bler, ERROR_NAME_LEN, NULL);
 	else if (code > 1 && *c > COMMENT_LENGTH)
-		error_printf(bler, ERROR_COMM_LEN, bler->line);
+		error_printf(bler, ERROR_COMM_LEN, NULL);
 }
 
 /*
@@ -64,7 +64,7 @@ int                     write_name(t_asm *bler, int *c ,int *code, int i)
 {
 	*code % 2 == 0 ? i = skip_delimiters(bler->line, i) : i;
 	if (bler->line[i] != '\"' && *code % 2 == 0)
-		error_printf(bler, ERROR_WOKS_NM_CM, bler->line);
+		error_printf(bler, ERROR_COMM_LEN, NULL);
 	while (bler->line[i] != '\0' && *code < 4)
 	{
 		if (*code % 2 == 1)
@@ -73,7 +73,7 @@ int                     write_name(t_asm *bler, int *c ,int *code, int i)
 			{
 				i++;
 				if (check_comment(&bler->line[i]))
-					error_printf(bler, ERROR_WOKS_NM_CM, bler->line);
+					error_printf(bler, ERROR_WOKS_NM_CM, NULL);
 				*code = *code + 1;
 			}
 			else
@@ -92,7 +92,10 @@ int                     write_name(t_asm *bler, int *c ,int *code, int i)
  * С помощью хитрой флаговой системы мы получаем данные
  * и валидируем их.
  */
+//FIXME Когда комментарий пустой, то выдает ошибку. Почему?
 //FIXME Если комментарий перед именем и комментом, то выводится ошибка! Игрок Car из vm_champs/champs
+//FIXME Когда нет коммента, то выводит, что длина слишком большая.
+//FIXME неправильная реакция на файлы zother tests/unit_tests/error/
 void            parse_name_comm(t_asm *bler)
 {
 	int flag;
