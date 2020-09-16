@@ -116,21 +116,42 @@ void            parse_lbl_op(t_asm *bler)
     }
 }
 
-void            check_end_line(t_asm *bler)
-{
-	int         lpos;
-	char        sym;
-	int         fd_res;
+void            check_end_line(t_asm *bler) {
+	int lpos;
+	char sym;
+	int fd_res;
+
+	//FIXME Когда в конце комментарий вместо символа следующей строки, то это валидный файл. А у нас выдаёт ошибку, так как в настоящей функции проверяет каждый раз присутствие символа следующей строки у комментария.
 
 	fd_res = -42;
-	lpos = 0;
-	lpos = lseek(bler->fd, -1, SEEK_END);
-	fd_res = read(bler->fd, &sym, 1);
-	if (sym == '\n')
-		return ;
-	else
-		error_printf(bler, ERROR_END_LINE, NULL);
+	lseek(bler->fd, -bler->line_len, SEEK_CUR);
+	get_next_line(bler->fd, &bler->line);
+	if (bler->line[0] == '#' || bler->line[0] == ';') {
+		free(bler->line);
+		return;
+	} else {
+		lpos = lseek(bler->fd, -1, SEEK_END);
+		fd_res = read(bler->fd, &sym, bler->line_len);
+		if (sym == '\n')
+			return;
+		else {
+			error_printf(bler, ERROR_END_LINE, NULL);
+		}
+	}
+	//FIXME А как очистить выделенную память под bler-line в GNL???
 }
+	//	if (!check_op(bler))
+//	lpos = 0;
+//	lpos = lseek(bler->fd, -(bler->line_len - 1), SEEK_END);
+//	fd_res = read(bler->fd, &sym, bler->line_len);
+//	if (sym == '#' || sym == ';' || sym == '\n')
+//		return;
+	//	lpos = lseek(bler->fd, -1, SEEK_END);
+//	fd_res = read(bler->fd, &sym, 1);
+//	if (sym == '\n' || bler->line_len)
+//		return ;
+//	else
+//		error_printf(bler, ERROR_END_LINE, NULL);
 
 void            parse_instructions(t_asm *bler)
 {
@@ -143,4 +164,3 @@ void            parse_instructions(t_asm *bler)
     }
 	check_end_line(bler);
 }
-//FIXME когда много запятых после аргументов, он их пропускает, а не выводит ошибку.
