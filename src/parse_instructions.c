@@ -37,13 +37,6 @@ void            pass_comments(char *str)
     }
 }
 
-void            pass_voids(t_asm *bler)
-{
-    while (bler->line[bler->sym] && (bler->line[bler->sym] == ' '
-                || bler->line[bler->sym] == '\t'))
-        bler->sym++;
-}
-
 t_operation     *init_op_list(t_asm *bler)
 {
     t_operation *tmp;
@@ -61,27 +54,6 @@ t_operation     *init_op_list(t_asm *bler)
     else
         tmp->next = new_op;
     return (new_op);
-}
-
-void            end_line_validation(t_asm *bler)
-{
-	int 		i;
-
-	i = 0;
-	if (bler->line != NULL)
-		free(bler->line);
-	bler->line = ft_strnew(bler->line_len);
-	lseek(bler->fd, -bler->line_len, SEEK_CUR);
-	read(bler->fd, &bler->line, bler->line_len);
-	bler->sym = 0;
-	if (!check_op(bler) && !check_label(bler))
-		error_printf(bler, "TEST", NULL);
-	else
-	{
-		i = (int)ft_strlen(bler->line) - 1;
-		if (bler->line[i] == '\n')
-			error_printf(bler, "TEST2", NULL);
-	}
 }
 
 /*
@@ -108,39 +80,11 @@ void            parse_lbl_op(t_asm *bler)
     }
     if (bler->line != NULL)
     {
-    	//FIXME вот здесь нужно проверять на присутствие лишних символов.
     	pass_voids(bler);
 	    str = bler->line + bler->sym;
     	if (*str != '\0')
 		    error_printf(bler, ERROR_CONTANT, bler->line);
     }
-}
-
-void            check_end_line(t_asm *bler)
-{
-	char sym;
-
-	lseek(bler->fd, -bler->line_len, SEEK_CUR);
-	if (get_next_line(bler->fd, &bler->line) > 0)
-	{
-		if (bler->line[0] == '#' || bler->line[0] == ';')
-		{
-			ft_strdel(&bler->line);
-			return;
-		}
-	}
-	else
-		{
-		lseek(bler->fd, -1, SEEK_END);
-		read(bler->fd, &sym, bler->line_len);
-		if (sym == '\n')
-		{
-			ft_strdel(&bler->line);
-			return;
-		}
-		else
-			error_printf(bler, ERROR_END_LINE, NULL);
-	}
 }
 
 void            parse_instructions(t_asm *bler)

@@ -52,78 +52,33 @@ void                print_operation(t_asm *bler, t_operation *opera)
 
 }
 
-
-//#include <stdio.h>
-//#include <string.h>
-//
-//# define COREWAR_EXEC_MAGIC		0x00ea83f3
-//
-//void	bytecode_conversion(char *data, int size)
-//{
-//	int			i;
-//	//char *str[;
-//
-//	i = 0;
-//	while (i < size)
-//	{
-//		// printf("%.2hhx\n", (char)((data >> ((size - i - 1) * 8)) & 0xFF));
-//		printf("%.2hhx\n", data[size - i - 1]);
-//		str[i] = data[size - i - 1];
-//		i++;
-//	}
-//}
-
-// void test(int a)
-// {
-//   int n = 32;
-//   printf("0b");
-//   while (n > 0)
-//   {
-//     n--;
-//     printf("%d", (a >> n) & 0x1);
-//   }
-//   printf("\n");
-// }
-
-//int a;      // 1000 1003  == 4
-//char b[4]; // 1004 1007  == 4
-//char *p;
-//
-//p = (char *)&a;
-//
-//
-//
-//int main(void) {
-//	int a = COREWAR_EXEC_MAGIC;
-//	bytecode_conversion((char *)&a, sizeof(a));
-//
-//	// test(-2147483648);
-//	// test(2147483647);
-//	return 0;
-//}
-
-/*
-
-bytecode_conversion(bler->write.final, COREWAR_EXEC_MAGIC, 4, cur);
-
-
-int			bytecode_conversion(char *src, int data, int size, int cur)
+void            check_end_line(t_asm *bler)
 {
-	int			i;
+	char sym;
 
-	i = 0;
-	while (i < size)
+	lseek(bler->fd, -bler->line_len, SEEK_CUR);
+	if (get_next_line(bler->fd, &bler->line) > 0)
 	{
-    src[cur + i] = (char)((data >> ((size - i - 1) * 8)) & 0xFF);
-		i++;
+		if (bler->line[0] == '#' || bler->line[0] == ';')
+		{
+			ft_strdel(&bler->line);
+			return;
+		}
 	}
-	return (size);
+	lseek(bler->fd, -1, SEEK_END);
+	read(bler->fd, &sym, bler->line_len);
+	if (sym == '\n')
+	{
+		ft_strdel(&bler->line);
+		return;
+	}
+	else
+		error_printf(bler, ERROR_END_LINE, NULL);
 }
 
-*/
-
-
-//printf("size final_code: %lu\n", sizeof(rec->final_code));
-//printf("file_size: %d\n", rec->file_size);
-//printf("cur: %d\n", rec->cur);
-//printf("Exec code size:%d\n\n", bler->exec_code_size);
+void            pass_voids(t_asm *bler)
+{
+	while (bler->line[bler->sym] && (bler->line[bler->sym] == ' '
+	                                 || bler->line[bler->sym] == '\t'))
+		bler->sym++;
+}

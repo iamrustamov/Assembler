@@ -210,4 +210,5 @@ void		bytecode_conversion(t_rec *rec,int data ,int size);
  */
 void                print_operation(t_asm *bler, t_operation *opera);
 void                clear_bler(t_asm *bler);
+void                check_end_line(t_asm *bler);
 #endif
