@@ -6,15 +6,15 @@
 /*   By: dpenney <dpenney@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 06:21:31 by dpenney           #+#    #+#             */
-/*   Updated: 2020/09/15 06:44:52 by dpenney          ###   ########.fr       */
+/*   Updated: 2020/09/16 16:05:48 by dpenney          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/asm.h"
 
-void           		clean_arguments(t_argument *args)
+void				clean_arguments(t_argument *args)
 {
-	t_argument      *tmp;
+	t_argument		*tmp;
 
 	tmp = args;
 	while (tmp)
@@ -24,9 +24,9 @@ void           		clean_arguments(t_argument *args)
 	}
 }
 
-void                clear_operations(t_operation *opers)
+void				clear_operations(t_operation *opers)
 {
-	t_operation     *tmp;
+	t_operation		*tmp;
 
 	tmp = opers;
 	while (tmp)
@@ -39,7 +39,7 @@ void                clear_operations(t_operation *opers)
 	}
 }
 
-void                clear_bler(t_asm *bler)
+void				clear_bler(t_asm *bler)
 {
 	if (bler->files_name != NULL)
 		free(bler->files_name);
@@ -48,14 +48,14 @@ void                clear_bler(t_asm *bler)
 	bler->comment ? free(bler->comment) : 0;
 	if (bler->line && bler->line[0])
 		ft_strdel(&bler->line);
-    clear_operations(bler->oper);
+	clear_operations(bler->oper);
 }
 
-void                error_printf(t_asm *bler, char *text, char *line)
+void				error_printf(t_asm *bler, char *text, char *line)
 {
-    text ? ft_printf("%s", text) : 0;
-    line ? ft_printf("Pay attention to this line of file: %s\n", line) : 0;
+	text ? ft_printf("%s", text) : 0;
+	line ? ft_printf("Pay attention to this line of file: %s\n", line) : 0;
 	if (bler)
 		clear_bler(bler);
-    exit(0);
+	exit(0);
 }

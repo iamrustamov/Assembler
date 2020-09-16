@@ -6,15 +6,15 @@
 /*   By: dpenney <dpenney@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 06:21:36 by dpenney           #+#    #+#             */
-/*   Updated: 2020/09/15 06:44:53 by dpenney          ###   ########.fr       */
+/*   Updated: 2020/09/16 16:10:07 by dpenney          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-void                join_arg_to_oper(t_operation *oper, t_argument *new_arg)
+void				join_arg_to_oper(t_operation *oper, t_argument *new_arg)
 {
-	t_argument      *tmp;
+	t_argument		*tmp;
 
 	tmp = oper->args;
 	if (!tmp)
@@ -28,15 +28,16 @@ void                join_arg_to_oper(t_operation *oper, t_argument *new_arg)
 }
 
 /*
- * Здесь проверяются размеры типов.
- * У T_REG обычно 1 байт.
- * T_IND - 2 байта.
- * А у T_DIR зависит от операции. У некоторых операций 2 байта, у других - 4 байта.
- */
+** Здесь проверяются размеры типов.
+** У T_REG обычно 1 байт.
+** T_IND - 2 байта.
+** А у T_DIR зависит от операции. У некоторых операций 2 байта,
+** у других - 4 байта.
+*/
 
-int         set_args_size(t_operation *oper, int type)
+int					set_args_size(t_operation *oper, int type)
 {
-	int     i;
+	int				i;
 
 	i = 0;
 	if (type == T_DIR)
@@ -57,7 +58,8 @@ int         set_args_size(t_operation *oper, int type)
 	return (0);
 }
 
-t_argument               	*init_new_arg_list(t_argument *new_arg, t_operation *oper, int type, int detector)
+t_argument			*init_new_arg_list(t_argument *new_arg,
+						t_operation *oper, int type, int detector)
 {
 	if (!(new_arg = (t_argument *)ft_memalloc(sizeof(t_argument))))
 		error_printf(NULL, ERROR_ALLOCATE, NULL);
@@ -68,18 +70,19 @@ t_argument               	*init_new_arg_list(t_argument *new_arg, t_operation *o
 }
 
 /*
- * Выделяем место для арумента в операции, обнуляем все значения.
- * Далее добалвяем новый аргумент в операцию.
- * Дальше смотрим - если аргумент строка - то добавляем в переменную строки.
- * И указываем флаг STRING_VAL в аргументе.
- * Если строка, то указывается во флаге 2. Если цифры, то указ-ся 1.
- * detector нужен чтобы понимать - это строка или цифры.
- * type указывает на тип аргумента - T_REG, T_DIR, T_IND.
- */
+** Выделяем место для арумента в операции, обнуляем все значения.
+** Далее добалвяем новый аргумент в операцию.
+** Дальше смотрим - если аргумент строка - то добавляем в переменную строки.
+** И указываем флаг STRING_VAL в аргументе.
+** Если строка, то указывается во флаге 2. Если цифры, то указ-ся 1.
+** detector нужен чтобы понимать - это строка или цифры.
+** type указывает на тип аргумента - T_REG, T_DIR, T_IND.
+*/
 
-void                join_argument(t_operation *oper, void *arg, int type, int detector)
+void				join_argument(t_operation *oper,
+						void *arg, int type, int detector)
 {
-	t_argument     *new_arg;
+	t_argument		*new_arg;
 
 	new_arg = NULL;
 	new_arg = init_new_arg_list(new_arg, oper, type, detector);
@@ -90,7 +93,7 @@ void                join_argument(t_operation *oper, void *arg, int type, int de
 	}
 	else if (detector == NUM_VAL)
 	{
-		new_arg->num_val = ((int *)arg)[0]; // неправильно записывается.
+		new_arg->num_val = ((int *)arg)[0];
 		free(arg);
 	}
 	new_arg->args_size = set_args_size(oper, type);
