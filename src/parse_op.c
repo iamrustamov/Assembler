@@ -66,14 +66,18 @@ int             check_op(t_asm *bler)
     str = bler->line;
     if (check_label(bler))
         str = ft_strchr(bler->line, ':') + 1;
-	while (*str == ' ' || *str == '\t')
-		str++;
-    while (str[i] && ft_isalpha(str[i]))
-        i++;
-    if (i > 0 && find_oper(str, i) != -1)
-        return (TRUE);
-    else
-        return (FALSE);
+	if (bler->line)
+	{
+		while (*str == ' ' || *str == '\t')
+			str++;
+		while (str[i] && ft_isalpha(str[i]))
+			i++;
+		if (i > 0 && find_oper(str, i) != -1)
+			return (TRUE);
+		else
+			return (FALSE);
+	}
+	return (FALSE);
 }
 
 /*

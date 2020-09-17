@@ -27,14 +27,18 @@ int             check_label(t_asm *bler)
 
     i = 0;
     pass_voids(bler);
-    while (bler->line[i] && bler->line[i] != ':')
+    if (bler->line)
     {
-        if (!ft_strchr(LABEL_CHARS, bler->line[i]))
-	        return (0);
-        i++;
+	    while (bler->line[i] && bler->line[i] != ':') {
+		    if (!ft_strchr(LABEL_CHARS, bler->line[i]))
+			    return (0);
+		    i++;
+	    }
+	    if (i > 0 && bler->line[i] == ':')
+		    return (TRUE);
+	    else
+		    return (FALSE);
     }
-    if (i > 0 && bler->line[i] == ':')
-        return (TRUE);
     else
 	    return (FALSE);
 }

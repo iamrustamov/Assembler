@@ -24,7 +24,7 @@ static int	rec_line(int fd, char **line, char **rem)
 	{
 		*line = ft_strsub(rem[fd], 0, i);
 		t_ptr2 = ft_strdup(rem[fd] + i + 1);
-		free(rem[fd]);
+		ft_strdel(&rem[fd]);
 		rem[fd] = t_ptr2;
 		if (rem[fd][0] == '\0')
 			ft_strdel(&rem[fd]);
@@ -49,12 +49,12 @@ static int	give_line(int fd, char **line, char **rem, char *buff)
 		if (rem[fd] == NULL)
 			rem[fd] = ft_strnew(1);
 		t_ptr = ft_strjoin(rem[fd], buff);
-		free(rem[fd]);
+		ft_strdel(&rem[fd]);
 		rem[fd] = t_ptr;
 		if (ft_strchr(buff, '\n'))
 			break ;
 	}
-	free(buff);
+	buff ? ft_strdel(&buff) : 0;
 	if (rsr < 0)
 		return (-1);
 	if (rsr == 0 && (rem[fd] == NULL || rem[fd][0] == '\0'))

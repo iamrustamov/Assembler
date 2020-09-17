@@ -65,6 +65,8 @@ int                     write_name(t_asm *bler, int *c ,int *code, int i)
 	*code % 2 == 0 ? i = skip_delimiters(bler->line, i) : i;
 	if (bler->line[i] != '\"' && *code % 2 == 0)
 		error_printf(bler, ERROR_COMM_LEN, NULL);
+	if (!bler->line)
+		return (0);
 	while (bler->line[i] != '\0' && *code < 4)
 	{
 		if (*code % 2 == 1)
@@ -117,10 +119,11 @@ void            parse_name_comm(t_asm *bler)
 			len = write_name(bler, &len, &flag, 8);
 		else
 			len = write_name(bler, &len, &flag, 0);
-		free(bler->line);
+		bler->line ? ft_strdel(&bler->line) : 0;
 	}
 	flag != 4 ? error_printf(bler, ERROR_NOT_FOUND_NM_CM, NULL) : 0;
 	pass_voids(bler);
-	if ((check_label(bler) == FALSE && check_op(bler) == FALSE) && ft_isalnum(bler->line[bler->sym]))
-		error_printf(bler, ERROR_UNKNOWN_TEXT, bler->line);
+	if ((check_label(bler) == FALSE && check_op(bler) == FALSE) && bler->line)
+			if (ft_isalnum(bler->line[bler->sym]))
+				error_printf(bler, ERROR_UNKNOWN_TEXT, bler->line);
 }
