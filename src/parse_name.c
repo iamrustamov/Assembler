@@ -65,8 +65,6 @@ int                     write_name(t_asm *bler, int *c ,int *code, int i)
 	*code % 2 == 0 ? i = skip_delimiters(bler->line, i) : i;
 	if (bler->line[i] != '\"' && *code % 2 == 0)
 		error_printf(bler, ERROR_COMM_LEN, NULL);
-	if (!bler->line)
-		return (0);
 	while (bler->line[i] != '\0' && *code < 4)
 	{
 		if (*code % 2 == 1)
