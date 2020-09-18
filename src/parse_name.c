@@ -29,99 +29,120 @@ int         check_comment(const char* str)
 }
 
 /*
- * Пропуск пробелов и табов
+ * Переписываем символ(с) в name или в comment в зависимости от
+ * переменной from. После записи сдвигаем позицию(pos) и проверяем длину
+ * записи на валидность.
  */
 
-int         skip_delimiters(char *str, int i)
+void record(t_data *data, char c, t_asm *bler)
 {
-	while (str[i] == ' ' || str[i] == '\t')
-		i++;
-	return(i);
-}
-
-/*
- * Функция которая переписывает с line в name или comment
- */
-
-void record(t_asm *bler, int code, int *c, char s)
-{
-	if (code < 2)
-		bler->name[*c] = s;
-	else
-		bler->comment[*c] = s;
-	*c = *c + 1;
-	if (code < 2 && *c > PROG_NAME_LENGTH)
+	if (data->from == 'n')
+		data->name[data->pos] = c;
+	else if (data->from == 'c')
+		data->comment[data->pos] = c;
+	data->pos++;
+	if (data->from == 'n' && data->pos > PROG_NAME_LENGTH)
 		error_printf(bler, ERROR_NAME_LEN, NULL);
-	else if (code > 1 && *c > COMMENT_LENGTH)
+	else if (data->from == 'c' && data->pos > COMMENT_LENGTH)
 		error_printf(bler, ERROR_COMM_LEN, NULL);
 }
 
 /*
  * Основная функция, где реализованна вся логика, проверки и обработка строки.
+ * В основном рычаги(write и item) отталкиваются от ковычек.
  */
 
-int                     write_name(t_asm *bler, int *c ,int *code, int i)
+void                     write_name(t_data *data, t_asm *bler)
 {
-	*code % 2 == 0 ? i = skip_delimiters(bler->line, i) : i;
-	if (bler->line[i] != '\"' && *code % 2 == 0)
-		error_printf(bler, ERROR_COMM_LEN, NULL);
-	while (bler->line[i] != '\0' && *code < 4)
+	int i;
+
+	i = 0;
+	while (data->buff[i] != '\0')
 	{
-		if (*code % 2 == 1)
+		if (data->write == TRUE)
 		{
-			if (bler->line[i] == '\"')
+			if (data->buff[i] == '\"')
 			{
-				i++;
-				if (check_comment(&bler->line[i]))
+				if (check_comment(&data->buff[i + 1]))
 					error_printf(bler, ERROR_WOKS_NM_CM, NULL);
-				*code = *code + 1;
+				data->write = FALSE;
+				data->item++;
+				break;
 			}
 			else
-				record(bler, *code, c, bler->line[i]);
+				record(data, data->buff[i], bler);
 		}
-		if (bler->line[i] == '\"' && *code % 2 == 0 && *c == 0)
-			*code = *code + 1;
+		else if  (data->buff[i] == '\"' && data->pos == 0 && data->write == FALSE)
+			data->write = TRUE;
+		else
+			error_printf(bler, ERROR_COMM_LEN, NULL);
 		i++;
 	}
-	return (*c);
 }
 
-//FIXME Почему флаг 4?
-/*
- * В данной фукции мы парсим имя и комментарий чемпиона.
- * С помощью хитрой флаговой системы мы получаем данные
- * и валидируем их.
- */
 //FIXME Когда комментарий пустой, то выдает ошибку. Почему?
 //FIXME Если комментарий перед именем и комментом, то выводится ошибка! Игрок Car из vm_champs/champs
 //FIXME Когда нет коммента, то выводит, что длина слишком большая.
 //FIXME неправильная реакция на файлы zother tests/unit_tests/error/
 
+/*
+ * В данной функции мы определяем принадлежность строки
+ * к имени или комментарию. По итогу в переменной(char) from структуры data
+ * мы будем иметь букву 'n' или 'c'. В случае неудачи мы получаем ошибку.
+ */
+
+void			enrol_in(t_data *data, t_asm *bler)
+{
+	char *str;
+
+	str = data->buff;
+	if (*str == '\0')
+		return;
+	if (!ft_strncmp(".name", str, 5) ||
+			!ft_strncmp(".comment", str, 8))
+	{
+		data->from = str[1];
+		if(data->from == 'n')
+			data->buff = &str[5];
+		else
+			data->buff = &str[8];
+	}
+	else
+		error_printf(bler, "Невалидная строка", NULL); // FIXME Нужен коммент нормальный
+}
+
+/*
+ * Пропускаем все разделители(пробелы и табы)
+ */
+
+void	pass_delimetr(t_data *data)
+{
+	while ((*data->buff == ' ' || *data->buff == '\t') && *data->buff != '\0')
+		data->buff++;
+}
+
 void            parse_name_comm(t_asm *bler)
 {
-	int flag;
-	int len;
+	t_data *data;
 
-	flag = 0;
-	bler->name = ft_strnew(PROG_NAME_LENGTH);
-	bler->comment = ft_strnew(COMMENT_LENGTH);
-	while (flag < 4 && get_next_line(bler->fd, &bler->line) > 0)
+	data = bler->data;
+	while (data->item < 2 && get_next_line(bler->fd, &bler->line) > 0)
 	{
-		if (flag == 0 || flag == 2)
-			len = 0;
-		else if (flag == 1 || flag == 3)
-			record(bler, flag, &len, '\n');
-		if (flag == 0 && !ft_strncmp(".name", bler->line, 5))
-			len = write_name(bler, &len, &flag, 5);
-		else if (flag == 2 && !ft_strncmp(".comment", bler->line, 8))
-			len = write_name(bler, &len, &flag, 8);
-		else
-			len = write_name(bler, &len, &flag, 0);
+		data->buff = bler->line;
+		data->pos = (data->write == FALSE) ? 0 : data->pos;
+		if (data->write == FALSE)
+		{
+			pass_delimetr(data);
+			enrol_in(data, bler);
+			pass_delimetr(data);
+		}
+		else if (data->write == TRUE)
+			record(data, '\n', bler);
+		write_name(data, bler);
 		bler->line ? ft_strdel(&bler->line) : 0;
 	}
-	flag != 4 ? error_printf(bler, ERROR_NOT_FOUND_NM_CM, NULL) : 0;
 	pass_voids(bler);
 	if ((check_label(bler) == FALSE && check_op(bler) == FALSE) && bler->line)
-			if (ft_isalnum(bler->line[bler->sym]))
-				error_printf(bler, ERROR_UNKNOWN_TEXT, bler->line);
+		if (ft_isalnum(bler->line[bler->sym]))
+			error_printf(bler, ERROR_UNKNOWN_TEXT, bler->line);
 }

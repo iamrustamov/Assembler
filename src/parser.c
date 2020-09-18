@@ -40,11 +40,21 @@ int             check_lbl_dupl(t_asm *bler)
 	return (0);
 }
 
+void		parser_init(t_asm *bler)
+{
+	if (!(bler->data = (t_data *) ft_memalloc(sizeof(t_data))))
+		error_printf(bler, "НЕ замалочилось", NULL); //FIXME АДЕКВАТНЫЙ КОМЕНТ НУЖЕН
+	bler->data->name = ft_strnew(PROG_NAME_LENGTH);
+	bler->data->comment = ft_strnew(COMMENT_LENGTH);
+}
+
 void        parser(t_asm *bler)
 {
+	parser_init(bler);
     parse_name_comm(bler);
-	ft_printf("NAME:    %s\n", bler->name);
-	ft_printf("COMMENT:    %s\n", bler->comment);
+	ft_printf("NAME:    %s\n", bler->data->name);
+	ft_printf("COMMENT:    %s\n", bler->data->comment);
+	exit(1);
 	parse_instructions(bler);
 	check_lbl_dupl(bler);
 	if (!bler->oper)

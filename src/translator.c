@@ -154,11 +154,11 @@ void	recorder(t_asm *bler)
     get_exec_code_size(bler);
     rec_init(bler);
     rec = &bler->record;
-    bytecode_conversion(rec, COREWAR_EXEC_MAGIC, 4);
-    ft_memcpy(&rec->final_code[rec->cur], bler->name, ft_strlen(bler->name));
-    rec->cur += PROG_NAME_LENGTH + 4;
-    bytecode_conversion(rec, bler->exec_code_size, 4);
-    ft_memcpy(&rec->final_code[rec->cur], bler->comment, ft_strlen(bler->comment));
+//    bytecode_conversion(rec, COREWAR_EXEC_MAGIC, 4);
+//    ft_memcpy(&rec->final_code[rec->cur], bler->name, ft_strlen(bler->name));
+//    rec->cur += PROG_NAME_LENGTH + 4;
+//    bytecode_conversion(rec, bler->exec_code_size, 4);
+//    ft_memcpy(&rec->final_code[rec->cur], bler->comment, ft_strlen(bler->comment));
     rec->cur += COMMENT_LENGTH + 4;
     ft_putstr("Writing output program to ");
     ft_putstr(bler->files_name);

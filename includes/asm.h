@@ -148,14 +148,24 @@ typedef struct          s_rec
 	int 				file_fd;
 }                       t_rec;
 
+typedef struct          s_data
+{
+	char            	*name;
+	char            	*comment;
+	int					pos;
+	int					item;
+	char				from;
+	char				*buff;
+	int 				write;
+}                       t_data;
+
 typedef  struct     s_asm
 {
     int             fd;
     char            *files_name;
-    char            *name;
-    char            *comment;
     char            *line;
 	t_operation     *oper;
+	t_data 			*data;
     int             sym;
     int 			exec_code_size; // TODO DALER ОБЩИЙ РАЗМЕР КОДА
     int             line_len;

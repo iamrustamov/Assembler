@@ -1,5 +1,14 @@
-.name           "42"
-.comment        "Just a basic Winner Program"
+
+
+                    .comment        "Just a basic Winner Program";ghdijkolpfkojihujikofdigu
+
+
+  .name           "basic Winner P
+
+#hjlkjbhjkljh
+   rogramJust a b
+
+   inner ProgramJust a basic Winner ProgramJust a basic Winner Program"
 
 entree:
     ld	%0,r5 # offset 0
