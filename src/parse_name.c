@@ -12,20 +12,33 @@
 
 #include "../includes/asm.h"
 
+
+/*
+ * Пропускаем все разделители(пробелы и табы)
+ */
+
+void	pass_delimetr(t_data *data)
+{
+	while ((*data->buff == ' ' || *data->buff == '\t') && *data->buff != '\0')
+		data->buff++;
+}
+
 /*
  * Проверка комментария после закрытия кавычек например .name "name" # Данный коммент проверяется на валидность
  */
 
-int         check_comment(const char* str)
+int         check_comment(t_data *data, int pos)
 {
-	int i;
-
-	i = 0;
-	while (str[i] == ' ' || str[i] == '\t')
-		i++;
-	if (str[i] == COMMENT_CHAR || str[i] == ALT_COMMENT_CHAR || str[i] == '\0')
+	data->buff = &data->buff[pos];
+	pass_delimetr(data);
+	if (*data->buff == COMMENT_CHAR || *data->buff == ALT_COMMENT_CHAR || *data->buff == '\0')
+	{
+		while (*data->buff != '\0')
+			data->buff++;
 		return (0);
-	return (1);
+	}
+	else
+		return (1);
 }
 
 /*
@@ -63,7 +76,7 @@ void                     write_name(t_data *data, t_asm *bler)
 		{
 			if (data->buff[i] == '\"')
 			{
-				if (check_comment(&data->buff[i + 1]))
+				if (check_comment(data, i + 1))
 					error_printf(bler, ERROR_WOKS_NM_CM, NULL);
 				data->write = FALSE;
 				data->item++;
@@ -107,18 +120,8 @@ void			enrol_in(t_data *data, t_asm *bler)
 		else
 			data->buff = &str[8];
 	}
-	else
-		error_printf(bler, "Невалидная строка", NULL); // FIXME Нужен коммент нормальный
-}
-
-/*
- * Пропускаем все разделители(пробелы и табы)
- */
-
-void	pass_delimetr(t_data *data)
-{
-	while ((*data->buff == ' ' || *data->buff == '\t') && *data->buff != '\0')
-		data->buff++;
+	else if (check_comment(data, 0))
+			error_printf(bler, "Невалидная строка", NULL); // FIXME Нужен коммент нормальный
 }
 
 void            parse_name_comm(t_asm *bler)

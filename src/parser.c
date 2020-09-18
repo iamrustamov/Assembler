@@ -54,7 +54,6 @@ void        parser(t_asm *bler)
     parse_name_comm(bler);
 	ft_printf("NAME:    %s\n", bler->data->name);
 	ft_printf("COMMENT:    %s\n", bler->data->comment);
-	exit(1);
 	parse_instructions(bler);
 	check_lbl_dupl(bler);
 	if (!bler->oper)

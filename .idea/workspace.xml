@@ -116,7 +116,7 @@
     </option>
   </component>
   <component name="RunManager" selected="CMake Application.Assembler">
-    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;tests/unit_tests/valid/Car.s&quot;" WORKING_DIR="file://$PROJECT_DIR$/tests" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assembler_master" RUN_TARGET_NAME="Assembler_master" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;42.s&quot;" WORKING_DIR="file://$PROJECT_DIR$/tests" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assembler_master" RUN_TARGET_NAME="Assembler_master" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -174,7 +174,7 @@
       <workItem from="1600323783901" duration="6018000" />
       <workItem from="1600338837923" duration="396000" />
       <workItem from="1600438381350" duration="104000" />
-      <workItem from="1600438492422" duration="17910000" />
+      <workItem from="1600438492422" duration="19964000" />
     </task>
     <servers />
   </component>
@@ -328,12 +328,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/parse_name.c</url>
-          <line>128</line>
+          <line>131</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/parse_name.c</url>
-          <line>65</line>
+          <line>78</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
