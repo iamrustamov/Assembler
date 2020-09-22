@@ -52,25 +52,30 @@ void                print_operation(t_asm *bler, t_operation *opera)
 
 }
 
-void            check_end_line(t_asm *bler)
+void		check_end_line(t_asm *bler)
 {
-	char sym;
+	char	buff[bler->line_len + 1];
+	int		i;
 
-	lseek(bler->fd, -bler->line_len, SEEK_CUR);
-	if (get_next_line(bler->fd, &bler->line) > 0)
+	i = 0;
+	ft_bzero(buff, bler->line_len + 1);
+	if ((lseek(bler->fd, -bler->line_len, SEEK_CUR)) <= 0)
+		error_printf(bler, NULL, NULL);
+	read(bler->fd, &buff, bler->line_len);
+	while (buff[i] != '\0')
 	{
-		if (bler->line[0] == '#' || bler->line[0] == ';')
+		if (buff[i] == COMMENT_CHAR || buff[i] == ALT_COMMENT_CHAR)
+			break;
+		else if (buff[i] == ' ' || buff[i] == '\t')
+			i++;
+		else
 		{
-			ft_strdel(&bler->line);
-			return;
+			if (buff[ft_strlen(buff) - 1] == '\n')
+				break;
+			else
+				error_printf(bler, ERROR_END_LINE, NULL);
 		}
 	}
-	lseek(bler->fd, -1, SEEK_CUR);
-	read(bler->fd, &sym, 1);
-	if (sym == '\n')
-		return;
-	else
-		error_printf(bler, ERROR_END_LINE, NULL);
 }
 
 void            pass_voids(t_asm *bler)

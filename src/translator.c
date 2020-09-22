@@ -148,9 +148,9 @@ void 	opcode_to_bytecode(t_asm *bler)
 void	recorder(t_asm *bler)
 {
     t_rec *rec;
-    int fd;
-
-    fd = 0;
+//    int fd;
+//
+//    fd = 0;
     get_exec_code_size(bler);
     rec_init(bler);
     rec = &bler->record;
@@ -164,6 +164,6 @@ void	recorder(t_asm *bler)
     ft_putstr(bler->files_name);
     ft_putstr(".cor file\n");
     opcode_to_bytecode(bler);
-    // FIXME write(bler->record.file_fd, rec->final_code, rec->file_size);
-    write(open("111111.cor", O_WRONLY | O_TRUNC | O_CREAT, 0644), rec->final_code, rec->file_size);
+    write(bler->record.file_fd, rec->final_code, rec->file_size);
+    //write(open("111111.cor", O_WRONLY | O_TRUNC | O_CREAT, 0644), rec->final_code, rec->file_size);
 }

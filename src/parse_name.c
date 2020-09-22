@@ -111,8 +111,8 @@ void			enrol_in(t_data *data, t_asm *bler)
 	str = data->buff;
 	if (*str == '\0')
 		return;
-	if (!ft_strncmp(".name", str, 5) ||
-			!ft_strncmp(".comment", str, 8))
+	if (!ft_strncmp(NAME_CMD_STRING, str, 5) ||
+			!ft_strncmp(COMMENT_CMD_STRING, str, 8))
 	{
 		data->from = str[1];
 		if(data->from == 'n')

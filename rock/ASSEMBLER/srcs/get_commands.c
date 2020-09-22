@@ -78,7 +78,7 @@ static	void		get_lca(t_asm *asmb)
 		(!check_line(asmb->line + j)) ? ft_error(ERR_STRING) : 0;
 }
 
-void				get_commands(t_asm *asmb)
+void					get_commands(t_asm *asmb)
 {
 	while (get_next_line(asmb->fd, &asmb->line) > 0)
 	{

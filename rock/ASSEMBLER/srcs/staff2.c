@@ -21,7 +21,7 @@ char		check_last_line(t_asm *asmb)
 	ft_bzero(s, asmb->last_line_size + 1);
 	lseek(asmb->fd, -asmb->last_line_size, SEEK_CUR);
 	read(asmb->fd, &s, asmb->last_line_size);
-	if (!str_has(s, LABEL) && !str_has(s, COMMAND))
+	if (!str_has(s, LABEL) && !str_has(s, COMMAND)) // while (s[i] == ' ' || s[i] == '\t' || s[i] == ; || s[i] == #
 		return (1);
 	else
 	{
