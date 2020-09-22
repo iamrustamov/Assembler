@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="1" targetName="1" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -33,20 +31,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3db04e-cb60-4e7e-b99f-7d1f83732990" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/111111.cor" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/asm" beforeDir="false" afterPath="$PROJECT_DIR$/asm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isalpha.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isalpha.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/set_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/set_args.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translator.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/translator.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/111111.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/valid/Asombra.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/valid/Car.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/valid/_honeybadger.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/valid/aff_no_OCP.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/valid/jumper.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/valid/maxidef.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asm.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/asm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_lbl.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_lbl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_name.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_name.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,31 +90,22 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="CMake Application.Assembler">
+  <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="1" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="1" RUN_TARGET_NAME="1">
+    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;42.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/tests" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assembler" RUN_TARGET_NAME="1" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;42.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/tests" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="1" RUN_TARGET_NAME="1" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.Assembler" />
-      <item itemvalue="CMake Application.1" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -171,6 +153,7 @@
       <workItem from="1600438492422" duration="19964000" />
       <workItem from="1600772402195" duration="27000" />
       <workItem from="1600772430719" duration="1868000" />
+      <workItem from="1600783367969" duration="1883000" />
     </task>
     <servers />
   </component>
@@ -202,10 +185,10 @@
     <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1600252635938" />
     <state x="837" y="397" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2880.1517@0.23.2880.1517" timestamp="1600772535597" />
     <state x="558" y="287" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936975613" />
-    <state x="423" y="491" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600237208371">
+    <state x="423" y="491" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600783775159">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="423" y="491" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1600237208371" />
+    <state x="423" y="491" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1600783775159" />
     <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1595666085371">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

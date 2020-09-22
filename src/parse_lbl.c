@@ -31,7 +31,7 @@ int             check_label(t_asm *bler)
     {
 	    while (bler->line[i] && bler->line[i] != ':') {
 		    if (!ft_strchr(LABEL_CHARS, bler->line[i]))
-			    return (0);
+			    return (FALSE);
 		    i++;
 	    }
 	    if (i > 0 && bler->line[i] == ':')

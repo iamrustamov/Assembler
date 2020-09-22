@@ -77,7 +77,7 @@ void                     write_name(t_data *data, t_asm *bler)
 			if (data->buff[i] == '\"')
 			{
 				if (check_comment(data, i + 1))
-					error_printf(bler, ERROR_WOKS_NM_CM, NULL);
+					error_printf(bler, ERROR_GARBAGE, bler->line);
 				data->write = FALSE;
 				data->item++;
 				break;
@@ -121,7 +121,7 @@ void			enrol_in(t_data *data, t_asm *bler)
 			data->buff = &str[8];
 	}
 	else if (check_comment(data, 0))
-			error_printf(bler, "Невалидная строка", NULL); // FIXME Нужен коммент нормальный
+			error_printf(bler, ERROR_NM_CMN_N_EXIST, bler->line); // FIXME Нужен коммент нормальный
 }
 
 void            parse_name_comm(t_asm *bler)

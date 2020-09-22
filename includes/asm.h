@@ -21,7 +21,7 @@
 # define ERROR_LBL_NAME "ERROR: This string have wrong label name:\n"
 # define ERROR_FILE_EXTENSION "ERROR: File have not valid extension or this file not exist.\nPlease, check it.\n"
 # define ERROR_CONTANT "ERROR: File have not valid data.\nPlease check it.\n"
-# define ERROR_WOKS_NM_CM "ERROR: Name or comment have wrong with woks or doubled.\n"
+# define ERROR_GARBAGE "ERROR: String have wrong content or mistake with quotes.\n"
 # define ERROR_NAME_LEN "ERROR: Name's length is long.\n"
 # define ERROR_COMM_LEN "ERROR: Comment's length is long.\n"
 # define ERROR_NOT_FOUND_NM_CM "ERROR: Name or comment not fount.\n"
@@ -34,7 +34,8 @@
 # define NEARLY_MAX_UINT 429496729
 # define SIZE_T_IND 2
 # define SIZE_T_REG 1
-
+# define ERROR_USAGE "Usage: ./name_prog [-a] <sourcefile.s>\n      Instead of creating a .cor file, outputs a stripped and annotated version of the code to the standard output"
+#define  ERROR_NM_CMN_N_EXIST "ERROR: Name or comment not exist\n"
 /*
  * op_code - 1 because g_op_tab starting with 0.
  */
