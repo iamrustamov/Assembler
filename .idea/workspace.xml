@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a64beed-5141-488a-b867-48b0f5e2cb17" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm" beforeDir="false" afterPath="$PROJECT_DIR$/asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barriere.cor" beforeDir="false" afterPath="$PROJECT_DIR$/barriere.cor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barriere.s" beforeDir="false" afterPath="$PROJECT_DIR$/barriere.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_name.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_name.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hsCytADsJbjuSCqCpJiaHkzJKf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.cor&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" RUN_PATH="$PROJECT_DIR$/asm" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a64beed-5141-488a-b867-48b0f5e2cb17" name="Default Changelist" comment="" />
+      <created>1600790670546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600790670546</updated>
+      <workItem from="1600790671757" duration="19000" />
+      <workItem from="1600790691854" duration="17000" />
+      <workItem from="1600790709297" duration="109000" />
+      <workItem from="1600790854728" duration="65000" />
+      <workItem from="1600791122815" duration="41000" />
+      <workItem from="1600791164286" duration="166000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="904" y="443" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600791142545">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state x="904" y="443" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2880.1517@0.23.2880.1517" timestamp="1600791142545" />
+    <state x="1178" y="535" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600791174610">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state x="1178" y="535" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2880.1517@0.23.2880.1517" timestamp="1600791174610" />
+    <state width="2838" height="744" key="GridCell.Tab.0.bottom" timestamp="1600790546091">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="2838" height="744" key="GridCell.Tab.0.bottom/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546091" />
+    <state width="2838" height="744" key="GridCell.Tab.0.center" timestamp="1600790546091">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="2838" height="744" key="GridCell.Tab.0.center/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546091" />
+    <state width="2838" height="744" key="GridCell.Tab.0.left" timestamp="1600790546091">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="2838" height="744" key="GridCell.Tab.0.left/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546091" />
+    <state width="2838" height="744" key="GridCell.Tab.0.right" timestamp="1600790546091">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="2838" height="744" key="GridCell.Tab.0.right/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546091" />
+    <state width="2838" height="449" key="GridCell.Tab.1.bottom" timestamp="1600790546088">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="2838" height="449" key="GridCell.Tab.1.bottom/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546088" />
+    <state width="2838" height="449" key="GridCell.Tab.1.center" timestamp="1600790546088">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="2838" height="449" key="GridCell.Tab.1.center/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546088" />
+    <state width="2838" height="449" key="GridCell.Tab.1.left" timestamp="1600790546088">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="2838" height="449" key="GridCell.Tab.1.left/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546088" />
+    <state width="2838" height="449" key="GridCell.Tab.1.right" timestamp="1600790546088">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="2838" height="449" key="GridCell.Tab.1.right/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546088" />
+    <state width="720" height="232" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1600791160903">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="720" height="232" key="ImportCMakeProjectWizard.bottomPanel/0.23.2880.1517@0.23.2880.1517" timestamp="1600791160903" />
+    <state width="720" height="543" key="ImportCMakeProjectWizard.topPanel" timestamp="1600791160902">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state width="720" height="543" key="ImportCMakeProjectWizard.topPanel/0.23.2880.1517@0.23.2880.1517" timestamp="1600791160902" />
+    <state x="949" y="420" key="SettingsEditor" timestamp="1600790743989">
+      <screen x="0" y="23" width="2880" height="1517" />
+    </state>
+    <state x="949" y="420" key="SettingsEditor/0.23.2880.1517@0.23.2880.1517" timestamp="1600790743989" />
+  </component>
+</project>

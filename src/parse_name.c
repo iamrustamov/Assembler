@@ -115,13 +115,21 @@ void			enrol_in(t_data *data, t_asm *bler)
 			!ft_strncmp(COMMENT_CMD_STRING, str, 8))
 	{
 		data->from = str[1];
-		if(data->from == 'n')
+		if (data->from == 'n' && data->nm == 0)
+		{
 			data->buff = &str[5];
-		else
+			data->nm++;
+		}
+		else if (data->from == 'c' && data->cnm == 0)
+		{
 			data->buff = &str[8];
+			data->cnm++;
+		}
+		else
+			error_printf(bler, ERROR_DOUBLE_NM_CMN, bler->line);
 	}
 	else if (check_comment(data, 0))
-			error_printf(bler, ERROR_NM_CMN_N_EXIST, bler->line); // FIXME Нужен коммент нормальный
+			error_printf(bler, ERROR_NM_CMN_N_EXIST, bler->line);
 }
 
 void            parse_name_comm(t_asm *bler)

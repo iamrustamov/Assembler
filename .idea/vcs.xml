@@ -2,14 +2,14 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/42-corewar" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/arobion" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/bcozic" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/chaydont" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/mbenjell3" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/mkamel" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/nolivier" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/sboulet" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/sgalasso3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/42-corewar" vcs="" />
+    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/arobion" vcs="" />
+    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/bcozic" vcs="" />
+    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/chaydont" vcs="" />
+    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/mbenjell3" vcs="" />
+    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/mkamel" vcs="" />
+    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/nolivier" vcs="" />
+    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/sboulet" vcs="" />
+    <mapping directory="$PROJECT_DIR$/vm_champs/champs/championships/2018/sgalasso3" vcs="" />
   </component>
 </project>

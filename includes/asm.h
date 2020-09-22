@@ -34,8 +34,9 @@
 # define NEARLY_MAX_UINT 429496729
 # define SIZE_T_IND 2
 # define SIZE_T_REG 1
-# define ERROR_USAGE "Usage: ./name_prog [-a] <sourcefile.s>\n      Instead of creating a .cor file, outputs a stripped and annotated version of the code to the standard output"
-#define  ERROR_NM_CMN_N_EXIST "ERROR: Name or comment not exist\n"
+# define ERROR_USAGE "Usage: ./asm [-a] <sourcefile.s>\n      Instead of creating a .cor file, outputs a stripped and annotated version of the code to the standard output"
+# define ERROR_NM_CMN_N_EXIST "ERROR: Name or comment not exist\n"
+# define ERROR_DOUBLE_NM_CMN "ERROR: Double name or comment\n"
 /*
  * op_code - 1 because g_op_tab starting with 0.
  */
@@ -158,6 +159,8 @@ typedef struct          s_data
 	char				from;
 	char				*buff;
 	int 				write;
+	int 				nm;
+	int 				cnm;
 }                       t_data;
 
 typedef  struct     s_asm

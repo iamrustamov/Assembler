@@ -43,7 +43,7 @@ int             check_lbl_dupl(t_asm *bler)
 void		parser_init(t_asm *bler)
 {
 	if (!(bler->data = (t_data *) ft_memalloc(sizeof(t_data))))
-		error_printf(bler, "НЕ замалочилось", NULL); //FIXME АДЕКВАТНЫЙ КОМЕНТ НУЖЕН
+		error_printf(bler, ERROR_ALLOCATE, NULL); //FIXME АДЕКВАТНЫЙ КОМЕНТ НУЖЕН
 	bler->data->name = ft_strnew(PROG_NAME_LENGTH);
 	bler->data->comment = ft_strnew(COMMENT_LENGTH);
 }
