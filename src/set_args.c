@@ -174,5 +174,5 @@ void                set_args(t_asm *bler, t_operation *oper, char **args)
 	}
 	check_arg_count_type(bler, oper);
 	set_op_size(oper);
-	print_operation(bler, oper);
+//	print_operation(bler, oper);
 }
