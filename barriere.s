@@ -1,9 +1,5 @@
-.comment "just a basic living prog"
-.name "just a basic living prog"
+.name "zork"
+.comment "I'M ALIIIIVE"
 
-l2:	sti	r1,%:live,%0
-	and	r1,%0,r1
-live:	live	%1
-	zjmp	%:live
-live2:
-            ;asda
+aff		r12
+#test

@@ -10,6 +10,8 @@
 # define TRUE 1
 # define FALSE 0
 
+# define GNLINE bler->line[bler->sym]
+
 # define ERROR_LINE "ERROR: This line have not valid parameters.\n"
 # define ERROR_ARGS "ERROR: This line have not valid arguments.\n"
 # define ERROR_ALLOCATE "ERROR: Didn't allocate memory.\n"
@@ -159,8 +161,6 @@ typedef struct          s_data
 	char				from;
 	char				*buff;
 	int 				write;
-	int 				nm;
-	int 				cnm;
 }                       t_data;
 
 typedef  struct     s_asm
@@ -196,7 +196,7 @@ void                add_op(t_asm *bler, t_operation *oper);
 void                pass_comments(char *str);
 void                pass_voids(t_asm *bler);
 void                error_printf(t_asm *bler, char *text, char *line);
-
+void 				pass_delimetr(t_data *data);
 /*
  * Function of parsing arguments;
  */
@@ -214,10 +214,10 @@ void                check_arg_count_type(t_asm *bler, t_operation *oper);
 void		recorder(t_asm *bler);
 void		get_exec_code_size(t_asm *bler);
 void 		rec_init(t_asm *bler);
-void 		test(t_asm *bler);
-int			get_t_dir_val(t_argument *arg, t_asm *bler, t_operation *oper);
-char		create_code_type_arg(t_operation *oper);
-void		bytecode_conversion(t_rec *rec,int data ,int size);
+void 		opcode_to_bytecode(t_asm *bler);
+int			lbl_adr(t_argument *arg, t_asm *bler, t_operation *oper);
+char		code_type_arg(t_operation *oper);
+void		bc_conver(t_rec *rec,int data ,int size);
 
 /*
  * Утилиты

@@ -13,13 +13,14 @@
 #include "asm.h"
 
 /*
- * Обычно T_REG имеет переменные максимум 16. Поэтому здесь проверяется именно это.
- */
+** Обычно T_REG имеет переменные максимум 16.
+** Поэтому здесь проверяется именно это.
+*/
 
-int                 check_reg_num(char *str)
+int					check_reg_num(char *str)
 {
-	int             i;
-	unsigned        res;
+	int				i;
+	unsigned		res;
 
 	i = 0;
 	res = 0;
@@ -30,7 +31,7 @@ int                 check_reg_num(char *str)
 		while (ft_isdigit(*str))
 		{
 			if (res > MAX_UINT || (res == NEARLY_MAX_UINT &&
-			                       *str >= '5'))
+					*str >= '5'))
 				return (0);
 			res = res * 10 + *str - 48;
 			i++;
@@ -45,14 +46,14 @@ int                 check_reg_num(char *str)
 }
 
 /*
- * Если есть % и :, значит дальше будет метка,
- * метка парсится отдельно.
- * Дальше смотрим - если дальше идут до конца цифры, то парсим только цифры.
- */
+** Если есть % и :, значит дальше будет метка,
+** метка парсится отдельно.
+** Дальше смотрим - если дальше идут до конца цифры, то парсим только цифры.
+*/
 
-int                 check_t_dir(char *str)
+int					check_t_dir(char *str)
 {
-	int             i;
+	int				i;
 
 	i = 0;
 	if (str[i] && str[i] == '%')
@@ -74,13 +75,13 @@ int                 check_t_dir(char *str)
 }
 
 /*
- * If string begin with ':' that mean label;
- * Else if have digits, it's IND
- */
+** If string begin with ':' that mean label;
+** Else if have digits, it's IND
+*/
 
-int                 check_t_ind(char *str)
+int					check_t_ind(char *str)
 {
-	int             i;
+	int				i;
 
 	i = 0;
 	if (str[i] == ':')
@@ -102,20 +103,18 @@ int                 check_t_ind(char *str)
 }
 
 /*
- * Checking arguments by 3 types - T_REG, T_DIR, T_IND(ID);
- */
+** Checking arguments by 3 types - T_REG, T_DIR, T_IND(ID);
+*/
 
-int                 search_types(char *str)
+int					search_types(char *str)
 {
-	int             arg_num;
+	int				arg_num;
 
-	arg_num = 0;
 	if (*str == 'r')
 	{
 		str++;
-//		if (*str == '-' || *str == '+' || !check_reg_num(str))
 		if (*str == '-' || *str == '+')
-				return (WRONG_TYPE);
+			return (WRONG_TYPE);
 		arg_num = ft_atoi(str);
 		if (arg_num <= REG_NUMBER && arg_num >= 0)
 			return (T_REG);
@@ -130,15 +129,15 @@ int                 search_types(char *str)
 }
 
 /*
- * Находим тип. Если тип не найден, то вывод ошибки.
- * Когда тип найден, то парсим эти данные в структуру данных t_args.
- * А дальше фигачим в операцию всю инфу.
- */
+** Находим тип. Если тип не найден, то вывод ошибки.
+** Когда тип найден, то парсим эти данные в структуру данных t_args.
+** А дальше фигачим в операцию всю инфу.
+*/
 
 void				set_op_size(t_operation *opera)
 {
-	int len;
-	t_argument *args;
+	int				len;
+	t_argument		*args;
 
 	len = 1;
 	args = opera->args;
@@ -152,14 +151,12 @@ void				set_op_size(t_operation *opera)
 	opera->op_size = len;
 }
 
-
-void                set_args(t_asm *bler, t_operation *oper, char **args)
+void				set_args(t_asm *bler, t_operation *oper, char **args)
 {
-	int             detector;
-	int             i;
-	int             type;
-	void            *arg;
-
+	int				detector;
+	int				i;
+	int				type;
+	void			*arg;
 
 	i = 0;
 	check_commas(bler, args);
@@ -174,5 +171,4 @@ void                set_args(t_asm *bler, t_operation *oper, char **args)
 	}
 	check_arg_count_type(bler, oper);
 	set_op_size(oper);
-//	print_operation(bler, oper);
 }

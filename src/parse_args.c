@@ -60,7 +60,6 @@ void				check_commas(t_asm *bler, char **args)
 	int				comm;
 
 	i = 0;
-	j = 0;
 	str = bler->line;
 	sym = bler->sym;
 	while (args[i])

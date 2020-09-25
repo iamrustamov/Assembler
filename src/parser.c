@@ -13,16 +13,16 @@
 #include "asm.h"
 
 /*
- * Сравниваем метки всех операций.
- * Для этого берём метку одной операции, ищём совпадения. Если есть,
- * то выводим ошибку. Создается два цикла для поиска.
- * Один цикл для проверки, другой для прохода.
- */
+** Сравниваем метки всех операций.
+** Для этого берём метку одной операции, ищём совпадения. Если есть,
+** то выводим ошибку. Создается два цикла для поиска.
+** Один цикл для проверки, другой для прохода.
+*/
 
-int             check_lbl_dupl(t_asm *bler)
+int				check_lbl_dupl(t_asm *bler)
 {
-	t_operation *tmp_oper;
-	t_operation *tmp2_oper;
+	t_operation	*tmp_oper;
+	t_operation	*tmp2_oper;
 
 	tmp_oper = bler->oper;
 	while (tmp_oper)
@@ -40,20 +40,9 @@ int             check_lbl_dupl(t_asm *bler)
 	return (0);
 }
 
-void		parser_init(t_asm *bler)
+void			parser(t_asm *bler)
 {
-	if (!(bler->data = (t_data *) ft_memalloc(sizeof(t_data))))
-		error_printf(bler, ERROR_ALLOCATE, NULL); //FIXME АДЕКВАТНЫЙ КОМЕНТ НУЖЕН
-	bler->data->name = ft_strnew(PROG_NAME_LENGTH);
-	bler->data->comment = ft_strnew(COMMENT_LENGTH);
-}
-
-void        parser(t_asm *bler)
-{
-	parser_init(bler);
-    parse_name_comm(bler);
-	//ft_printf("NAME:    %s\n", bler->data->name);
-	//ft_printf("COMMENT:    %s\n", bler->data->comment);
+	parse_name_comm(bler);
 	parse_instructions(bler);
 	check_lbl_dupl(bler);
 	if (!bler->oper)

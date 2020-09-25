@@ -12,26 +12,17 @@
 
 #include "../includes/asm.h"
 
-
 /*
- * Пропускаем все разделители(пробелы и табы)
- */
+** Проверка комментария после закрытия кавычек например .name "name"
+** # Данный коммент проверяется на валидность
+*/
 
-void	pass_delimetr(t_data *data)
-{
-	while ((*data->buff == ' ' || *data->buff == '\t') && *data->buff != '\0')
-		data->buff++;
-}
-
-/*
- * Проверка комментария после закрытия кавычек например .name "name" # Данный коммент проверяется на валидность
- */
-
-int         check_comment(t_data *data, int pos)
+int				check_comment(t_data *data, int pos)
 {
 	data->buff = &data->buff[pos];
 	pass_delimetr(data);
-	if (*data->buff == COMMENT_CHAR || *data->buff == ALT_COMMENT_CHAR || *data->buff == '\0')
+	if (*data->buff == COMMENT_CHAR || *data->buff == ALT_COMMENT_CHAR
+			|| *data->buff == '\0')
 	{
 		while (*data->buff != '\0')
 			data->buff++;
@@ -42,12 +33,12 @@ int         check_comment(t_data *data, int pos)
 }
 
 /*
- * Переписываем символ(с) в name или в comment в зависимости от
- * переменной from. После записи сдвигаем позицию(pos) и проверяем длину
- * записи на валидность.
- */
+** Переписываем символ(с) в name или в comment в зависимости от
+** переменной from. После записи сдвигаем позицию(pos) и проверяем длину
+** записи на валидность.
+*/
 
-void record(t_data *data, char c, t_asm *bler)
+void			record(t_data *data, char c, t_asm *bler)
 {
 	if (data->from == 'n')
 		data->name[data->pos] = c;
@@ -61,13 +52,13 @@ void record(t_data *data, char c, t_asm *bler)
 }
 
 /*
- * Основная функция, где реализованна вся логика, проверки и обработка строки.
- * В основном рычаги(write и item) отталкиваются от ковычек.
- */
+** Основная функция, где реализованна вся логика, проверки и обработка строки.
+** В основном рычаги(write и item) отталкиваются от ковычек.
+*/
 
-void                     write_name(t_data *data, t_asm *bler)
+void			write_name(t_data *data, t_asm *bler)
 {
-	int i;
+	int			i;
 
 	i = 0;
 	while (data->buff[i] != '\0')
@@ -80,12 +71,13 @@ void                     write_name(t_data *data, t_asm *bler)
 					error_printf(bler, ERROR_GARBAGE, bler->line);
 				data->write = FALSE;
 				data->item++;
-				break;
+				break ;
 			}
 			else
 				record(data, data->buff[i], bler);
 		}
-		else if  (data->buff[i] == '\"' && data->pos == 0 && data->write == FALSE)
+		else if (data->buff[i] == '\"' && data->pos == 0 &&
+					data->write == FALSE)
 			data->write = TRUE;
 		else
 			error_printf(bler, ERROR_COMM_LEN, NULL);
@@ -93,49 +85,54 @@ void                     write_name(t_data *data, t_asm *bler)
 	}
 }
 
-//FIXME Когда комментарий пустой, то выдает ошибку. Почему?
-//FIXME Если комментарий перед именем и комментом, то выводится ошибка! Игрок Car из vm_champs/champs
-//FIXME Когда нет коммента, то выводит, что длина слишком большая.
-//FIXME неправильная реакция на файлы zother tests/unit_tests/error/
+/*
+** FIXME Когда комментарий пустой, то выдает ошибку. Почему?
+** FIXME Если комментарий перед именем и комментом, то выводится
+** ошибка! Игрок Car из vm_champs/champs
+** FIXME Когда нет коммента, то выводит, что длина слишком большая.
+** FIXME неправильная реакция на файлы zother tests/unit_tests/error/
+*/
 
 /*
- * В данной функции мы определяем принадлежность строки
- * к имени или комментарию. По итогу в переменной(char) from структуры data
- * мы будем иметь букву 'n' или 'c'. В случае неудачи мы получаем ошибку.
- */
+** В данной функции мы определяем принадлежность строки
+** к имени или комментарию. По итогу в переменной(char) from структуры data
+** мы будем иметь букву 'n' или 'c'. В случае неудачи мы получаем ошибку.
+*/
 
 void			enrol_in(t_data *data, t_asm *bler)
 {
-	char *str;
+	char		*str;
 
 	str = data->buff;
 	if (*str == '\0')
-		return;
+		return ;
 	if (!ft_strncmp(NAME_CMD_STRING, str, 5) ||
 			!ft_strncmp(COMMENT_CMD_STRING, str, 8))
 	{
 		data->from = str[1];
-		if (data->from == 'n' && data->nm == 0)
+		if (data->from == 'n' && data->name == NULL)
 		{
 			data->buff = &str[5];
-			data->nm++;
+			bler->data->name = ft_strnew(PROG_NAME_LENGTH);
 		}
-		else if (data->from == 'c' && data->cnm == 0)
+		else if (data->from == 'c' && data->comment == NULL)
 		{
 			data->buff = &str[8];
-			data->cnm++;
+			bler->data->comment = ft_strnew(COMMENT_LENGTH);
 		}
 		else
 			error_printf(bler, ERROR_DOUBLE_NM_CMN, bler->line);
 	}
 	else if (check_comment(data, 0))
-			error_printf(bler, ERROR_NM_CMN_N_EXIST, bler->line);
+		error_printf(bler, ERROR_NM_CMN_N_EXIST, bler->line);
 }
 
-void            parse_name_comm(t_asm *bler)
+void			parse_name_comm(t_asm *bler)
 {
-	t_data *data;
+	t_data		*data;
 
+	if (!(bler->data = (t_data *)ft_memalloc(sizeof(t_data))))
+		error_printf(bler, ERROR_ALLOCATE, NULL);
 	data = bler->data;
 	while (data->item < 2 && get_next_line(bler->fd, &bler->line) > 0)
 	{

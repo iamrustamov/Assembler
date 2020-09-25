@@ -32,19 +32,24 @@ void		check_extension(const char *str)
 	error_printf(NULL, ERROR_FILE_EXTENSION, NULL);
 }
 
-/*TODO провести по двум чекерам в FAQ 21
-** FIXME Daler, Bekha, игрок mat.s имеет несколько ошибок. Совместно разобрать. 
-** Когда его ошибки исправляешь, то наш говорит, что размер файла превышает размер игрока, а оригиналы продолжают работать.
+/*
+** TODO провести по двум чекерам в FAQ 21
+** FIXME Daler, Bekha, игрок mat.s имеет несколько ошибок. Совместно разобрать.
+** Когда его ошибки исправляешь, то наш говорит, что размер файла превышает
+** размер игрока, а оригиналы продолжают работать.
 ** TODO Провести тест на валидные файлы.
-** FIXME ./tests/error/header_double_comments.cor file здесь два коммента, должен выводить ошибку.  А наш читает и транслирует.
- * FIXME ./tests/error/header_double_names.cor file здесь две имени, д.б. ошибка.  А наш читает и транслирует.
-** FIXME Daler, есть различие в бинарных файлах с игроком Death.s из vm_champs/champs.
+** FIXME ./tests/error/header_double_comments.cor file здесь два коммента,
+** должен выводить ошибку.  А наш читает и транслирует.
+** FIXME ./tests/error/header_double_names.cor file здесь две имени, д.б.
+** ошибка. А наш читает и транслирует.
+** FIXME Daler, есть различие в бинарных файлах с игроком Death.s из
+** vm_champs/champs.
 ** FIXME Binary files 111111.cor and ./vm_champs/champs/slider2.cor differ
 */
 
 int			main(int argc, char **argv)
 {
-    t_asm	bler;
+	t_asm	bler;
 
 	ft_bzero(&bler, sizeof(bler));
 	if (argc == 1 || argc > 2)

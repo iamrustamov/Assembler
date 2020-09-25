@@ -1,24 +1,33 @@
 .name "stayin' alive"
 .comment "Ha, Ha, Ha, stayiiiiin' aliiiiiiiiiive"
 	
-sti	r1, %:live, %1			;change live by the right value
-sti	r1, %:live2, %1			;change live by the right value
-ld	%1, r3
-ld	%33, r6
-#While (r2 < 10)
-forks:
-add	r2, r3, r2		;increment r2
-xor	r2, %15, r4		;if (r4) {carry = 0}
-live2:
-	live 	%4
-zjmp	%:endwhile		;if (carry)
-fork	%:forks
-ld	%0, r4			;carry = 1
-zjmp	%:forks
-#EndWhile
-endwhile:
-ld	%0, r4			;carry = 1
+mov:
+	live	%99
+	sti		r6, :up, r4
+	add		r4, r8, r4
+	sti		r6, :up, r4
+	add		r4, r8, r4
+	fork	%:mov
+	zjmp	%:mov
 
-live:
-live %4
-zjmp %:live
+torpille_front:
+	live	%4242
+	add		r4, r8, r4
+	sti		r6, r4, %:up
+	add		r4, r8, r4
+	sti		r6, r4, %:up
+	zjmp	%:torpille_front
+
+up:
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parse_instruments.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dpenney <dpenney@student.21-school.ru>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/15 06:21:48 by dpenney           #+#    #+#             */
+/*   Updated: 2020/09/15 06:44:55 by dpenney          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
