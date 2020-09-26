@@ -13,39 +13,6 @@
 #include "asm.h"
 
 /*
-** Обычно T_REG имеет переменные максимум 16.
-** Поэтому здесь проверяется именно это.
-*/
-
-int					check_reg_num(char *str)
-{
-	int				i;
-	unsigned		res;
-
-	i = 0;
-	res = 0;
-	if (str && *str)
-	{
-		if (*str == '-' || *str == '+')
-			str++;
-		while (ft_isdigit(*str))
-		{
-			if (res > MAX_UINT || (res == NEARLY_MAX_UINT &&
-					*str >= '5'))
-				return (0);
-			res = res * 10 + *str - 48;
-			i++;
-			str++;
-		}
-		if (str[i] == '\0' && 0 < i)
-			return (TRUE);
-		else
-			return (FALSE);
-	}
-	return (FALSE);
-}
-
-/*
 ** Если есть % и :, значит дальше будет метка,
 ** метка парсится отдельно.
 ** Дальше смотрим - если дальше идут до конца цифры, то парсим только цифры.

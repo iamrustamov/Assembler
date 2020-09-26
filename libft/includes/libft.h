@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# include "get_next_line.h"
 # include "bbtree_utils.h"
 
 int					ft_strcmp(const char *s1, const char *s2);

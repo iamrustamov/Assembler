@@ -41,12 +41,15 @@ void			get_exec_code_size(t_asm *bler)
 
 void			rec_init(t_asm *bler)
 {
-	bler->record.file_fd = open(
-		ft_strjoin(bler->files_name, ".cor"),
+	char *new_name;
+
+	new_name = ft_strjoin(bler->files_name, ".cor");
+	bler->record.file_fd = open(new_name,
 			O_WRONLY | O_TRUNC | O_CREAT, 0644);
 	bler->record.cur = 0;
 	bler->record.file_size =
 			PROG_NAME_LENGTH + COMMENT_LENGTH + (4 * 4) + bler->exec_code_size;
 	if ((bler->record.final_code = ft_strnew(bler->record.file_size)) == NULL)
 		error_printf(bler, ERROR_ALLOCATE, NULL);
+	free(new_name);
 }

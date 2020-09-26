@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "./libft.h"
 
 static int	rec_line(int fd, char **line, char **rem)
 {
@@ -24,7 +24,7 @@ static int	rec_line(int fd, char **line, char **rem)
 	{
 		*line = ft_strsub(rem[fd], 0, i);
 		t_ptr2 = ft_strdup(rem[fd] + i + 1);
-		ft_strdel(&rem[fd]);
+		free(rem[fd]);
 		rem[fd] = t_ptr2;
 		if (rem[fd][0] == '\0')
 			ft_strdel(&rem[fd]);
@@ -49,12 +49,12 @@ static int	give_line(int fd, char **line, char **rem, char *buff)
 		if (rem[fd] == NULL)
 			rem[fd] = ft_strnew(1);
 		t_ptr = ft_strjoin(rem[fd], buff);
-		ft_strdel(&rem[fd]);
+		free(rem[fd]);
 		rem[fd] = t_ptr;
 		if (ft_strchr(buff, '\n'))
 			break ;
 	}
-	buff ? ft_strdel(&buff) : 0;
+	free(buff);
 	if (rsr < 0)
 		return (-1);
 	if (rsr == 0 && (rem[fd] == NULL || rem[fd][0] == '\0'))
@@ -65,9 +65,9 @@ static int	give_line(int fd, char **line, char **rem, char *buff)
 int			get_next_line(int fd, char **line)
 {
 	char		*buff;
-	static char	*rem[FD_MAX];
+	static char	*rem[MAX_FD];
 
-	if (fd < 0 || !line || fd > FD_MAX || \
+	if (fd < 0 || !line || fd > MAX_FD || \
 								BUFF_SIZE <= 0)
 		return (-1);
 	if (!(buff = (char *)malloc(sizeof(char) * (BUFF_SIZE + 1))))

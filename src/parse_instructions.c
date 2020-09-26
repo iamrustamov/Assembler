@@ -94,6 +94,7 @@ void			parse_instructions(t_asm *bler)
 		pass_comments(bler->line);
 		parse_lbl_op(bler);
 		bler->sym = 0;
+		bler->line ? free(bler->line) : 0;
 	}
 	check_end_line(bler);
 }

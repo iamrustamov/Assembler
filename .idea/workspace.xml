@@ -1,15 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="1" targetName="1" />
+    </generated>
   </component>
   <component name="CMakeSettings">
-    <configurations />
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-Coverage" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_CXX_FLAGS=&quot;-fprofile-instr-generate -fcoverage-mapping&quot; -DCMAKE_C_FLAGS=&quot;-fprofile-instr-generate -fcoverage-mapping&quot;" />
+    </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a64beed-5141-488a-b867-48b0f5e2cb17" name="Default Changelist" comment="">
+    <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doge.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Assembler.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/barriere.cor" beforeDir="false" afterPath="$PROJECT_DIR$/barriere.cor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barriere.s" beforeDir="false" afterPath="$PROJECT_DIR$/barriere.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strjoin.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strjoin.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/get_next_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/includes/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/get_next_line.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/includes/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rock/libft/get_next_line.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilities.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asm.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/asm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/errors.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/errors.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parse_instructions.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_instructions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/set_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/set_args.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translator.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/translator.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translator_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/translator_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/comment_len_2049.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/direct_param_no_value.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/four_arg_malloc_free_pointer_error.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_double_comments.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_double_comments.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_double_names.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_double_names.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_max_comment.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_max_name.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_nl.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_nl_unclosed.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/header_null_name.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_contain_badchar.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_error_1.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_error_2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_error_3.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_invalidname.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_noending.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_space.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_space.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/label_without_double_dot_at_the_end.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/name_len_129.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/op_double_operation_on_single_line.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/op_extra.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/op_extreme.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/op_no_code.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_badtypes.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_commas.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_direct_no_sp.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_direct_no_value.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_double_commas.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_extra2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_mt_3.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_mt_r99.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_nonexistent_label.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_nonexistent_label.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_plus_minus.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/param_specialchars.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/zother_1.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/zother_2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/zother_3.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/error/zother_4.s" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,33 +107,49 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-Coverage" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1hsCytADsJbjuSCqCpJiaHkzJKf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1i3RyyCxZ1DQkIoU7AwXG3kK7zU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libft/includes" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libft/includes" />
+      <recent name="$PROJECT_DIR$/libft" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/libft" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="1" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="1" RUN_TARGET_NAME="1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
@@ -57,22 +161,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a64beed-5141-488a-b867-48b0f5e2cb17" name="Default Changelist" comment="" />
-      <created>1600790670546</created>
+      <changelist id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="" />
+      <created>1601134547051</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1600790670546</updated>
-      <workItem from="1600790671757" duration="19000" />
-      <workItem from="1600790691854" duration="17000" />
-      <workItem from="1600790709297" duration="109000" />
-      <workItem from="1600790854728" duration="65000" />
-      <workItem from="1600791122815" duration="41000" />
-      <workItem from="1600791164286" duration="343000" />
-      <workItem from="1601036943812" duration="46000" />
-      <workItem from="1601036991175" duration="41000" />
-      <workItem from="1601037033459" duration="9000" />
-      <workItem from="1601037065376" duration="630000" />
-      <workItem from="1601044725264" duration="1058000" />
+      <updated>1601134547051</updated>
+      <workItem from="1601134548322" duration="80000" />
+      <workItem from="1601134628945" duration="8661000" />
     </task>
     <servers />
   </component>
@@ -80,74 +175,97 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="804" y="393" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601047940631">
+    <state x="745" y="408" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601145564579">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="804" y="393" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1601047940631" />
-    <state x="904" y="443" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2880.1517@0.23.2880.1517" timestamp="1600791142545" />
-    <state x="1178" y="535" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600791174610">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state x="1178" y="535" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2880.1517@0.23.2880.1517" timestamp="1600791174610" />
-    <state width="2838" height="744" key="GridCell.Tab.0.bottom" timestamp="1600790546091">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state width="2838" height="744" key="GridCell.Tab.0.bottom/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546091" />
-    <state width="2838" height="744" key="GridCell.Tab.0.center" timestamp="1600790546091">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state width="2838" height="744" key="GridCell.Tab.0.center/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546091" />
-    <state width="2838" height="744" key="GridCell.Tab.0.left" timestamp="1600790546091">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state width="2838" height="744" key="GridCell.Tab.0.left/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546091" />
-    <state width="2838" height="744" key="GridCell.Tab.0.right" timestamp="1600790546091">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state width="2838" height="744" key="GridCell.Tab.0.right/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546091" />
-    <state width="2838" height="449" key="GridCell.Tab.1.bottom" timestamp="1600790546088">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state width="2838" height="449" key="GridCell.Tab.1.bottom/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546088" />
-    <state width="2838" height="449" key="GridCell.Tab.1.center" timestamp="1600790546088">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state width="2838" height="449" key="GridCell.Tab.1.center/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546088" />
-    <state width="2838" height="449" key="GridCell.Tab.1.left" timestamp="1600790546088">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state width="2838" height="449" key="GridCell.Tab.1.left/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546088" />
-    <state width="2838" height="449" key="GridCell.Tab.1.right" timestamp="1600790546088">
-      <screen x="0" y="23" width="2880" height="1517" />
-    </state>
-    <state width="2838" height="449" key="GridCell.Tab.1.right/0.23.2880.1517@0.23.2880.1517" timestamp="1600790546088" />
-    <state width="640" height="205" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1601047973566">
+    <state x="745" y="408" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1601145564579" />
+    <state x="1018" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601144026212">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="640" height="205" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1601047973566" />
-    <state width="720" height="232" key="ImportCMakeProjectWizard.bottomPanel/0.23.2880.1517@0.23.2880.1517" timestamp="1600791160903" />
-    <state width="640" height="479" key="ImportCMakeProjectWizard.topPanel" timestamp="1601047973565">
+    <state x="1018" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1601144026212" />
+    <state x="1019" y="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601134592325">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="640" height="479" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1601047973565" />
-    <state width="720" height="543" key="ImportCMakeProjectWizard.topPanel/0.23.2880.1517@0.23.2880.1517" timestamp="1600791160902" />
-    <state x="949" y="420" key="SettingsEditor" timestamp="1600790743989">
-      <screen x="0" y="23" width="2880" height="1517" />
+    <state x="1019" y="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1601134592325" />
+    <state width="2518" height="382" key="GridCell.Tab.0.bottom" timestamp="1601147559008">
+      <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="949" y="420" key="SettingsEditor/0.23.2880.1517@0.23.2880.1517" timestamp="1600790743989" />
+    <state width="2518" height="382" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601147559008" />
+    <state width="2518" height="382" key="GridCell.Tab.0.center" timestamp="1601147559008">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601147559008" />
+    <state width="2518" height="382" key="GridCell.Tab.0.left" timestamp="1601147559007">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601147559007" />
+    <state width="2518" height="382" key="GridCell.Tab.0.right" timestamp="1601147559008">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601147559008" />
+    <state width="2518" height="382" key="GridCell.Tab.1.bottom" timestamp="1601147534536">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534536" />
+    <state width="2518" height="382" key="GridCell.Tab.1.center" timestamp="1601147534535">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534535" />
+    <state width="2518" height="382" key="GridCell.Tab.1.left" timestamp="1601147534535">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534535" />
+    <state width="2518" height="382" key="GridCell.Tab.1.right" timestamp="1601147534536">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534536" />
+    <state x="789" y="330" key="SettingsEditor" timestamp="1601138700161">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601138700161" />
+    <state x="981" y="446" width="598" height="490" key="find.popup" timestamp="1601143812711">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="981" y="446" width="598" height="490" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601143812711" />
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1601143933174">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601143933174" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/barriere.s</url>
-          <line>16</line>
+          <url>file://$PROJECT_DIR$/src/asm.c</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libft/includes/libft.h</url>
+          <line>15</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/translator.c</url>
+          <line>108</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="../../../../Desktop/1/cmake-build-debug-coverage" NAME="1 Coverage Results" MODIFIED="1601147149631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

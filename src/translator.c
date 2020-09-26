@@ -155,5 +155,7 @@ void			recorder(t_asm *bler)
 		ft_strlen(bler->data->comment));
 	rec->cur += COMMENT_LENGTH + 4;
 	opcode_to_bytecode(bler);
-	write(bler->record.file_fd, rec->final_code, rec->file_size);
+	if (write(bler->record.file_fd, rec->final_code, rec->file_size) < 0)
+		error_printf(bler, "ERROR: WRITE TO FILE.", NULL);
+	ft_printf("Writing output program to %s.cor\n", bler->files_name);
 }

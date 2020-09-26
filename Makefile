@@ -15,7 +15,7 @@ SRC = ./src/asm.c\
         ./src/set_args.c\
         ./src/translator.c\
         ./src/translator_utils.c\
-        ./src/Utilities.c
+        ./src/utilities.c
 
 HEADERS = includes/asm.h includes/op.h
 OBJ=$(SRC:.c=.o)
