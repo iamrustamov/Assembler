@@ -6,7 +6,7 @@
 #    By: dpenney <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/27 20:30:17 by dpenney           #+#    #+#              #
-#    Updated: 2020/09/27 20:30:27 by dpenney          ###   ########.fr        #
+#    Updated: 2020/09/27 20:39:26 by dpenney          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,10 +29,10 @@ SRC = ./src/asm.c\
         ./src/utilities.c
 
 HEADERS = includes/asm.h includes/op.h
-OBJ=$(SRC:.c=.o)
-LIBFT_HEADER=./libft/includes/libft.h ./libft/ft_printf/printf.h ./libft/ft_printf/apply_spec.h ./libft/ft_printf/fp_type.h ./libft/ft_printf/read_spec.h
-LIBFT=./libft/libftprintf.a
-INCLUDES=./includes
+OBJ = $(SRC:.c=.o)
+LIBFT_HEADER = ./libft/includes/libft.h ./libft/ft_printf/printf.h ./libft/ft_printf/apply_spec.h ./libft/ft_printf/fp_type.h ./libft/ft_printf/read_spec.h
+LIBFT = ./libft/libftprintf.a
+INCLUDES = ./includes
 
 all: $(NAME)
 
@@ -55,4 +55,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re

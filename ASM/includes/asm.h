@@ -211,18 +211,13 @@ void                check_arg_count_type(t_asm *bler, t_operation *oper);
  * Functions of translator
  */
 
-void		recorder(t_asm *bler);
-void		get_exec_code_size(t_asm *bler);
-void 		rec_init(t_asm *bler);
-void 		opcode_to_bytecode(t_asm *bler);
-int			lbl_adr(t_argument *arg, t_asm *bler, t_operation *oper);
-char		code_type_arg(t_operation *oper);
-void		bc_conver(t_rec *rec,int data ,int size);
-
-/*
- * Утилиты
- */
-void                print_operation(t_asm *bler, t_operation *opera);
-void                clear_bler(t_asm *bler);
-void 				check_end_line(t_asm *bler);
+void				recorder(t_asm *bler);
+void				get_exec_code_size(t_asm *bler);
+void 				rec_init(t_asm *bler);
+void				opcode_to_bytecode(t_asm *bler);
+int					lbl_adr(t_argument *arg, t_asm *bler, t_operation *oper);
+char				code_type_arg(t_operation *oper);
+void				bc_conver(t_rec *rec, int data, int size);
+void				clear_bler(t_asm *bler);
+void				check_end_line(t_asm *bler);
 #endif

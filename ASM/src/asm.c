@@ -36,6 +36,9 @@ void		check_extension(const char *str)
 ** TODO нормировать headers
 ** TODO сделать общий мейкфайл
 ** TODO проверить по чекерам
+** TODO проверить на правильную компиляцию.
+ * FIXME не удаляется объек-файл parse_instruments.
+ * FIXME Нужно чтоб готовую программу вывес на главную директорию, а не оставлял в папке ASM
 */
 
 int			main(int argc, char **argv)
