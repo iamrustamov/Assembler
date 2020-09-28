@@ -1,14 +1,16 @@
 #ifndef ASSEMBLER_ASM_H
-#define ASSEMBLER_ASM_H
 
-#include <op.h>
-#include "stdio.h" // remove it
-#include "../libft/includes/libft.h"
-#include "../libft/includes/get_next_line.h"
-#include "../libft/ft_printf/printf.h"
+# define ASSEMBLER_ASM_H
+
+# include <op.h>
+# include "../libft/includes/libft.h"
+# include "../libft/includes/get_next_line.h"
+# include "../libft/ft_printf/printf.h"
 
 # define TRUE 1
 # define FALSE 0
+# define T 1
+# define F 0
 
 # define GNLINE bler->line[bler->sym]
 
@@ -39,65 +41,55 @@
 # define ERROR_USAGE "Usage: ./asm [-a] <sourcefile.s>\n      Instead of creating a .cor file, outputs a stripped and annotated version of the code to the standard output"
 # define ERROR_NM_CMN_N_EXIST "ERROR: Name or comment not exist\n"
 # define ERROR_DOUBLE_NM_CMN "ERROR: Double name or comment\n"
+
 /*
- * op_code - 1 because g_op_tab starting with 0.
- */
+** op_code - 1 because g_op_tab starting with 0.
+*/
 
 # define CHECK_TYPE(op_code, num, type) g_op_tab[op_code - 1].args[num].arg[(int)type]
 # define CHECK_ARGS_COUNT(op_code) g_op_tab[op_code - 1].args_num
 
-typedef struct      s_array
+typedef struct		s_array
 {
-	char            arg[3];
-}                   t_array;
+	char			arg[3];
+}					t_array;
 
 /*
- * Recording name of operation;
- * Recording count of agruments;
- * args keeping - keeping arguments which indicate to type of argmunet.
- * cod_t_args -
- * lbl_size keeping size for translation to byte-code.
- */
+** Name of operation;
+** Operation code;
+** Size of label - fir translation to byte-code
+** Number of arguments which should be
+** Array t_array keeping types of arguments which should have operation.
+** cod_t_args - Code of type of argument
+*/
 
-typedef struct      s_op_list
+typedef struct		s_op_list
 {
-	char            *name;
-	char            op_code;
-	char            lbl_size;
-	int             args_num;
-	t_array         args[3];
-	int        	    cod_t_args; //что это? это <<Код типов аргументов>>
-}                   t_op_list;
+	char			*name;
+	char			op_code;
+	char			lbl_size;
+	int				args_num;
+	t_array			args[3];
+	int				cod_t_args;
+}					t_op_list;
 
-/*
- * In args - all arguments.
- * In arg - is code of types of arguments.
- * In args c
- */
-//# define CHECK_TYPE(op_code, num, type) g_op_tab[op_code].args[num].arg[(int)type]
-/*
- * Как происходит поиск через константную переменную?
- * Идёт обращение к коду операции - далее какой по счету этот аргумент? Обращается к номеру аргумента - если там 1, то отлично.
- * Т.е. все нули это отсуствие аргументов, а все единицы возвращают TRUE, что значит - аргумент действительно должен быть.
- */
-
-static t_op_list  g_op_tab[16] = {
-		{"live", 1, 4, 1, {{{FALSE, TRUE, FALSE}}, {{FALSE, FALSE, FALSE}}, {{FALSE, FALSE, FALSE}}}, 0},
-		{"ld", 2, 4,  2, {{{FALSE, TRUE, TRUE}}, {{TRUE, FALSE, FALSE}}, {{FALSE, FALSE, FALSE}}}, 1},
-		{"st", 3, 4, 2, {{{TRUE, FALSE, FALSE}}, {{TRUE, FALSE, TRUE}}, {{FALSE, FALSE, FALSE}}}, 1},
-		{"add", 4, 4, 3, {{{TRUE, FALSE, FALSE}}, {{TRUE, FALSE, FALSE}}, {{TRUE, FALSE, FALSE}}}, 1},
-		{"sub", 5, 4, 3, {{{TRUE, FALSE, FALSE}}, {{TRUE, FALSE, FALSE}}, {{TRUE, FALSE, FALSE}}}, 1},
-		{"and", 6, 4, 3, {{{TRUE, TRUE, TRUE}}, {{TRUE, TRUE, TRUE}}, {{TRUE, FALSE, FALSE}}}, 1},
-		{"or", 7, 4,3, {{{TRUE, TRUE, TRUE}}, {{TRUE, TRUE, TRUE}}, {{TRUE, FALSE, FALSE}}}, 1},
-		{"xor", 8, 4, 3, {{{TRUE, TRUE, TRUE}}, {{TRUE, TRUE, TRUE}}, {{TRUE, FALSE, FALSE}}}, 1},
-		{"zjmp", 9, 2, 1, {{{FALSE, TRUE, FALSE}}, {{FALSE, FALSE, FALSE}}, {{FALSE, FALSE, FALSE}}}, 0},
-		{"ldi", 10, 2, 3, {{{TRUE, TRUE, TRUE}}, {{TRUE, TRUE, FALSE}}, {{TRUE, FALSE, FALSE}}}, 1},
-		{"sti", 11, 2, 3, {{{TRUE, FALSE, FALSE}}, {{TRUE, TRUE, TRUE}}, {{TRUE, TRUE, FALSE}}}, 1},
-		{"fork", 12, 2, 1, {{{FALSE, TRUE, FALSE}}, {{FALSE, FALSE, FALSE}}, {{FALSE, FALSE, FALSE}}}, 0},
-		{"lld", 13, 4, 2, {{{FALSE, TRUE, TRUE}}, {{TRUE, FALSE, FALSE}}, {{FALSE, FALSE, FALSE}}}, 1},
-		{"lldi", 14, 2, 3, {{{TRUE, TRUE, TRUE}}, {{TRUE, TRUE, FALSE}}, {{TRUE, FALSE, FALSE}}}, 1},
-		{"lfork", 15, 2, 1, {{{FALSE, TRUE, FALSE}}, {{FALSE, FALSE, FALSE}}, {{FALSE, FALSE, FALSE}}}, 0},
-		{"aff", 16, 4, 1, {{{TRUE, FALSE, FALSE}}, {{FALSE, FALSE, FALSE}}, {{FALSE, FALSE, FALSE}}}, 1}
+static t_op_list	g_op_tab[16] = {
+					{"live", 1, 4, 1, {{{F, T, F}}, {{F, F, F}}, {{F, F, F}}}, 0},
+					{"ld", 2, 4,  2, {{{F, T, T}}, {{T, F, F}}, {{F, F, F}}}, 1},
+					{"st", 3, 4, 2, {{{T, F, F}}, {{T, F, T}}, {{F, F, F}}}, 1},
+					{"add", 4, 4, 3, {{{T, F, F}}, {{T, F, F}}, {{T, F, F}}}, 1},
+					{"sub", 5, 4, 3, {{{T, F, F}}, {{T, F, F}}, {{T, F, F}}}, 1},
+					{"and", 6, 4, 3, {{{T, T, T}}, {{T, T, T}}, {{T, F, F}}}, 1},
+					{"or", 7, 4,3, {{{T, T, T}}, {{T, T, T}}, {{T, F, F}}}, 1},
+					{"xor", 8, 4, 3, {{{T, T, T}}, {{T, T, T}}, {{T, F, F}}}, 1},
+					{"zjmp", 9, 2, 1, {{{F, T, F}}, {{F, F, F}}, {{F, F, F}}}, 0},
+					{"ldi", 10, 2, 3, {{{T, T, T}}, {{T, T, F}}, {{T, F, F}}}, 1},
+					{"sti", 11, 2, 3, {{{T, F, F}}, {{T, T, T}}, {{T, T, F}}}, 1},
+					{"fork", 12, 2, 1, {{{F, T, F}}, {{F, F, F}}, {{F, F, F}}}, 0},
+					{"lld", 13, 4, 2, {{{F, T, T}}, {{T, F, F}}, {{F, F, F}}}, 1},
+					{"lldi", 14, 2, 3, {{{T, T, T}}, {{T, T, F}}, {{T, F, F}}}, 1},
+					{"lfork", 15, 2, 1, {{{F, T, F}}, {{F, F, F}}, {{F, F, F}}}, 0},
+					{"aff", 16, 4, 1, {{{T, F, F}}, {{F, F, F}}, {{F, F, F}}}, 1}
 };
 
 enum {
@@ -106,118 +98,114 @@ enum {
 };
 
 /*
- * str_val и num_val запоминают сами значения исходя из типа.
- * Детектор указывает - это строка или цифра (STRING_VAL или NUM_VAL);
- * args_size размер аргумента;
- * type - сохраняет в виде цифр тип аргумент - T_REG, T_DIR, T_IND;
- */
+** str_val and num_val keeping value of argument.
+** detector - helping to recognize (STRING_VAL or NUM_VAL);
+** args_size size of arguments;
+** type - keeping types in digits - T_REG, T_DIR, T_IND;
+*/
 
-typedef  struct     s_arg
+typedef struct			s_arg
 {
-	int             detector;
-	char            *str_val;
-    long long       num_val;
-    int             args_size;
-    int             type;
-    struct s_arg    *next;
-}                   t_argument;
+	int					detector;
+	char				*str_val;
+	long long			num_val;
+	int					args_size;
+	int					type;
+	struct s_arg		*next;
+}						t_argument;
 
-typedef struct          s_lbls
+typedef struct			s_lbls
 {
-    char                *str;
-    int                 strlen;
-}                       t_lbls;
+	char				*str;
+	int					strlen;
+}						t_lbls;
 
-typedef  struct         s_operation
+typedef struct			s_operation
 {
-    char                *name;
-    int 				addr;
-    int 				code_type_arg; // FIXME DALER
-    int                 op_code; // у него установлено char.
-    int                 op_size; // FIXME DALER здесь храним размер операции
-    t_lbls              *lbl;
-    t_argument          *args;
-    struct s_operation  *next;
-}                       t_operation;
+	char				*name;
+	int					addr;
+	int					code_type_arg;
+	int					op_code;
+	int					op_size;
+	t_lbls				*lbl;
+	t_argument			*args;
+	struct s_operation	*next;
+}						t_operation;
 
-/*
- *
- */
-
-typedef struct          s_rec
+typedef struct			s_rec
 {
-	char                *final_code;
-	int 				cur;
+	char				*final_code;
+	int					cur;
 	int					file_size;
-	int 				file_fd;
-}                       t_rec;
+	int					file_fd;
+}						t_rec;
 
-typedef struct          s_data
+typedef struct			s_data
 {
-	char            	*name;
-	char            	*comment;
+	char				*name;
+	char				*comment;
 	int					pos;
 	int					item;
 	char				from;
 	char				*buff;
-	int 				write;
-}                       t_data;
+	int					write;
+}						t_data;
 
-typedef  struct     s_asm
+typedef struct			s_asm
 {
-    int             fd;
-    char            *files_name;
-    char            *line;
-	t_operation     *oper;
-	t_data 			*data;
-    int             sym;
-    int 			exec_code_size; // TODO DALER ОБЩИЙ РАЗМЕР КОДА
-    int             line_len;
-	t_rec			record;
-}                   t_asm;
+	int					fd;
+	char				*files_name;
+	char				*line;
+	t_operation			*oper;
+	t_data				*data;
+	int					sym;
+	int					exec_code_size;
+	int					line_len;
+	t_rec				record;
+}						t_asm;
 
 /*
- * Functions
- */
-void                parser(t_asm *bler);
-void                parse_name_comm(t_asm *bler);\
-void                parse_instructions(t_asm *bler);
-t_operation         *init_op_list(t_asm *bler);
-void                parse_args(t_asm *bler, t_operation *oper);
-
-int                 check_label(t_asm *bler);
-void                add_lbls(t_asm *bler, t_operation *oper);
-
-int                 check_op(t_asm *bler);
-void                add_op(t_asm *bler, t_operation *oper);
+** Functions
+*/
+void					parser(t_asm *bler);
+void					parse_name_comm(t_asm *bler);\
+void					parse_instructions(t_asm *bler);
+t_operation				*init_op_list(t_asm *bler);
+void					parse_args(t_asm *bler, t_operation *oper);
+int						check_label(t_asm *bler);
+void					add_lbls(t_asm *bler, t_operation *oper);
+int						check_op(t_asm *bler);
+void					add_op(t_asm *bler, t_operation *oper);
 /*
- * Instruments
- */
-void                pass_comments(char *str);
-void                pass_voids(t_asm *bler);
-void                error_printf(t_asm *bler, char *text, char *line);
-void 				pass_delimetr(t_data *data);
-/*
- * Function of parsing arguments;
- */
-
-void                set_args(t_asm *bler, t_operation *oper, char **args);
-void                *parse_data(char *arg, int arg_type, int *detector);
-void                join_argument(t_operation *oper, void *arg, int type, int detector);
-void                check_commas(t_asm *bler, char **args);
-void                check_arg_count_type(t_asm *bler, t_operation *oper);
+** Instruments
+*/
+void					pass_comments(char *str);
+void					pass_voids(t_asm *bler);
+void					error_printf(t_asm *bler, char *text, char *line);
+void					pass_delimetr(t_data *data);
 
 /*
- * Functions of translator
- */
+** Function of parsing arguments;
+*/
 
-void				recorder(t_asm *bler);
-void				get_exec_code_size(t_asm *bler);
-void 				rec_init(t_asm *bler);
-void				opcode_to_bytecode(t_asm *bler);
-int					lbl_adr(t_argument *arg, t_asm *bler, t_operation *oper);
-char				code_type_arg(t_operation *oper);
-void				bc_conver(t_rec *rec, int data, int size);
-void				clear_bler(t_asm *bler);
-void				check_end_line(t_asm *bler);
+void					set_args(t_asm *bler, t_operation *oper, char **args);
+void					*parse_data(char *arg, int arg_type, int *detector);
+void					join_argument(t_operation *oper, void *arg, int type,\
+						int detector);
+void					check_commas(t_asm *bler, char **args);
+void					check_arg_count_type(t_asm *bler, t_operation *oper);
+
+/*
+** Functions of translator
+*/
+
+void					recorder(t_asm *bler);
+void					get_exec_code_size(t_asm *bler);
+void					rec_init(t_asm *bler);
+void					opcode_to_bytecode(t_asm *bler);
+int						lbl_adr(t_argument *arg, t_asm *bler, t_operation *oper);
+char					code_type_arg(t_operation *oper);
+void					bc_conver(t_rec *rec, int data, int size);
+void					clear_bler(t_asm *bler);
+void					check_end_line(t_asm *bler);
 #endif
