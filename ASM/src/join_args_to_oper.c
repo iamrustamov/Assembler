@@ -44,8 +44,8 @@ int					set_args_size(t_operation *oper, int type)
 	{
 		while (i <= 16)
 		{
-			if (ft_strcmp(g_op_tab[i].name, oper->name) == 0)
-				return (g_op_tab[i].lbl_size);
+			if (ft_strcmp(g_op[i].name, oper->name) == 0)
+				return (g_op[i].lbl_size);
 			i++;
 		}
 	}

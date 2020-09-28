@@ -164,7 +164,7 @@ void					op_lldi(t_vm *vm, t_carriage *cursor);
 void					op_lfork(t_vm *vm, t_carriage *cursor);
 void					op_ff(t_vm *vm, t_carriage *cursor);
 
-t_op g_op_tab[16] =
+t_op g_op[16] =
 {
 	{1, {{DIR, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 10, 0, 4, &op_live},
 	{2, {{DIR, IND, 0}, {REG, 0, 0}, {0, 0, 0}}, 5, 1, 4, &op_ld},

@@ -29,19 +29,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/asm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ASM/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/includes/op.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/includes/op.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASM/src/asm.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/asm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/src/join_args_to_oper.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/join_args_to_oper.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/src/parse_op.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/parse_op.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/src/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/parser.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/determine_value.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/determine_value.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/run_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/run_vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +61,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.advertisement.text.overridden" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -64,7 +72,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -77,12 +85,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -103,7 +111,10 @@
       <updated>1601134547051</updated>
       <workItem from="1601134548322" duration="80000" />
       <workItem from="1601134628945" duration="8661000" />
-      <workItem from="1601227179419" duration="1355000" />
+      <workItem from="1601227179419" duration="1485000" />
+      <workItem from="1601321234565" duration="232000" />
+      <workItem from="1601321486110" duration="702000" />
+      <workItem from="1601322611645" duration="1311000" />
     </task>
     <servers />
   </component>
@@ -123,6 +134,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="803" y="366" key="#C/C++" timestamp="1601321625147">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="803" y="366" key="#C/C++/0.23.2560.1337@0.23.2560.1337" timestamp="1601321625147" />
     <state x="745" y="408" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601145564579">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -167,14 +182,14 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="382" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534536" />
-    <state x="789" y="330" key="SettingsEditor" timestamp="1601138700161">
+    <state x="789" y="330" key="SettingsEditor" timestamp="1601322574101">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601138700161" />
-    <state x="981" y="446" width="598" height="490" key="find.popup" timestamp="1601143812711">
+    <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601322574101" />
+    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601324909941">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="981" y="446" width="598" height="490" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601143812711" />
+    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601324909941" />
     <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1601143933174">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

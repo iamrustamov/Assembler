@@ -29,7 +29,7 @@ void		check_extension(const char *str)
 {
 	if (ft_strcmp(&str[ft_strlen(str) - 2], ".s") == 0)
 		return ;
-	error_printf(NULL, ERROR_FILE_EXTENSION, NULL);
+	error_printf(NULL, ERROR_FILE_EXT, NULL);
 }
 
 /*
@@ -48,7 +48,10 @@ int			main(int argc, char **argv)
 
 	ft_bzero(&bler, sizeof(bler));
 	if (argc == 1 || argc > 2)
-		error_printf(&bler, ERROR_USAGE, NULL);
+		error_printf(&bler,"Usage: ./asm [-a] <sourcefile.s>\n      "
+		                    "Instead of creating a .cor file, "
+		                    "outputs a stripped and annotated version of the code to the standard output"
+		             , NULL);
 	check_extension(argv[1]);
 	check_file(&bler, argv[1]);
 	parser(&bler);

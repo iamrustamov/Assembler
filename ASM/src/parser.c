@@ -32,7 +32,7 @@ int				check_lbl_dupl(t_asm *bler)
 		{
 			if (tmp2_oper->lbl && tmp_oper->lbl)
 				if (!ft_strcmp(tmp_oper->lbl->str, tmp2_oper->lbl->str))
-					error_printf(bler, ERROR_DOUBLE_LBL, tmp2_oper->lbl->str);
+					error_printf(bler, ERR_2LBL, tmp2_oper->lbl->str);
 			tmp2_oper = tmp2_oper->next;
 		}
 		tmp_oper = tmp_oper->next;

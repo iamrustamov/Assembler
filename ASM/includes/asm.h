@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   asm.h                                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/28 22:42:47 by dpenney           #+#    #+#             */
+/*   Updated: 2020/09/28 23:28:22 by dpenney          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef ASSEMBLER_ASM_H
 
 # define ASSEMBLER_ASM_H
 
-# include <op.h>
+# include "op.h"
 # include "../libft/includes/libft.h"
 # include "../libft/includes/get_next_line.h"
 # include "../libft/ft_printf/printf.h"
@@ -10,7 +22,7 @@
 # define TRUE 1
 # define FALSE 0
 # define T 1
-# define F 0
+# define FA 0
 
 # define GNLINE bler->line[bler->sym]
 
@@ -23,7 +35,7 @@
 # define ERROR_WRONG_COUNT_ARGS "ERROR: Operation have wrong count of arguments.\n"
 # define ERROR_TYPE_OF_OPER "ERROR: Operation have wrong type in arguments.\n"
 # define ERROR_LBL_NAME "ERROR: This string have wrong label name:\n"
-# define ERROR_FILE_EXTENSION "ERROR: File have not valid extension or this file not exist.\nPlease, check it.\n"
+# define ERROR_FILE_EXT "ERROR: File have not valid extension or this file not exist.\nPlease, check it.\n"
 # define ERROR_CONTANT "ERROR: File have not valid data.\nPlease check it.\n"
 # define ERROR_GARBAGE "ERROR: String have wrong content or mistake with quotes.\n"
 # define ERROR_NAME_LEN "ERROR: Name's length is long.\n"
@@ -38,7 +50,6 @@
 # define NEARLY_MAX_UINT 429496729
 # define SIZE_T_IND 2
 # define SIZE_T_REG 1
-# define ERROR_USAGE "Usage: ./asm [-a] <sourcefile.s>\n      Instead of creating a .cor file, outputs a stripped and annotated version of the code to the standard output"
 # define ERROR_NM_CMN_N_EXIST "ERROR: Name or comment not exist\n"
 # define ERROR_DOUBLE_NM_CMN "ERROR: Double name or comment\n"
 
@@ -46,8 +57,8 @@
 ** op_code - 1 because g_op_tab starting with 0.
 */
 
-# define CHECK_TYPE(op_code, num, type) g_op_tab[op_code - 1].args[num].arg[(int)type]
-# define CHECK_ARGS_COUNT(op_code) g_op_tab[op_code - 1].args_num
+# define CHECK_TYPE(op_code, num, type) g_op[op_code - 1].args[num].arg[(int)type]
+# define CHECK_ARGS_COUNT(op_code) g_op[op_code - 1].args_num
 
 typedef struct		s_array
 {
@@ -73,23 +84,23 @@ typedef struct		s_op_list
 	int				cod_t_args;
 }					t_op_list;
 
-static t_op_list	g_op_tab[16] = {
-					{"live", 1, 4, 1, {{{F, T, F}}, {{F, F, F}}, {{F, F, F}}}, 0},
-					{"ld", 2, 4,  2, {{{F, T, T}}, {{T, F, F}}, {{F, F, F}}}, 1},
-					{"st", 3, 4, 2, {{{T, F, F}}, {{T, F, T}}, {{F, F, F}}}, 1},
-					{"add", 4, 4, 3, {{{T, F, F}}, {{T, F, F}}, {{T, F, F}}}, 1},
-					{"sub", 5, 4, 3, {{{T, F, F}}, {{T, F, F}}, {{T, F, F}}}, 1},
-					{"and", 6, 4, 3, {{{T, T, T}}, {{T, T, T}}, {{T, F, F}}}, 1},
-					{"or", 7, 4,3, {{{T, T, T}}, {{T, T, T}}, {{T, F, F}}}, 1},
-					{"xor", 8, 4, 3, {{{T, T, T}}, {{T, T, T}}, {{T, F, F}}}, 1},
-					{"zjmp", 9, 2, 1, {{{F, T, F}}, {{F, F, F}}, {{F, F, F}}}, 0},
-					{"ldi", 10, 2, 3, {{{T, T, T}}, {{T, T, F}}, {{T, F, F}}}, 1},
-					{"sti", 11, 2, 3, {{{T, F, F}}, {{T, T, T}}, {{T, T, F}}}, 1},
-					{"fork", 12, 2, 1, {{{F, T, F}}, {{F, F, F}}, {{F, F, F}}}, 0},
-					{"lld", 13, 4, 2, {{{F, T, T}}, {{T, F, F}}, {{F, F, F}}}, 1},
-					{"lldi", 14, 2, 3, {{{T, T, T}}, {{T, T, F}}, {{T, F, F}}}, 1},
-					{"lfork", 15, 2, 1, {{{F, T, F}}, {{F, F, F}}, {{F, F, F}}}, 0},
-					{"aff", 16, 4, 1, {{{T, F, F}}, {{F, F, F}}, {{F, F, F}}}, 1}
+static t_op_list	g_op[16] = {
+	{"live", 1, 4, 1, {{{FA, T, FA}}, {{FA, FA, FA}}, {{FA, FA, FA}}}, 0},
+	{"ld", 2, 4, 2, {{{FA, T, T}}, {{T, FA, FA}}, {{FA, FA, FA}}}, 1},
+	{"st", 3, 4, 2, {{{T, FA, FA}}, {{T, FA, T}}, {{FA, FA, FA}}}, 1},
+	{"add", 4, 4, 3, {{{T, FA, FA}}, {{T, FA, FA}}, {{T, FA, FA}}}, 1},
+	{"sub", 5, 4, 3, {{{T, FA, FA}}, {{T, FA, FA}}, {{T, FA, FA}}}, 1},
+	{"and", 6, 4, 3, {{{T, T, T}}, {{T, T, T}}, {{T, FA, FA}}}, 1},
+	{"or", 7, 4, 3, {{{T, T, T}}, {{T, T, T}}, {{T, FA, FA}}}, 1},
+	{"xor", 8, 4, 3, {{{T, T, T}}, {{T, T, T}}, {{T, FA, FA}}}, 1},
+	{"zjmp", 9, 2, 1, {{{FA, T, FA}}, {{FA, FA, FA}}, {{FA, FA, FA}}}, 0},
+	{"ldi", 10, 2, 3, {{{T, T, T}}, {{T, T, FA}}, {{T, FA, FA}}}, 1},
+	{"sti", 11, 2, 3, {{{T, FA, FA}}, {{T, T, T}}, {{T, T, FA}}}, 1},
+	{"fork", 12, 2, 1, {{{FA, T, FA}}, {{FA, FA, FA}}, {{FA, FA, FA}}}, 0},
+	{"lld", 13, 4, 2, {{{FA, T, T}}, {{T, FA, FA}}, {{FA, FA, FA}}}, 1},
+	{"lldi", 14, 2, 3, {{{T, T, T}}, {{T, T, FA}}, {{T, FA, FA}}}, 1},
+	{"lfork", 15, 2, 1, {{{FA, T, FA}}, {{FA, FA, FA}}, {{FA, FA, FA}}}, 0},
+	{"aff", 16, 4, 1, {{{T, FA, FA}}, {{FA, FA, FA}}, {{FA, FA, FA}}}, 1}
 };
 
 enum {
@@ -203,7 +214,8 @@ void					recorder(t_asm *bler);
 void					get_exec_code_size(t_asm *bler);
 void					rec_init(t_asm *bler);
 void					opcode_to_bytecode(t_asm *bler);
-int						lbl_adr(t_argument *arg, t_asm *bler, t_operation *oper);
+int						lbl_adr(t_argument *arg, t_asm *bler,\
+		t_operation *oper);
 char					code_type_arg(t_operation *oper);
 void					bc_conver(t_rec *rec, int data, int size);
 void					clear_bler(t_asm *bler);

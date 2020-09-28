@@ -35,8 +35,8 @@ int		determine_value(unsigned char arg, t_vm *vm, t_carriage *cursor)
 	else if (arg == DIR_CODE)
 	{
 		value = bit_args(vm, address(cursor),
-			g_op_tab[cursor->op_cod - 1].dir_size);
-		cursor->steps_next_oper += g_op_tab[cursor->op_cod - 1].dir_size;
+			g_op[cursor->op_cod - 1].dir_size);
+		cursor->steps_next_oper += g_op[cursor->op_cod - 1].dir_size;
 	}
 	else if (arg == IND_CODE)
 	{
@@ -58,7 +58,7 @@ int		determine_value_lld(unsigned char arg, t_vm *vm, t_carriage *cursor)
 	if (arg == DIR_CODE)
 	{
 		value = bit_args(vm, address(cursor), 4);
-		cursor->steps_next_oper += g_op_tab[cursor->op_cod - 1].dir_size;
+		cursor->steps_next_oper += g_op[cursor->op_cod - 1].dir_size;
 	}
 	else if (arg == IND_CODE)
 	{

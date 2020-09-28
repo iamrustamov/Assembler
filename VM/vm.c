@@ -18,7 +18,7 @@ void	cod_oper(t_vm *vm, t_carriage *cursor)
 	{
 		cursor->op_cod = vm->arena[cursor->pos];
 		if (vm->arena[cursor->pos] >= 0x01 && vm->arena[cursor->pos] <= 0x10)
-			cursor->cycles_to_cod = g_op_tab[cursor->op_cod - 1].cycles_exec;
+			cursor->cycles_to_cod = g_op[cursor->op_cod - 1].cycles_exec;
 	}
 	if (cursor->cycles_to_cod > 0)
 		cursor->cycles_to_cod--;
@@ -32,7 +32,7 @@ void	start_oper(t_vm *vm, t_carriage *cursor)
 	{
 		args_typ(vm, cursor);
 		if (valid_args(vm, cursor))
-			g_op_tab[cursor->op_cod - 1].func(vm, cursor);
+			g_op[cursor->op_cod - 1].func(vm, cursor);
 		else
 			cursor->steps_next_oper += step_by_step(cursor);
 		if (cursor->steps_next_oper && vm->logs)

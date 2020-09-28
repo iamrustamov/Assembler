@@ -16,7 +16,7 @@ void			args_typ(t_vm *vm, t_carriage *cursor)
 {
 	unsigned char kod_arg;
 
-	if (g_op_tab[cursor->op_cod - 1].cod_typ_args)
+	if (g_op[cursor->op_cod - 1].cod_typ_args)
 	{
 		kod_arg = vm->arena[(cursor->pos + 1) % MEM_SIZE];
 		cursor->op_args[0] = kod_args(kod_arg, 0);
@@ -30,7 +30,7 @@ void			args_typ(t_vm *vm, t_carriage *cursor)
 unsigned int	arg_size(unsigned char arg, t_carriage *cursor)
 {
 	if (arg == DIR_CODE)
-		return (g_op_tab[cursor->op_cod - 1].dir_size);
+		return (g_op[cursor->op_cod - 1].dir_size);
 	else if (arg == REG_CODE)
 		return (REG_S);
 	else if (arg == IND_CODE)
@@ -45,8 +45,8 @@ unsigned int	step_by_step(t_carriage *cursor)
 
 	i = 0;
 	step = 0;
-	step += OP_CODE_SIZE + g_op_tab[cursor->op_cod - 1].cod_typ_args;
-	while (i < g_op_tab[cursor->op_cod - 1].arg)
+	step += OP_CODE_SIZE + g_op[cursor->op_cod - 1].cod_typ_args;
+	while (i < g_op[cursor->op_cod - 1].arg)
 	{
 		step += arg_size(cursor->op_args[i], cursor);
 		i++;
@@ -63,15 +63,15 @@ int				valid_args(t_vm *vm, t_carriage *cursor)
 
 	a = 0;
 	i = -1;
-	step = (OP_CODE_SIZE + g_op_tab[cursor->op_cod - 1].cod_typ_args);
-	while (++i < g_op_tab[cursor->op_cod - 1].arg)
+	step = (OP_CODE_SIZE + g_op[cursor->op_cod - 1].cod_typ_args);
+	while (++i < g_op[cursor->op_cod - 1].arg)
 	{
-		while (g_op_tab[cursor->op_cod - 1].args[i][a])
+		while (g_op[cursor->op_cod - 1].args[i][a])
 		{
-			if (cursor->op_args[i] == g_op_tab[cursor->op_cod - 1].args[i][a])
+			if (cursor->op_args[i] == g_op[cursor->op_cod - 1].args[i][a])
 				break ;
 			a++;
-			if (g_op_tab[cursor->op_cod - 1].args[i][a] == 0 || a == 3)
+			if (g_op[cursor->op_cod - 1].args[i][a] == 0 || a == 3)
 				return (0);
 		}
 		reg = vm->arena[(cursor->pos + step) % MEM_SIZE];
