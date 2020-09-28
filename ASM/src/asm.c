@@ -29,7 +29,7 @@ void		check_extension(const char *str)
 {
 	if (ft_strcmp(&str[ft_strlen(str) - 2], ".s") == 0)
 		return ;
-	error_printf(NULL, ERROR_FILE_EXT, NULL);
+	error_printf(NULL, ERR_FILE_EXT, NULL);
 }
 
 /*

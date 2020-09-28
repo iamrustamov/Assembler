@@ -73,7 +73,7 @@ void				check_commas(t_asm *bler, char **args)
 				if (str[sym++] == SEPARATOR_CHAR)
 					comm++;
 			if (comm > 1 || comm < 1)
-				error_printf(bler, ERROR_SEVERAL_COMMAS, bler->line);
+				error_printf(bler, ERR2COMM, bler->line);
 		}
 		i++;
 	}
@@ -108,14 +108,14 @@ void				check_arg_count_type(t_asm *bler, t_operation *oper)
 	while (argm != NULL)
 	{
 		if (num > 3)
-			error_printf(bler, ERROR_WRONG_COUNT_ARGS, bler->line);
-		if (CHECK_TYPE(oper->op_code, num, argm->type) == 0)
+			error_printf(bler, ERR_ARGS_NUM, bler->line);
+		if (g_op[oper->op_code - 1].args[num].arg[(int)argm->type] == 0)
 			error_printf(bler, ERROR_TYPE_OF_OPER, bler->line);
 		argm = argm->next;
 		num++;
 	}
-	if (CHECK_ARGS_COUNT(oper->op_code) != num)
-		error_printf(bler, ERROR_WRONG_COUNT_ARGS, bler->line);
+	if (g_op[oper->op_code - 1].args_num != num)
+		error_printf(bler, ERR_ARGS_NUM, bler->line);
 }
 
 /*

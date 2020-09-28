@@ -48,15 +48,16 @@ void				clear_bler(t_asm *bler)
 
 void				error_printf(t_asm *bler, char *text, char *line)
 {
-	char *buff;
-
-	text ? ft_putstr_fd(text, 2) : 0;
+	if (text)
+	{
+		ft_putstr_fd("ERROR: ", 2);
+		ft_putstr_fd(text, 2);
+	}
 	if (line)
 	{
-		buff = ft_strjoin("Pay attention to this line of file: ", line);
-		ft_putstr_fd(buff, 2);
+		ft_putstr_fd("Pay attention to this line of file: ", 2);
+		ft_putstr_fd(line, 2);
 		ft_putchar_fd('\n', 2);
-		free(buff);
 	}
 	if (bler)
 		clear_bler(bler);

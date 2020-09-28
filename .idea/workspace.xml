@@ -29,20 +29,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/asm" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/barriere.s" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/barriere.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/includes/.asm.h.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ASM/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/includes/asm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/includes/op.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/includes/op.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASM/src/asm.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/asm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/join_args_to_oper.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/join_args_to_oper.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parse_op.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/parse_op.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/parser.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/determine_value.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/determine_value.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/run_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/run_vm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/src/errors.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/errors.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASM/src/parse_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/src/parse_args.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +108,7 @@
       <workItem from="1601227179419" duration="1485000" />
       <workItem from="1601321234565" duration="232000" />
       <workItem from="1601321486110" duration="702000" />
-      <workItem from="1601322611645" duration="1311000" />
+      <workItem from="1601322611645" duration="2835000" />
     </task>
     <servers />
   </component>
@@ -186,10 +180,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601322574101" />
-    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601324909941">
+    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601326118509">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601324909941" />
+    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601326118509" />
     <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1601143933174">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

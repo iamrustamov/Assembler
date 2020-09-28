@@ -6,7 +6,7 @@
 /*   By: dpenney <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 22:42:47 by dpenney           #+#    #+#             */
-/*   Updated: 2020/09/28 23:28:22 by dpenney          ###   ########.fr       */
+/*   Updated: 2020/09/28 23:44:34 by dpenney          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,44 +26,41 @@
 
 # define GNLINE bler->line[bler->sym]
 
-# define ERROR_LINE "ERROR: This line have not valid parameters.\n"
-# define ERROR_ARGS "ERROR: This line have not valid arguments.\n"
-# define ERROR_ALLOCATE "ERROR: Didn't allocate memory.\n"
-# define ERROR_ARGS_TYPE "ERROR: Some argument have wrong type.\n"
-# define ERROR_TYPE_SIZE "ERROR: Type of arguments is invalid.\n"
-# define ERROR_SEVERAL_COMMAS "ERROR:  Line have several commas between arguments.\n"
-# define ERROR_WRONG_COUNT_ARGS "ERROR: Operation have wrong count of arguments.\n"
-# define ERROR_TYPE_OF_OPER "ERROR: Operation have wrong type in arguments.\n"
-# define ERROR_LBL_NAME "ERROR: This string have wrong label name:\n"
-# define ERROR_FILE_EXT "ERROR: File have not valid extension or this file not exist.\nPlease, check it.\n"
-# define ERROR_CONTANT "ERROR: File have not valid data.\nPlease check it.\n"
-# define ERROR_GARBAGE "ERROR: String have wrong content or mistake with quotes.\n"
-# define ERROR_NAME_LEN "ERROR: Name's length is long.\n"
-# define ERROR_COMM_LEN "ERROR: Comment's length is long.\n"
-# define ERROR_NOT_FOUND_NM_CM "ERROR: Name or comment not fount.\n"
-# define ERROR_UNKNOWN_TEXT "ERROR: This line is unknown to program:\n"
-# define ERROR_END_LINE "ERROR: wrong end of file.\nPlease check content of file.\n"
-# define ERROR_CHMP_SIZE "ERROR: The champs size is exceeded.\n"
-# define ERROR_LBLS_NOT "ERROR: Champ file have lable which not exist.\n"
-# define ERROR_DOUBLE_LBL "ERROR: file have double lable name.\nPlease, fix files labels.\n"
+# define ERROR_LINE "This line have not valid parameters.\n"
+# define ERROR_ARGS "This line have not valid arguments.\n"
+# define ERROR_ALLOCATE "Didn't allocate memory.\n"
+# define ERROR_ARGS_TYPE "Some argument have wrong type.\n"
+# define ERROR_TYPE_SIZE "Type of arguments is invalid.\n"
+# define ERR2COMM "Line have several commas between arguments.\n"
+# define ERR_ARGS_NUM "Operation have wrong count of arguments.\n"
+# define ERROR_TYPE_OF_OPER "Operation have wrong type in arguments.\n"
+# define ERROR_LBL_NAME "This string have wrong label name:\n"
+# define ERR_FILE_EXT "File have not valid extension or this file not exist.\n"
+# define ERROR_CONTANT "File have not valid data.\nPlease check it.\n"
+# define ERROR_GARBAGE "String have wrong content or mistake with quotes.\n"
+# define ERROR_NAME_LEN "Name's length is long.\n"
+# define ERROR_COMM_LEN "Comment's length is long.\n"
+# define ERROR_NOT_FOUND_NM_CM "Name or comment not fount.\n"
+# define ERROR_UNKNOWN_TEXT "This line is unknown to program:\n"
+# define ERROR_END_LINE "Wrong end of file.\nPlease check content of file.\n"
+# define ERROR_CHMP_SIZE "The champs size is exceeded.\n"
+# define ERROR_LBLS_NOT "Champ file have lable which not exist.\n"
+# define ERR_2LBL "File have double lable name.\nPlease, fix files labels.\n"
 # define MAX_UINT 4294967295
 # define NEARLY_MAX_UINT 429496729
 # define SIZE_T_IND 2
 # define SIZE_T_REG 1
-# define ERROR_NM_CMN_N_EXIST "ERROR: Name or comment not exist\n"
-# define ERROR_DOUBLE_NM_CMN "ERROR: Double name or comment\n"
+# define ERROR_NM_CMN_N_EXIST "Name or comment not exist\n"
+# define ERROR_DOUBLE_NM_CMN "Double name or comment\n"
 
 /*
 ** op_code - 1 because g_op_tab starting with 0.
 */
 
-# define CHECK_TYPE(op_code, num, type) g_op[op_code - 1].args[num].arg[(int)type]
-# define CHECK_ARGS_COUNT(op_code) g_op[op_code - 1].args_num
-
-typedef struct		s_array
+typedef struct			s_array
 {
-	char			arg[3];
-}					t_array;
+	char				arg[3];
+}						t_array;
 
 /*
 ** Name of operation;
@@ -74,15 +71,15 @@ typedef struct		s_array
 ** cod_t_args - Code of type of argument
 */
 
-typedef struct		s_op_list
+typedef struct			s_op_list
 {
-	char			*name;
-	char			op_code;
-	char			lbl_size;
-	int				args_num;
-	t_array			args[3];
-	int				cod_t_args;
-}					t_op_list;
+	char				*name;
+	char				op_code;
+	char				lbl_size;
+	int					args_num;
+	t_array				args[3];
+	int					cod_t_args;
+}						t_op_list;
 
 static t_op_list	g_op[16] = {
 	{"live", 1, 4, 1, {{{FA, T, FA}}, {{FA, FA, FA}}, {{FA, FA, FA}}}, 0},
