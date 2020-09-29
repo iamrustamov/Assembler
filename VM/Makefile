@@ -10,84 +10,60 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ../corewar
-
-CC = gcc
+NAME = corewar
+CC = clang
 FLAGS = -Wall -Wextra -Werror
+SRC = vm.c\
+		./check_arena.c\
+		./create_arena.c\
+		./determine_value.c\
+		./output.c\
+		./pars_args.c\
+		./pars_bit.c\
+		./pars_champo.c\
+		./pars_flag.c\
+		./run_vm.c\
+		./op/add.c\
+		./op/aff.c\
+		./op/and.c\
+		./op/fork.c\
+		./op/ld.c\
+		./op/ldi.c\
+		./op/lfork.c\
+		./op/live.c\
+		./op/lld.c\
+		./op/lldi.c\
+		./op/or.c\
+		./op/st.c\
+		./op/sti.c\
+		./op/sub.c\
+		./op/xor.c\
+		./op/zjmp.c
 
-OBJS	:= main.o \
-cursor.o free.o ft_refactor.o initialization.o player.o \
-input.o parse_arguments.o parse_cor_file.o \
-output.o show_fight_field.o \
-apply_operation.o check.o helpers_for_run.o run.o \
-op_add.o op_and.o op_ld.o op_lfork.o op_lld.o op_or.o op_sti.o op_xor.o \
-op_aff.o op_fork.o op_ldi.o op_live.o op_lldi.o op_st.o op_sub.o op_zjmp.o \
-init.o the.o \
-gets.o parse_flags.o
-
-FT		:= ./libft/
-FT_LIB	:= $(addprefix $(FT), libftprintf.a)
-FT_INC	:= -I $(FT)/includes/
-FT_LNK	:= -L $(FT) -lftprintf
-
-ODIR	:= ./obj/
-IDIR	:= ./includes/
-
-SDIR	:= ./
-VDIR	:= ./visual_machine/
-GDIR	:= ./general/
-INDIR	:= ./input/
-RUNDIR	:= ./run/
-OPDIR	:= ./run/op/
-OUTDIR	:= ./output/
-
-$(ODIR)%.o:$(SDIR)%.c
-	gcc $(FLAGS) $(FT_INC) -I $(IDIR) -o $@ -c $<
-
-$(ODIR)%.o:$(VDIR)%.c
-	gcc $(FLAGS) $(FT_INC) -I $(IDIR) -o $@ -c $<
-
-$(ODIR)%.o:$(GDIR)%.c
-	gcc $(FLAGS) $(FT_INC) -I $(IDIR) -o $@ -c $<
-
-
-$(ODIR)%.o:$(INDIR)%.c
-	gcc $(FLAGS) $(FT_INC) -I $(IDIR) -o $@ -c $<
-
-
-$(ODIR)%.o:$(RUNDIR)%.c
-	gcc $(FLAGS) $(FT_INC) -I $(IDIR) -o $@ -c $<
-
-
-$(ODIR)%.o:$(OUTDIR)%.c
-	gcc $(FLAGS) $(FT_INC) -I $(IDIR) -o $@ -c $<
-
-$(ODIR)%.o:$(OPDIR)%.c
-	gcc $(FLAGS) $(FT_INC) -I $(IDIR) -o $@ -c $<
-
-
-OFILES	:= $(addprefix $(ODIR),$(OBJS))
-
+HEADERS = vm.h op.h
+OBJ = $(SRC:.c=.o)
+LIBFT_HEADER = ./libft/ #libft.h
+LIBFT = ./libft/libft.a
+INCLUDES = ./vm.h
 
 all: $(NAME)
 
-$(FT_LIB):
-	make -C $(FT)
+%.o: %.c $(INCLUDES) $(LIBFT)
+	$(CC) $(FLAGS) -o $@ -c $< -I $(INCLUDES)
 
-obj:
-	mkdir obj
+$(NAME): $(LIBFT) $(OBJ) $(HEADERS) $(LIBFT_HEADER)
+	$(CC) $(FLAGS) $(OBJ) $(LIBFT) -o $(NAME)
 
-$(NAME): obj $(FT_LIB) $(OFILES)
-	gcc -lncurses -o $(NAME) $(OFILES) -I./includes/ $(FT_INC) $(FT_LNK)
-
+$(LIBFT):
+	make -C ./libft
 
 clean:
-	rm -fr $(ODIR)*.o
-	make -C $(FT) clean
+	rm -f $(OBJ)
+	make clean -C ./libft
 
 fclean: clean
-	rm -rf $(NAME)
-	make -C $(FT) fclean
+	rm -f $(NAME)
+	make fclean -C ./libft
 
 re: fclean all
 
