@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="VM" targetName="VM" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -28,7 +30,186 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d35d836-c4ac-424f-acf5-2ac9b4be73a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../ASM/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/Intra Projects Corewar Edit.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/asm_linux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/111111.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/42.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Backward.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Car.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Car.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Death.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Gagnant.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Gagnant.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Octobre_Rouge_V4.2.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Octobre_Rouge_V4.2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Survivor.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Torpille.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/barriere.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/barriere.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/bguy/sam_2.0.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/bjacob/doge.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/brandazz/Rainbow_dash.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/cdivry/youforkmytralala.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/clafleur/big_feet.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/dcohen/loose.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/ekocevar/mandragore.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/esusseli/gedeon.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/evlasova/terminator.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/fcorre/ultimate-surrender.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gbir/_.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gjestin/salamahenagalabadoun.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gleger/Machine-gun.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gmange/corelol.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gpetrov/MarineKing.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gudepard/Kappa.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/hmichals/Wall.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/hmoutaou/Misaka_Mikoto.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/kelickel/Varimathras.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/kmonrose/justin_bee.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/ldesgoui/_honeybadger.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/lseguin/skynet.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/lsirigna/live.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/mbacoux/meowluigi.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/mconraux/dubo.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/rabid-on/jinx.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/results.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/rmasse/THUNDER.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/sbuono/Asombra.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/srabah-m/littlepuppy.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/tdemay/champ.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/vrey/darksasuke.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/ybouvet/casimir.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/adenis/Explosive_Kitty.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/agregoir/Kittystrophic.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/gnebie/ultima.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/iburel/gateau.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/jaustry/mise_a_jour_windows95.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/nolivier/run_Kitty_RUN.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/pzarmehr/overwatch.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/tbillard/Douceur_power.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2018/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2018/corewar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/ex.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/ex.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/bee_gees.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/bigzork.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/fluttershy.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/helltrain.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/turtle.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/zork.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/jumper.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/jumper.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/lde.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/leeloo.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/mat.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/mat.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/maxidef.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/maxidef.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/mortel.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/mortel.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/new.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/sebc.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/slider2.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/slider2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/tdc2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/tdc3.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/tdc4.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/toto.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/corewar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/Intra Projects Corewar Edit.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/asm_linux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/111111.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/42.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Backward.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Car.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Car.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Death.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Gagnant.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Gagnant.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Octobre_Rouge_V4.2.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Octobre_Rouge_V4.2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Survivor.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Torpille.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/barriere.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/barriere.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/bguy/sam_2.0.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/bjacob/doge.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/brandazz/Rainbow_dash.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/cdivry/youforkmytralala.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/clafleur/big_feet.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/dcohen/loose.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/ekocevar/mandragore.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/esusseli/gedeon.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/evlasova/terminator.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/fcorre/ultimate-surrender.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gbir/_.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gjestin/salamahenagalabadoun.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gleger/Machine-gun.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gmange/corelol.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gpetrov/MarineKing.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gudepard/Kappa.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/hmichals/Wall.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/hmoutaou/Misaka_Mikoto.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/kelickel/Varimathras.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/kmonrose/justin_bee.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/ldesgoui/_honeybadger.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/lseguin/skynet.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/lsirigna/live.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/mbacoux/meowluigi.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/mconraux/dubo.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/rabid-on/jinx.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/results.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/rmasse/THUNDER.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/sbuono/Asombra.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/srabah-m/littlepuppy.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/tdemay/champ.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/vrey/darksasuke.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/ybouvet/casimir.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/adenis/Explosive_Kitty.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/agregoir/Kittystrophic.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/gnebie/ultima.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/iburel/gateau.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/jaustry/mise_a_jour_windows95.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/nolivier/run_Kitty_RUN.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/pzarmehr/overwatch.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/tbillard/Douceur_power.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2018/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2018/corewar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/ex.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/ex.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/bee_gees.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/bigzork.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/fluttershy.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/helltrain.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/turtle.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/zork.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/jumper.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/jumper.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/lde.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/leeloo.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/mat.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/mat.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/maxidef.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/maxidef.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/mortel.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/mortel.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/new.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/sebc.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/slider2.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/slider2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/tdc2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/tdc3.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/tdc4.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/toto.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/resource/corewar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +219,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -55,9 +237,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VM" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;Car.cor&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/../resource/champs" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VM" TARGET_NAME="VM" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="VM" RUN_TARGET_NAME="VM">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -70,6 +262,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601334679463</updated>
       <workItem from="1601334681044" duration="2101000" />
+      <workItem from="1601392260068" duration="460000" />
     </task>
     <servers />
   </component>
@@ -86,5 +279,44 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="693" y="367" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601392719614">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="693" y="367" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1601392719614" />
+    <state width="2518" height="382" key="GridCell.Tab.0.bottom" timestamp="1601392708687">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601392708687" />
+    <state width="2518" height="382" key="GridCell.Tab.0.center" timestamp="1601392708686">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601392708686" />
+    <state width="2518" height="382" key="GridCell.Tab.0.left" timestamp="1601392708685">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601392708685" />
+    <state width="2518" height="382" key="GridCell.Tab.0.right" timestamp="1601392708686">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601392708686" />
+    <state width="2518" height="382" key="GridCell.Tab.1.bottom" timestamp="1601392707319">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601392707319" />
+    <state width="2518" height="382" key="GridCell.Tab.1.center" timestamp="1601392707318">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601392707318" />
+    <state width="2518" height="382" key="GridCell.Tab.1.left" timestamp="1601392707318">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601392707318" />
+    <state width="2518" height="382" key="GridCell.Tab.1.right" timestamp="1601392707318">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601392707318" />
   </component>
 </project>

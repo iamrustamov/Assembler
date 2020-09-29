@@ -6,11 +6,11 @@
 #    By: dpenney <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/27 20:30:17 by dpenney           #+#    #+#              #
-#    Updated: 2020/09/27 20:39:26 by dpenney          ###   ########.fr        #
+#    Updated: 2020/09/29 08:16:31 by doberyn          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME= ../asm
+NAME= ./asm
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRC = ./src/asm.c\

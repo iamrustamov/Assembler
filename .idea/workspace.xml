@@ -32,13 +32,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASM/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/create_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/create_arena.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/determine_value.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/determine_value.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/output.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/output.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/pars_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/pars_args.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-coverage/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-coverage/CMakeFiles/clion-log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +108,7 @@
       <workItem from="1601321234565" duration="232000" />
       <workItem from="1601321486110" duration="702000" />
       <workItem from="1601322611645" duration="2835000" />
-      <workItem from="1601387421125" duration="1700000" />
+      <workItem from="1601387421125" duration="4043000" />
     </task>
     <servers />
   </component>
