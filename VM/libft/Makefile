@@ -50,16 +50,16 @@ HFILE = libft.h
 all: $(NAME)
 
 %.o: %.c libft.h
-	@gcc -c $< -o $@ -I $(HFILE)
+	gcc -c $< -o $@ -I $(HFILE)
 
 $(NAME): $(OBJ) libft.h
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 clean:
-	@rm -f $(OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all

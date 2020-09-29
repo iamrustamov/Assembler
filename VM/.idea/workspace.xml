@@ -31,185 +31,138 @@
   <component name="ChangeListManager">
     <list default="true" id="0d35d836-c4ac-424f-acf5-2ac9b4be73a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../ASM/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/Intra Projects Corewar Edit.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/asm_linux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/111111.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/42.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Backward.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Car.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Car.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Death.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Gagnant.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Gagnant.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Octobre_Rouge_V4.2.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Octobre_Rouge_V4.2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Survivor.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/Torpille.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/barriere.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/barriere.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/bguy/sam_2.0.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/bjacob/doge.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/brandazz/Rainbow_dash.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/cdivry/youforkmytralala.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/clafleur/big_feet.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/dcohen/loose.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/ekocevar/mandragore.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/esusseli/gedeon.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/evlasova/terminator.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/fcorre/ultimate-surrender.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gbir/_.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gjestin/salamahenagalabadoun.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gleger/Machine-gun.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gmange/corelol.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gpetrov/MarineKing.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/gudepard/Kappa.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/hmichals/Wall.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/hmoutaou/Misaka_Mikoto.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/kelickel/Varimathras.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/kmonrose/justin_bee.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/ldesgoui/_honeybadger.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/lseguin/skynet.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/lsirigna/live.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/mbacoux/meowluigi.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/mconraux/dubo.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/rabid-on/jinx.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/results.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/rmasse/THUNDER.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/sbuono/Asombra.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/srabah-m/littlepuppy.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/tdemay/champ.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/vrey/darksasuke.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2014/ybouvet/casimir.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/adenis/Explosive_Kitty.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/agregoir/Kittystrophic.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/gnebie/ultima.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/iburel/gateau.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/jaustry/mise_a_jour_windows95.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/nolivier/run_Kitty_RUN.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/pzarmehr/overwatch.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2017/tbillard/Douceur_power.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2018/asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/championships/2018/corewar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/ex.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/ex.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/bee_gees.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/bigzork.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/fluttershy.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/helltrain.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/turtle.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/examples/zork.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/jumper.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/jumper.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/lde.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/leeloo.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/mat.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/mat.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/maxidef.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/maxidef.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/mortel.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/mortel.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/new.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/sebc.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/slider2.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/slider2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/tdc2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/tdc3.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/tdc4.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/champs/toto.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource copy/corewar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/Intra Projects Corewar Edit.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/asm_linux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/111111.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/42.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Backward.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Car.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Car.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Death.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Gagnant.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Gagnant.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Octobre_Rouge_V4.2.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Octobre_Rouge_V4.2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Survivor.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/Torpille.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/barriere.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/barriere.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/bguy/sam_2.0.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/bjacob/doge.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/brandazz/Rainbow_dash.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/cdivry/youforkmytralala.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/clafleur/big_feet.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/dcohen/loose.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/ekocevar/mandragore.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/esusseli/gedeon.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/evlasova/terminator.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/fcorre/ultimate-surrender.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gbir/_.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gjestin/salamahenagalabadoun.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gleger/Machine-gun.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gmange/corelol.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gpetrov/MarineKing.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/gudepard/Kappa.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/hmichals/Wall.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/hmoutaou/Misaka_Mikoto.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/kelickel/Varimathras.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/kmonrose/justin_bee.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/ldesgoui/_honeybadger.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/lseguin/skynet.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/lsirigna/live.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/mbacoux/meowluigi.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/mconraux/dubo.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/rabid-on/jinx.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/results.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/rmasse/THUNDER.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/sbuono/Asombra.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/srabah-m/littlepuppy.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/tdemay/champ.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/vrey/darksasuke.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2014/ybouvet/casimir.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/adenis/Explosive_Kitty.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/agregoir/Kittystrophic.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/gnebie/ultima.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/iburel/gateau.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/jaustry/mise_a_jour_windows95.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/nolivier/run_Kitty_RUN.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/pzarmehr/overwatch.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2017/tbillard/Douceur_power.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2018/asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/championships/2018/corewar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/ex.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/ex.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/bee_gees.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/bigzork.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/fluttershy.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/helltrain.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/turtle.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/examples/zork.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/jumper.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/jumper.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/lde.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/leeloo.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/mat.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/mat.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/maxidef.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/maxidef.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/mortel.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/mortel.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/new.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/sebc.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/slider2.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/slider2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/tdc2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/tdc3.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/tdc4.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/champs/toto.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASM/resource/corewar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/.Makefile.swp" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/.Makefile.swp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/asm" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/includes/op.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/includes/op.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/author" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/author" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_array_subtract.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_array_subtract.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_atoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_atoi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_bbtree_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_bbtree_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_bsort_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_bsort_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_bzero.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_bzero.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_del.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_del.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_isalnum.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_isalnum.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_isalpha.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_isalpha.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_isascii.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_isascii.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_isdigit.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_isdigit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_isprint.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_isprint.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_itoa.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_itoa_base.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_itoa_base.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_lstadd.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_lstadd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_lstappend.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_lstappend.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_lstdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_lstdel.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_lstdelone.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_lstdelone.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_lstiter.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_lstiter.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_lstmap.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_lstmap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_lstnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_lstnew.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_max_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_max_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_maxval_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_maxval_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memalloc.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memalloc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memccpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memccpy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memchr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memcmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memcpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memcpy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memdel.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memdup.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memmove.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memmove.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_memset.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_memset.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_min_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_min_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_minval_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_minval_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_print_array.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_print_array.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/apply_spec.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/apply_spec.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/apply_spec.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/apply_spec.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/apply_spec2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/apply_spec2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/apply_spec3.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/apply_spec3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/apply_spec4.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/apply_spec4.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/apply_spec5.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/apply_spec5.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/apply_spec6.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/apply_spec6.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/arg_extractors.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/arg_extractors.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/arg_extractors2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/arg_extractors2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/conv_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/conv_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/conv_int2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/conv_int2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/conv_other.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/conv_other.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/conv_wrappers_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/conv_wrappers_int.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/conv_wrappers_int2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/conv_wrappers_int2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/conv_wrappers_other.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/conv_wrappers_other.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/find_action.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/find_action.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/fp_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/fp_type.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/printf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/printf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/read_spec.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/read_spec.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/read_spec.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/read_spec.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_printf/read_spec2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_printf/read_spec2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_putchar.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_putchar.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_putchar_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_putchar_fd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_putendl.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_putendl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_putendl_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_putendl_fd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_putnbr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_putnbr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_putnbr_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_putnbr_fd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_putstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_putstr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_putstr_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_putstr_fd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strcat.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strcat.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strchr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strclr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strclr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strcmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strcpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strcpy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strdel.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strdup.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strequ.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_striter.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_striter.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_striteri.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_striteri.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strjoin.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strjoin.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strlcat.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strlcat.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strlen.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strlen.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strmap.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strmap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strmapi.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strmapi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strncat.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strncat.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strncmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strncmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strncpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strncpy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strnequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strnequ.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strnew.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strnstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strnstr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strrchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strrchr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strrev.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strrev.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strsplit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strstr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strsub.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strsub.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_strtrim.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_strtrim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_swap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_swapint.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_swapint.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_tolower.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_tolower.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ft_toupper.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ft_toupper.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/decimal_arithmetic.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/decimal_arithmetic.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/decimal_arithmetic2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/decimal_arithmetic2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/decimal_arithmetic3.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/decimal_arithmetic3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/decimal_arithmetic4.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/decimal_arithmetic4.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/decimal_arithmetic5.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/decimal_arithmetic5.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/ft_fp.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/ft_fp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/ftoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/ftoa.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/ftoa/ftoa2.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/ftoa/ftoa2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/get_next_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/includes/bbtree_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/includes/bbtree_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/includes/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/includes/get_next_line.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/libft/includes/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/libft/includes/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/asm.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/asm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/errors.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/errors.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/join_args_to_oper.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/join_args_to_oper.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/parse_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/parse_args.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/parse_data.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/parse_data.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/parse_instructions.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/parse_instructions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/parse_lbl.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/parse_lbl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/parse_name.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/parse_name.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/parse_op.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/parse_op.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/parser.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/set_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/set_args.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/translator.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/translator.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/translator_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/translator_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASM/src/utilities.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/utilities.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,6 +185,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -262,7 +216,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601334679463</updated>
       <workItem from="1601334681044" duration="2101000" />
-      <workItem from="1601392260068" duration="460000" />
+      <workItem from="1601392260068" duration="1811000" />
     </task>
     <servers />
   </component>
@@ -286,37 +240,37 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="693" y="367" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1601392719614" />
-    <state width="2518" height="382" key="GridCell.Tab.0.bottom" timestamp="1601392708687">
+    <state width="2518" height="382" key="GridCell.Tab.0.bottom" timestamp="1601392845749">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2518" height="382" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601392708687" />
-    <state width="2518" height="382" key="GridCell.Tab.0.center" timestamp="1601392708686">
+    <state width="2518" height="382" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601392845749" />
+    <state width="2518" height="382" key="GridCell.Tab.0.center" timestamp="1601392845748">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2518" height="382" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601392708686" />
-    <state width="2518" height="382" key="GridCell.Tab.0.left" timestamp="1601392708685">
+    <state width="2518" height="382" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601392845748" />
+    <state width="2518" height="382" key="GridCell.Tab.0.left" timestamp="1601392845748">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2518" height="382" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601392708685" />
-    <state width="2518" height="382" key="GridCell.Tab.0.right" timestamp="1601392708686">
+    <state width="2518" height="382" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601392845748" />
+    <state width="2518" height="382" key="GridCell.Tab.0.right" timestamp="1601392845749">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2518" height="382" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601392708686" />
-    <state width="2518" height="382" key="GridCell.Tab.1.bottom" timestamp="1601392707319">
+    <state width="2518" height="382" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601392845749" />
+    <state width="2518" height="382" key="GridCell.Tab.1.bottom" timestamp="1601392845261">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2518" height="382" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601392707319" />
-    <state width="2518" height="382" key="GridCell.Tab.1.center" timestamp="1601392707318">
+    <state width="2518" height="382" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601392845261" />
+    <state width="2518" height="382" key="GridCell.Tab.1.center" timestamp="1601392845260">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2518" height="382" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601392707318" />
-    <state width="2518" height="382" key="GridCell.Tab.1.left" timestamp="1601392707318">
+    <state width="2518" height="382" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601392845260" />
+    <state width="2518" height="382" key="GridCell.Tab.1.left" timestamp="1601392845260">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2518" height="382" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601392707318" />
-    <state width="2518" height="382" key="GridCell.Tab.1.right" timestamp="1601392707318">
+    <state width="2518" height="382" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601392845260" />
+    <state width="2518" height="382" key="GridCell.Tab.1.right" timestamp="1601392845261">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2518" height="382" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601392707318" />
+    <state width="2518" height="382" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601392845261" />
   </component>
 </project>

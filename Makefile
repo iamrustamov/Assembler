@@ -6,23 +6,31 @@
 #    By: dpenney <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/27 20:30:06 by dpenney           #+#    #+#              #
-#    Updated: 2020/09/27 20:30:49 by dpenney          ###   ########.fr        #
+#    Updated: 2020/09/29 09:19:05 by doberyn          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = compiling
+ASM = asm
+VM = corewar
 
 COMPL = gcc
 CFLAGS = -Wall -Wextra -Werror -I
-ASM_DIR = ASM
+ASM_DIR = ASSEMBLER
 VM_DIR = ./VM
+NORM = norma
 
+all: $(ASM) $(VM)
 
-all: $(NAME)
-
-$(NAME):
-		make -C $(ASM_DIR)
+$(VM):
 		make -C $(VM_DIR)
+$(ASM):
+		make -C $(ASM_DIR)
+
+$(NORM):
+		norminette ./ASSEMBLER/src/*.c
+		norminette ./ASSEMBLER/includes/*.h
+		norminette ./VM/*.c
+		norminette ./VM/*.h
 
 clean:
 		make -C $(ASM_DIR) clean
