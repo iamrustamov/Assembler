@@ -1,1 +1,16 @@
-CMakeLists.txt not found in /Users/dpenney/Desktop/Assembler Select CMakeLists.txt file...
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_CXX_FLAGS=-fprofile-instr-generate -fcoverage-mapping" "-DCMAKE_C_FLAGS=-fprofile-instr-generate -fcoverage-mapping" -G "CodeBlocks - Unix Makefiles" /Users/doberyn/Desktop/1
+-- Configuring done
+CMake Error at CMakeLists.txt:11 (add_executable):
+  Cannot find source file:
+
+    includes/asm.h
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:11 (add_executable):
+  No SOURCES given to target: 1
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

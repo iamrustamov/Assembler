@@ -20,7 +20,7 @@ void	op_live(t_vm *vm, t_carriage *cursor)
 	cursor->live_last_cycl = vm->cycles;
 	cursor->steps_next_oper += OP_CODE_SIZE;
 	id = determine_value(cursor->op_args[0], vm, cursor);
-	if (id <= -1 && id >= -(vm->player_num))
+	if (id <= -1 && id >= -((int)vm->player_num))
 	{
 		vm->champ_live = vm->champions[-id - 1];
 		if (vm->live)

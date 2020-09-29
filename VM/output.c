@@ -18,7 +18,7 @@ void	player_introduction(t_vm *vm)
 
 	id = 1;
 	ft_printf("Introducing contestants...\n");
-	while (id <= vm->player_num)
+	while (id <= (int)vm->player_num)
 	{
 		ft_printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
 			id, vm->champions[id - 1]->exec_cod_size,

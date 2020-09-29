@@ -56,7 +56,7 @@ void	pars_cor(char *arg, t_pars *pars, t_vm *vm)
 
 void	pars_str_name(int fd, t_vm *vm)
 {
-	size_t	res;
+	int	res;
 
 	res = read(fd, vm->champ->name, PROG_NAME_LENGTH);
 	if (res == -1 || res < PROG_NAME_LENGTH)
@@ -65,7 +65,7 @@ void	pars_str_name(int fd, t_vm *vm)
 
 void	pars_str_comment(int fd, t_vm *vm)
 {
-	size_t	res;
+	int	res;
 
 	res = read(fd, vm->champ->comment, COMMENT_LENGTH);
 	if (res == -1 || res < COMMENT_LENGTH)

@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME= asm
-CC = clang
+CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRC = ./src/asm.c\
         ./src/errors.c\

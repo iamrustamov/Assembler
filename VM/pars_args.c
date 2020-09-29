@@ -52,7 +52,7 @@ void	add_id(t_vm *vm)
 	flag = 0;
 	player = 0;
 	id = 1;
-	while (player < vm->player_num)
+	while (player < (int)vm->player_num)
 	{
 		tmp_champ = vm->champ_first;
 		while (tmp_champ)
@@ -78,7 +78,7 @@ void	add_champions(t_vm *vm)
 
 	id = 1;
 	player = 0;
-	while (player < vm->player_num)
+	while (player < (int)vm->player_num)
 	{
 		tmp_champ = vm->champ_first;
 		while (tmp_champ)

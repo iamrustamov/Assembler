@@ -19,7 +19,7 @@ void		create_arena(t_vm *vm)
 
 	id = 0;
 	pos = 0;
-	while (id < vm->player_num)
+	while (id < (int)vm->player_num)
 	{
 		ft_memcpy(&(vm->arena[pos]), vm->champions[id]->exec_cod,
 			(size_t)(vm->champions[id]->exec_cod_size));
@@ -35,7 +35,7 @@ void		create_cursor(t_vm *vm)
 
 	pos = 0;
 	id = 0;
-	while (id < vm->player_num)
+	while (id < (int)vm->player_num)
 	{
 		add_to_start(&(vm->cursor), add_new_karet(vm, pos, id));
 		pos += MEM_SIZE / vm->player_num;
