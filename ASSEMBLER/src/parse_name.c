@@ -6,7 +6,7 @@
 /*   By: dpenney <dpenney@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 06:21:55 by dpenney           #+#    #+#             */
-/*   Updated: 2020/09/15 06:44:56 by dpenney          ###   ########.fr       */
+/*   Updated: 2020/09/29 12:49:14 by doberyn          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,14 +86,6 @@ void			write_name(t_data *data, t_asm *bler)
 }
 
 /*
-** FIXME Когда комментарий пустой, то выдает ошибку. Почему?
-** FIXME Если комментарий перед именем и комментом, то выводится
-** ошибка! Игрок Car из vm_champs/champs
-** FIXME Когда нет коммента, то выводит, что длина слишком большая.
-** FIXME неправильная реакция на файлы zother tests/unit_tests/error/
-*/
-
-/*
 ** В данной функции мы определяем принадлежность строки
 ** к имени или комментарию. По итогу в переменной(char) from структуры data
 ** мы будем иметь букву 'n' или 'c'. В случае неудачи мы получаем ошибку.
@@ -124,7 +116,7 @@ void			enrol_in(t_data *data, t_asm *bler)
 			error_printf(bler, ERROR_DOUBLE_NM_CMN, bler->line);
 	}
 	else if (check_comment(data, 0))
-		error_printf(bler, ERROR_NM_CMN_N_EXIST, bler->line);
+		error_printf(bler, ERROR_NM_CMN_N_EXIST, NULL);
 }
 
 void			parse_name_comm(t_asm *bler)

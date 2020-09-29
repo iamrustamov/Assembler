@@ -29,46 +29,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSEMBLER/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASSEMBLER/src/asm.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/asm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/VM/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/create_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/create_arena.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/determine_value.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/determine_value.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/auxiliary.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/dec.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_long_math_divider.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_long_math_squad.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_long_math_substraction.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_long_math_summ.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_make_man.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_print.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_print_float.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_print_help.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_print_nan_inf.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_try.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/mutual_exclusion.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/output.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/parser.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/simple.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/unsigned.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/x.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/x_add.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/op/add.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/op/add.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/op/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/op/live.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/output.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/output.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/pars_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/pars_args.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/pars_champo.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/pars_champo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/run_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/run_vm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm" beforeDir="false" afterPath="$PROJECT_DIR$/asm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corewar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/src/parse_name.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parse_name.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +107,7 @@
       <workItem from="1601322611645" duration="2835000" />
       <workItem from="1601387421125" duration="4043000" />
       <workItem from="1601396095588" duration="1819000" />
-      <workItem from="1601400561432" duration="3383000" />
+      <workItem from="1601400561432" duration="3623000" />
     </task>
     <servers />
   </component>

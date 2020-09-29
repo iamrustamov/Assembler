@@ -53,7 +53,7 @@ void				error_printf(t_asm *bler, char *text, char *line)
 		ft_putstr_fd("ERROR: ", 2);
 		ft_putstr_fd(text, 2);
 	}
-	if (line)
+	if (line && bler->data->name && bler->data->comment)
 	{
 		ft_putstr_fd("Pay attention to this line of file: ", 2);
 		ft_putstr_fd(line, 2);
