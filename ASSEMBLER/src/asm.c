@@ -6,7 +6,7 @@
 /*   By: dpenney <dpenney@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 06:18:01 by dpenney           #+#    #+#             */
-/*   Updated: 2020/09/16 16:02:55 by dpenney          ###   ########.fr       */
+/*   Updated: 2020/09/29 11:13:56 by doberyn          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,9 @@ void		check_extension(const char *str)
 }
 
 /*
-** TODO сделать общий мейкфайл
 ** TODO проверить по чекерам
 ** TODO проверить на правильную перекомпиляцию Makefile.
 ** FIXME не удаляется объек-файл parse_instruments.
-** FIXME Нужно чтоб готовую программу вывес на главную директорию, а не оставлял в папке ASSEMBLER
-** FIXME удалить папку ASSEMBLER/rock
- * TODO сделать Make функцию, которая сделает по отдельности вм и асм
 */
 
 int			main(int argc, char **argv)
@@ -48,10 +44,10 @@ int			main(int argc, char **argv)
 
 	ft_bzero(&bler, sizeof(bler));
 	if (argc == 1 || argc > 2)
-		error_printf(&bler,"Usage: ./asm [-a] <sourcefile.s>\n"
-		                    "Instead of creating a .cor file, "
-		                    "outputs a stripped and annotated version of the code to the standard output\n"
-		             , NULL);
+		error_printf(&bler, "Usage: ./asm [-a] <sourcefile.s>\n"\
+							"Instead of creating a .cor file,"\
+							"outputs a stripped and annotated version"\
+							"of the code to the standard output\n", NULL);
 	check_extension(argv[1]);
 	check_file(&bler, argv[1]);
 	parser(&bler);

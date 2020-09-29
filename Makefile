@@ -15,9 +15,9 @@ VM = corewar
 
 COMPL = gcc
 CFLAGS = -Wall -Wextra -Werror -I
-ASM_DIR = ASSEMBLER
+ASM_DIR = ./ASSEMBLER
 VM_DIR = ./VM
-NORM = norma
+NORM = norm
 
 all: $(ASM) $(VM)
 

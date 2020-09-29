@@ -29,140 +29,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/.Makefile.swp" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/.Makefile.swp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/includes/asm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/includes/op.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/includes/op.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/author" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/author" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_array_subtract.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_array_subtract.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_atoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_atoi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_bbtree_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_bbtree_utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_bsort_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_bsort_int.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_bzero.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_bzero.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_del.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_del.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_isalnum.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isalnum.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_isalpha.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isalpha.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_isascii.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isascii.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_isdigit.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isdigit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_isprint.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isprint.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_itoa.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_itoa_base.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_itoa_base.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_lstadd.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_lstadd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_lstappend.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_lstappend.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_lstdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_lstdel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_lstdelone.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_lstdelone.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_lstiter.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_lstiter.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_lstmap.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_lstmap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_lstnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_lstnew.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_max_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_max_int.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_maxval_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_maxval_int.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memalloc.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memalloc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memccpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memccpy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memchr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memcmp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memcpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memcpy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memdel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memdup.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memmove.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memmove.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_memset.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_memset.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_min_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_min_int.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_minval_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_minval_int.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_print_array.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_print_array.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/apply_spec.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/apply_spec.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/apply_spec.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/apply_spec.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/apply_spec2.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/apply_spec2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/apply_spec3.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/apply_spec3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/apply_spec4.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/apply_spec4.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/apply_spec5.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/apply_spec5.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/apply_spec6.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/apply_spec6.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/arg_extractors.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/arg_extractors.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/arg_extractors2.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/arg_extractors2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/conv_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/conv_int.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/conv_int2.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/conv_int2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/conv_other.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/conv_other.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/conv_wrappers_int.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/conv_wrappers_int.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/conv_wrappers_int2.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/conv_wrappers_int2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/conv_wrappers_other.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/conv_wrappers_other.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/find_action.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/find_action.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/fp_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/fp_type.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/printf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/printf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/read_spec.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/read_spec.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/read_spec.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/read_spec.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_printf/read_spec2.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_printf/read_spec2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_putchar.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_putchar.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_putchar_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_putchar_fd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_putendl.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_putendl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_putendl_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_putendl_fd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_putnbr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_putnbr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_putnbr_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_putnbr_fd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_putstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_putstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_putstr_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_putstr_fd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strcat.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strcat.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strchr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strclr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strclr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strcmp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strcpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strcpy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strdel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strdup.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strequ.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_striter.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_striter.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_striteri.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_striteri.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strjoin.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strjoin.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strlcat.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strlcat.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strlen.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strlen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strmap.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strmap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strmapi.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strmapi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strncat.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strncat.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strncmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strncmp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strncpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strncpy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strnequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strnequ.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strnew.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strnstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strnstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strrchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strrchr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strrev.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strrev.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strsplit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strsub.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strsub.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_strtrim.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strtrim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_swap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_swapint.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_swapint.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_tolower.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_tolower.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ft_toupper.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_toupper.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/decimal_arithmetic.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/decimal_arithmetic.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/decimal_arithmetic2.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/decimal_arithmetic2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/decimal_arithmetic3.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/decimal_arithmetic3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/decimal_arithmetic4.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/decimal_arithmetic4.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/decimal_arithmetic5.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/decimal_arithmetic5.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/ft_fp.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/ft_fp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/ftoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/ftoa.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/ftoa/ftoa2.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ftoa/ftoa2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/get_next_line.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/includes/bbtree_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/includes/bbtree_utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/includes/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/includes/get_next_line.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/libft/includes/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/includes/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/asm.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/asm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/errors.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/errors.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/join_args_to_oper.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/join_args_to_oper.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parse_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parse_args.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parse_data.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parse_data.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parse_instructions.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parse_instructions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parse_lbl.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parse_lbl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parse_name.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parse_name.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parse_op.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parse_op.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parser.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/set_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/set_args.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/translator.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/translator.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/translator_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/translator_utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASM/src/utilities.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/utilities.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/src/asm.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/asm.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/VM/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/create_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/create_arena.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/determine_value.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/determine_value.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VM/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/auxiliary.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/dec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_long_math_divider.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_long_math_squad.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_long_math_substraction.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_long_math_summ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_make_man.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_print.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_print_float.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_print_help.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_print_nan_inf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_try.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/mutual_exclusion.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/output.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/simple.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/unsigned.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/x.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/x_add.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/add.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/op/add.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/op/live.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/output.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/output.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/pars_args.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_champo.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/pars_champo.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/run_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/run_vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/vm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm" beforeDir="false" afterPath="$PROJECT_DIR$/asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corewar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,12 +114,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -240,6 +146,7 @@
       <workItem from="1601322611645" duration="2835000" />
       <workItem from="1601387421125" duration="4043000" />
       <workItem from="1601396095588" duration="1819000" />
+      <workItem from="1601400561432" duration="3383000" />
     </task>
     <servers />
   </component>
@@ -315,10 +222,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601322574101" />
-    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601326118509">
+    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601404101666">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601326118509" />
+    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601404101666" />
     <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1601143933174">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

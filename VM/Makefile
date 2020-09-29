@@ -12,7 +12,7 @@
 
 NAME = ../corewar
 CC = gcc
-FLAGS = -Wall -Wextra -Werror
+FLAGS = 
 SRC = vm.c\
 		./check_arena.c\
 		./create_arena.c\
