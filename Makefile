@@ -12,9 +12,9 @@
 
 NAME = compiling
 
-COMPL = clang
+COMPL = gcc
 CFLAGS = -Wall -Wextra -Werror -I
-ASM_DIR = ./ASM
+ASM_DIR = ASM
 VM_DIR = ./VM
 
 
@@ -29,8 +29,8 @@ clean:
 		make -C $(VM_DIR) clean
 
 fclean: clean
-		make -C (ASM_DIR) fclean
-		make -C (VM_DIR) fclean
+		make -C $(ASM_DIR) fclean
+		make -C $(VM_DIR) fclean
 
 re: fclean all
 

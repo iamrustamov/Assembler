@@ -10,8 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = corewar
-CC = clang
+NAME = ../corewar
+CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRC = vm.c\
 		./check_arena.c\
@@ -42,7 +42,7 @@ SRC = vm.c\
 
 HEADERS = vm.h op.h
 OBJ = $(SRC:.c=.o)
-LIBFT_HEADER = ./libft/ #libft.h
+LIBFT_HEADER = ./libft/libft.h
 LIBFT = ./libft/libft.a
 INCLUDES = ./vm.h
 

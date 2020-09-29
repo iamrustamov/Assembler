@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME= asm
+NAME= ../asm
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRC = ./src/asm.c\

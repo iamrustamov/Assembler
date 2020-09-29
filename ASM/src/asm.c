@@ -39,6 +39,7 @@ void		check_extension(const char *str)
 ** FIXME не удаляется объек-файл parse_instruments.
 ** FIXME Нужно чтоб готовую программу вывес на главную директорию, а не оставлял в папке ASM
 ** FIXME удалить папку ASM/rock
+ * TODO сделать Make функцию, которая сделает по отдельности вм и асм
 */
 
 int			main(int argc, char **argv)
