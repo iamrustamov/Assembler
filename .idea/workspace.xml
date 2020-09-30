@@ -29,7 +29,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ASSEMBLER/src/parse_name.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/src/parse_name.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/asm" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +78,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -107,7 +110,8 @@
       <workItem from="1601322611645" duration="2835000" />
       <workItem from="1601387421125" duration="4043000" />
       <workItem from="1601396095588" duration="1819000" />
-      <workItem from="1601400561432" duration="3623000" />
+      <workItem from="1601400561432" duration="3886000" />
+      <workItem from="1601486645979" duration="705000" />
     </task>
     <servers />
   </component>
@@ -183,10 +187,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601322574101" />
-    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601404101666">
+    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601409045152">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601404101666" />
+    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601409045152" />
     <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1601143933174">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

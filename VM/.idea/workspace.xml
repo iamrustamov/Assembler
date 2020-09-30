@@ -28,7 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d35d836-c4ac-424f-acf5-2ac9b4be73a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ASSEMBLER/src/parse_name.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ASSEMBLER/src/parse_name.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource/asm" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +59,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration name="VM" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;Car.cor&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/../resource/champs" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Corewar_vm_3_Final" TARGET_NAME="VM" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Corewar_vm_3_Final" RUN_TARGET_NAME="VM">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="VM" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;Car.cor&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/../resource/champs" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Corewar_vm_3_Final" TARGET_NAME="VM" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Corewar_vm_3_Final" RUN_TARGET_NAME="VM">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -83,6 +86,7 @@
       <workItem from="1601334681044" duration="2101000" />
       <workItem from="1601392260068" duration="1811000" />
       <workItem from="1601400564857" duration="1688000" />
+      <workItem from="1601486641902" duration="36000" />
     </task>
     <servers />
   </component>
