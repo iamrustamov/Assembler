@@ -1,3 +1,0 @@
-.name "sd" 
-.comment "sda"
-

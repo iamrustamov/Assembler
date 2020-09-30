@@ -10,49 +10,71 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME= ../asm
-CC = gcc
-FLAGS = -Wall -Wextra -Werror
-SRC = ./src/asm.c\
-        ./src/errors.c\
-        ./src/join_args_to_oper.c\
-        ./src/parse_args.c\
-        ./src/parse_data.c\
-        ./src/parse_instructions.c\
-        ./src/parse_lbl.c\
-        ./src/parse_name.c\
-        ./src/parse_op.c\
-        ./src/parser.c\
-        ./src/set_args.c\
-        ./src/translator.c\
-        ./src/translator_utils.c\
-        ./src/utilities.c
 
-HEADERS = includes/asm.h includes/op.h
-OBJ = $(SRC:.c=.o)
-LIBFT_HEADER = ./libft/includes/libft.h ./libft/ft_printf/printf.h ./libft/ft_printf/apply_spec.h ./libft/ft_printf/fp_type.h ./libft/ft_printf/read_spec.h
-LIBFT = ./libft/libftprintf.a
-INCLUDES = ./includes
+# ------------  PROJECT  ----------------------------------------------------- #
+NAME	=		../asm
+
+# ------------  DIRECTORIES  ------------------------------------------------- #
+SRC_DIR	=		src
+HDR_DIR	=		includes
+OBJ_DIR	=		obj
+LIB_DIR =	    libft
+
+# ------------  LIBFT  ------------------------------------------------------- #
+LFT		=		libftprintf.a
+LFT_DIR	=		$(LIB_DIR)
+LHS_DIR	=		$(LFT_DIR)/includes
+
+# ------------  SOURCE FILES  ------------------------------------------------ #
+SRC_FLS	=		asm.c errors.c join_args_to_oper.c\
+                parse_args.c parse_data.c\
+                parse_instructions.c parse_lbl.c\
+                          parse_name.c\
+                          parse_op.c\
+                          parser.c\
+                          set_args.c\
+                          translator.c\
+                          translator_utils.c\
+                          utilities.c
+
+
+SRCS	=		$(addprefix $(SRC_DIR)/, $(SRC_FLS))
+OBJS	=		$(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o, $(SRCS))
+DEPS	=		$(OBJS:.o=.d)
+
+CC		=		gcc
+RM		=		rm -rf
+CFLGS	=		-Wall -Werror -Wextra
+LFLGS	=		-L $(LFT_DIR) -lftprintf
+IFLGS	=		-I $(HDR_DIR) -I $(LHS_DIR)
+DFLGS	=		-MMD -MP
+OFLGS	=		-O3
+
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
-%.o: %.c $(INCLUDES) $(LIBFT)
-	$(CC) $(FLAGS) -o $@ -c $< -I $(INCLUDES)
+$(LFT_DIR)/$(LFT):
+	$(MAKE) -C $(LFT_DIR)
 
-$(NAME): $(LIBFT) $(OBJ) $(HEADERS) $(LIBFT_HEADER)
-	$(CC) $(FLAGS) $(OBJ) $(LIBFT) -o $(NAME)
+-include $(DEPS)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
+	$(CC) $(CFLGS) $(DFLGS) $(OFLGS) -c -o $@ $< $(IFLGS)
 
-$(LIBFT):
-	make -C ./libft
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+$(NAME): $(LFT_DIR)/$(LFT) $(OBJS)
+	$(CC) -o $(NAME) $(OBJS) $(LFLGS)
+
+$(NAME): $(OBJS)
 
 clean:
-	rm -f $(OBJ)
-	make clean -C ./libft
+	$(MAKE) -C $(LFT_DIR) clean
+	$(RM) $(OBJ_DIR)
 
 fclean: clean
-	rm -f $(NAME)
-	make fclean -C ./libft/
+	$(MAKE) -C $(LFT_DIR) fclean
+	$(RM) $(NAME)
 
 re: fclean all
-
-.PHONY: all clean fclean re

@@ -1,45 +1,42 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: dpenney <marvin@42.fr>                     +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/09/27 20:30:06 by dpenney           #+#    #+#              #
-#    Updated: 2020/09/29 09:19:05 by doberyn          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+asm := ASSEMBLER
 
-ASM = asm
-VM = corewar
+corewar := VM
 
-COMPL = gcc
-CFLAGS = -Wall -Wextra -Werror -I
-ASM_DIR = ./ASSEMBLER
-VM_DIR = ./VM
 NORM = norm
 
-all: $(ASM) $(VM)
+.PHONY: all $(asm) $(corewar) clean fclean re
 
-$(VM):
-		make -C $(VM_DIR)
-$(ASM):
-		make -C $(ASM_DIR)
+all: $(asm) $(corewar)
+
+$(asm):
+	$(MAKE) all --no-print-directory -C $(asm)
+
+$(corewar):
+	$(MAKE) all --no-print-directory -C $(corewar)
 
 $(NORM):
 		norminette ./ASSEMBLER/src/*.c
 		norminette ./ASSEMBLER/includes/*.h
-		norminette ./VM/*.c
-		norminette ./VM/*.h
+		norminette ./ASSEMBLER/libft/*.c
+		norminette ./ASSEMBLER/libft/ft_printf/*.c
+		norminette ./ASSEMBLER/libft/ft_printf/*.h
+		norminette ./ASSEMBLER/libft/ftoa/*.c
+		norminette ./ASSEMBLER/libft/ftoa/*.h
+		norminette ./ASSEMBLER/libft/includes/*.h
+		norminette ./VM/src/*.c
+		norminette ./VM/includes/*.h
+		norminette ./VM/libft/ft_printf/*.c
+		norminette ./VM/libft/ft_printf/*.h
+		norminette ./VM/libft/*.h
+		norminette ./VM/libft/*.c
 
 clean:
-		make -C $(ASM_DIR) clean
-		make -C $(VM_DIR) clean
+	$(MAKE) clean --no-print-directory -C $(asm)
+	$(MAKE) clean --no-print-directory -C $(corewar)
 
-fclean: clean
-		make -C $(ASM_DIR) fclean
-		make -C $(VM_DIR) fclean
+fclean:
+	$(MAKE) fclean --no-print-directory -C $(asm)
+	$(MAKE) fclean --no-print-directory -C $(corewar)
+
 
 re: fclean all
-
-.PHONY: all clean fclean re

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../vm.h"
+#include "../includes/vm.h"
 
 void	op_or(t_vm *vm, t_carriage *cursor)
 {

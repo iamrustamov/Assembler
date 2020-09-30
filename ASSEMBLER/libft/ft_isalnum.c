@@ -6,7 +6,7 @@
 /*   By: bgian <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/21 17:13:30 by bgian             #+#    #+#             */
-/*   Updated: 2019/09/21 19:30:35 by bgian            ###   ########.fr       */
+/*   Updated: 2020/09/30 22:39:01 by doberyn          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ int	ft_isalnum(int c)
 	if (c)
 		return (ft_isalpha(c) || ft_isdigit(c) ? 1 : 0);
 	else
-		return 0;
+		return (0);
 }

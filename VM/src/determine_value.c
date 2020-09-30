@@ -6,11 +6,11 @@
 /*   By: tyasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 22:20:48 by tyasmine          #+#    #+#             */
-/*   Created: 2020/02/14 22:20:48 by tyasmine        ###   ########.fr        */
+/*   Updated: 2020/02/14 22:20:52 by tyasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vm.h"
+#include "../includes/vm.h"
 
 int		address(t_carriage *cursor)
 {

@@ -174,6 +174,7 @@ typedef struct			s_asm
 /*
 ** Functions
 */
+
 void					parser(t_asm *bler);
 void					parse_name_comm(t_asm *bler);\
 void					parse_instructions(t_asm *bler);

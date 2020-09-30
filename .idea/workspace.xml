@@ -29,10 +29,204 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.clang-format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/555.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/555.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/.Makefile.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isalnum.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isalnum.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strnequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strnequ.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strsplit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/get_next_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/includes/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/includes/get_next_line.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/VM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/Corewar_vm_3_Final.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/check_arena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/create_arena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/determine_value.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_bzero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_error.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_intlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_intstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isalnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_itoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_itoa_base_sig.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_itoa_base_unsig.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memlcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_frac.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_get_ent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_lst.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_parse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_putnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_round.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_spec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_sup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_sup2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/float.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_lib_f.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_output.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_output_csp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_output_d.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_output_x.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_pars.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_prt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putchar.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putchar_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putendl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putendl_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putnbr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putnbr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putstr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strclr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_striter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_striteri.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strjoin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strmapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strncat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strncpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strnequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strsplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strsub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strtrim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/get_next_line.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/includes/ft_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/libft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/add.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/aff.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/and.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/fork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/ld.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/ldi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/lfork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/live.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/lld.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/lldi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/or.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/st.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/sti.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/sub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/xor.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/zjmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/output.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/pars_args.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/pars_bit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/pars_champo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/pars_flag.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/run_vm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/test.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/test.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/vm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/vm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/VM/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/check_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/check_arena.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/create_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/create_arena.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/determine_value.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/determine_value.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_frac.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_get_ent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_lst.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_parse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_putnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_round.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_spec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_sup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_sup2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/float.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_printf/float.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_lib_f.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_output.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_output_csp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_output_d.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_output_x.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_pars.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_prt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_strcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_strcmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_strjoin.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_strjoin.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_strnequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_strnequ.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/includes/op.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/add.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/add.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/aff.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/aff.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/and.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/and.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/fork.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/fork.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/ld.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/ld.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/ldi.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/ldi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/lfork.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/lfork.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/live.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/lld.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/lld.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/lldi.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/lldi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/or.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/or.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/st.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/st.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/sti.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/sti.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/sub.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/sub.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/xor.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/xor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/zjmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/zjmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/output.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/output.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/pars_args.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_bit.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/pars_bit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_champo.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/pars_champo.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_flag.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/pars_flag.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/run_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/run_vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/test.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/test.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/includes/vm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-coverage/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corewar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +251,7 @@
     <property name="cf.advertisement.text.has.clang-format" value="true" />
     <property name="cf.advertisement.text.overridden" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/VM/libft" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,21 +263,24 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/VM/includes" />
+      <recent name="$PROJECT_DIR$/VM/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/libft" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/VM/libft" />
       <recent name="$PROJECT_DIR$/libft/includes" />
       <recent name="$PROJECT_DIR$/libft" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -111,7 +308,8 @@
       <workItem from="1601387421125" duration="4043000" />
       <workItem from="1601396095588" duration="1819000" />
       <workItem from="1601400561432" duration="3886000" />
-      <workItem from="1601486645979" duration="705000" />
+      <workItem from="1601486645979" duration="8569000" />
+      <workItem from="1601495685090" duration="2287000" />
     </task>
     <servers />
   </component>
@@ -139,6 +337,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="332" y="540" key="#Other_File_Types/0.23.2560.1337@0.23.2560.1337" timestamp="1601397776209" />
+    <state x="1056" y="394" key="#YAML" timestamp="1601495669072">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1056" y="394" key="#YAML/0.23.2560.1337@0.23.2560.1337" timestamp="1601495669072" />
     <state x="745" y="408" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601145564579">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -187,10 +389,12 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601322574101" />
-    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601409045152">
+    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601496909081">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601409045152" />
+    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601496909081" />
+    <state x="954" y="577" width="598" height="581" key="find.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1601490488758" />
+    <state x="954" y="578" width="624" height="582" key="find.popup/0.23.2560.1340@0.23.2560.1340" timestamp="1601493667175" />
     <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1601143933174">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -213,6 +417,11 @@
           <url>file://$PROJECT_DIR$/src/translator.c</url>
           <line>108</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/VM/libft/libft.h</url>
+          <line>49</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

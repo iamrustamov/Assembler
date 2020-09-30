@@ -22,7 +22,7 @@
 # define BUFF_SIZE 16
 # define MAX_FD 4096
 
-int						ft_printf(char *format, ...);
+int						ft_printf(char const *s, ...);
 void					ft_error(char *str);
 int						get_next_line(const int fd, char **line);
 void					ft_putchar(char c);

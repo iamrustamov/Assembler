@@ -12,7 +12,36 @@
 
 #include "ft_printf.h"
 
-static void	ft_nt(t_format *p, t_format_d *d, double k, int f)
+size_t		ft_nan(t_format *p, double c)
+{
+	char	*str;
+	int		s;
+	int		t;
+
+	str = NULL;
+	c != c ? str = "nan" : 0;
+	NINF ? str = "-inf" : 0;
+	if (INF)
+		str = p->pl ? "+inf" : "inf";
+	s = str ? ft_strlen(str) : 0;
+	if (s > 0)
+	{
+		t = p->hp - s > 0 ? p->hp - s : 0;
+		!p->m ? ft_simup(p, t, ' ') : 0;
+		!p->m && !t && p->pr && INF ? ft_simup(p, 1, ' ') : 0;
+		while (*str)
+		{
+			ft_simup(p, 1, *str);
+			++str;
+		}
+		p->m ? ft_simup(p, t, ' ') : 0;
+		p->len += !t ? s : p->hp;
+		!p->m && !t && p->pr && INF ? ++p->len : 0;
+	}
+	return (str ? 1 : 0);
+}
+
+static void	ft_ntlong(t_format *p, t_format_d *d, long double k, int f)
 {
 	if ((d->o + 1) % 2 == 0)
 		k >= 0.5 ? ++d->o : 0;
@@ -22,7 +51,7 @@ static void	ft_nt(t_format *p, t_format_d *d, double k, int f)
 	ft_sborfloat(p, d, f, NULL);
 }
 
-static void	roudingd(char *str, unsigned t, double k, int i)
+static void	roudingdlong(char *str, unsigned t, long double k, int i)
 {
 	int l;
 
@@ -31,7 +60,7 @@ static void	roudingd(char *str, unsigned t, double k, int i)
 	{
 		i = 0;
 		if (((str[t - 1] + 1) % 2 == 0 && k >= 0.5) ||
-		((str[t - 1] + 1) % 2 == 1 && k > 0.5))
+			((str[t - 1] + 1) % 2 == 1 && k > 0.5))
 		{
 			str[t] = '0';
 			str[t - 1] = str[t - 1] + 1;
@@ -42,7 +71,7 @@ static void	roudingd(char *str, unsigned t, double k, int i)
 	}
 }
 
-static void	rounding(t_format *p, t_format_d *d, double o, int f)
+static void	roundinglong(t_format *p, t_format_d *d, double o, int f)
 {
 	char			okr[p->t + 1];
 	unsigned		i;
@@ -57,7 +86,7 @@ static void	rounding(t_format *p, t_format_d *d, double o, int f)
 		++i;
 		--p->t;
 	}
-	roudingd(okr, i, o, 1);
+	roudingdlong(okr, i, o, 1);
 	if (okr[0] > '9')
 	{
 		++d->o;
@@ -68,25 +97,25 @@ static void	rounding(t_format *p, t_format_d *d, double o, int f)
 	ft_sborfloat(p, d, f, okr);
 }
 
-size_t		ft_float(t_format *p)
+size_t		ft_floatlong(t_format *p)
 {
-	double			c;
-	t_format_d		d;
-	int				f;
-	unsigned long	*ptr;
+	long double			c;
+	t_format_d			d;
+	int					f;
 
 	ft_bzero(&d, sizeof(d));
 	d.base = 10;
-	c = va_arg(p->arg, double);
-	if (ft_nan(p, c))
-		return (1);
-	ptr = (unsigned long *)&c;
-	f = *ptr >> 63;
-	c < 0 ? c = -c : 0;
+	f = 0;
+	c = va_arg(p->arg, long double);
+	if (c < 0)
+	{
+		c = -c;
+		f = 1;
+	}
 	d.o = (unsigned long int)c;
 	c -= d.o;
 	p->st == 0 ? p->t = 6 : 0;
 	p->t < 0 ? p->t = 6 : 0;
-	!p->t ? ft_nt(p, &d, c, f) : rounding(p, &d, c, f);
+	!p->t ? ft_ntlong(p, &d, c, f) : roundinglong(p, &d, c, f);
 	return (1);
 }

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vm.h"
+#include "../includes/vm.h"
 
 void	pars_arg(t_pars *pars, t_vm *vm)
 {
@@ -47,7 +47,7 @@ void	add_id(t_vm *vm)
 	t_champ	*tmp_champ;
 	int		id;
 	int		flag;
-	int 	player;
+	int		player;
 
 	flag = 0;
 	player = 0;
@@ -73,7 +73,7 @@ void	add_id(t_vm *vm)
 void	add_champions(t_vm *vm)
 {
 	int		id;
-	int 	player;
+	int		player;
 	t_champ	*tmp_champ;
 
 	id = 1;

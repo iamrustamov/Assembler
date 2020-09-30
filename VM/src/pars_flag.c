@@ -10,11 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vm.h"
+#include "../includes/vm.h"
 
 void	dump_flag(t_pars *pars, t_vm *vm)
 {
-	if (*(pars->arg + 1) && ft_isdigit(*(pars->arg + 1)[0]) == 1 && pars->index >= 2)
+	if (*(pars->arg + 1) && ft_isdigit(*(pars->arg + 1)[0]) == 1 &&
+			pars->index >= 2)
 	{
 		vm->dump = 1;
 		vm->dump_cycles = ft_atoi(*(pars->arg + 1));
@@ -29,7 +30,8 @@ void	n_flag(t_pars *pars, t_vm *vm)
 {
 	int id;
 
-	if (*(pars->arg + 1) && ft_isdigit(*(pars->arg + 1)[0]) == 1 && pars->index >= 3)
+	if (*(pars->arg + 1) && ft_isdigit(*(pars->arg + 1)[0]) == 1 &&
+			pars->index >= 3)
 	{
 		if ((id = ft_atoi(*(pars->arg + 1))) < 1)
 			usage();

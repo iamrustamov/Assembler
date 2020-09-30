@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bgian <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: tyasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/23 16:38:09 by bgian             #+#    #+#             */
-/*   Updated: 2019/09/23 16:41:14 by bgian            ###   ########.fr       */
+/*   Created: 2019/04/12 21:08:22 by tyasmine          #+#    #+#             */
+/*   Updated: 2019/04/23 03:02:29 by tyasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,4 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 			return (1);
 	}
 	return (0);
-}
-
-int main()
-{
-	int g = ft_strnequ("123", "123", 3);
-	return(g);
 }

@@ -3,130 +3,110 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tyasmine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jwillem- <jwillem-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/23 19:08:18 by tyasmine          #+#    #+#             */
-/*   Updated: 2019/11/23 19:45:34 by tyasmine         ###   ########.fr       */
+/*   Created: 2019/02/23 03:47:46 by gabshire          #+#    #+#             */
+/*   Updated: 2019/06/15 02:59:55 by gabshire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
+
 # include "../libft.h"
-# include <stdio.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 # include <stdarg.h>
-# include <string.h>
-# include <unistd.h>
+# include <wchar.h>
+# include <limits.h>
 # include <stdlib.h>
-# include <float.h>
-# define LG2 0.301
-# define LG5 0.7
 
-typedef struct			s_form
+# define ANSI_COLOR_RED		"\x1b[31m"
+# define ANSI_COLOR_GREEN	"\x1b[32m"
+# define ANSI_COLOR_YELLOW	"\x1b[33m"
+# define ANSI_COLOR_BLUE	"\x1b[34m"
+# define ANSI_COLOR_MAGENTA	"\x1b[35m"
+# define ANSI_COLOR_CYAN	"\x1b[36m"
+# define ANSI_COLOR_RESET	"\x1b[0m"
+# define ANSI_COLOR_WHITE	"\x1b[37m"
+
+# define MAX_BUF_SIZE	100
+# define NINF c == c + c / .0 && c < 0
+# define INF c == c + c / .0 && c > 0
+
+typedef struct				s_format
 {
-	char				*f;
-	int					i;
-	int					f_min;
-	int					f_plus;
-	int					f_prob;
-	int					f_sharp;
-	int					f_null;
-	int					shir;
-	int					toch;
-	int					dlin;
-	va_list				ap;
-	int					a;
-	char				*s;
-	int					t;
-	long long int		p;
-	unsigned long int	pp;
-	char				*tmp;
-	int					iter;
-	int					her;
-}						t_f;
+	char			*str;
+	va_list			arg;
+	int				hp;
+	int				t;
+	char			sr[3];
+	int				len;
+	unsigned char	tp;
+	unsigned char	hps : 1;
+	unsigned char	st : 1;
+	unsigned char	m : 1;
+	unsigned char	pl : 1;
+	unsigned char	pr : 1;
+	unsigned char	o : 1;
+	unsigned char	z : 1;
+	char			buf[MAX_BUF_SIZE];
+	int				b_i;
+}							t_format;
 
-typedef struct			s_pow
+typedef struct				s_format_d
 {
-	char				*num;
-	int					size;
-	struct s_pow		*next;
-}						t_pow;
+	unsigned long long int	o;
+	size_t					spase;
+	size_t					zero;
+	size_t					minus;
+	size_t					plus;
+	size_t					base;
+	int						len;
+	size_t					rd;
+}							t_format_d;
 
-typedef struct			s_res
-{
-	char				*num;
-	int					entirelen;
-	int					sign;
-}						t_res;
+int							ft_printf(char const *s, ...);
+void						ft_flag(t_format *mod);
+void						ft_tochnost(t_format *mod);
+void						ft_hirina(t_format *mod);
+void						ft_specr(t_format *mod);
+void						write_and_zero(t_format *p);
+void						ft_restor_p(t_format *p);
 
-typedef struct			s_vars
-{
-	int					ret;
-	int					exp;
-	int					tmp;
-	t_pow				*entire;
-	t_pow				*frac;
-}						t_vars;
+size_t						ft_start(t_format *mod);
+size_t						ft_char(t_format *mod);
+size_t						ft_printstr(t_format *mod);
+void						ft_simup(t_format *p, size_t len, char c);
+size_t						kol_sim(unsigned long long int d, size_t base);
+void						itua_base_mod(t_format_d *d, t_format *p, size_t f);
 
-void					spec_format(t_f *str);
-void					spec(t_f *str);
-void					spec_d(t_f *str);
-void					spec_u(t_f *str);
-void					spec_u_o_x(t_f *str);
-void					spec_u_u(t_f *str);
-void					past_o(t_f *str);
-void					past_oo(t_f *str);
-void					past_ooo(t_f *str);
-void					past_o_o(t_f *str);
-void					past_x(t_f *str);
-void					past_d(t_f *str);
-void					past_dd(t_f *str);
-void					past_ddd(t_f *str);
-void					past_dc(t_f *str);
-void					past_db(t_f *str);
-void					past_da(t_f *str);
-int						ft_nbr_len(long long int n);
-void					ft_putnbr_p(long long int n, t_f *str);
-void					spec_p(t_f *str);
-void					spec_p_p(t_f *str);
-char					*ft_itoa_base(long long int value, int base);
-char					*ft_itoa_base16(unsigned long long int value,
-		int base, int f);
-size_t					digit_count(unsigned long nb, int base);
-void					spec_cs(t_f *str);
-void					pasts(t_f *str);
-void					pastc(t_f *str);
-void					spec_prc(t_f *str);
-void					dlin(t_f *str);
-void					dlin_plus(t_f *str, int x, int h, int l);
-void					toch(t_f *str);
-void					shir(t_f *str);
-void					flag(t_f *str);
-void					list_null(t_f *str);
-void					ft_putstr_p(char const *s, t_f *str);
-void					ft_putchar_p(char c, t_f *str);
-long					ft_pow2(int pow);
-int						ft_printf(char *format, ...);
-int						dtoi(long double a, t_f *format);
-t_pow					*get_entire(char *mantissa, int exp);
-void					carry(char *num, int size);
-void					tutu(char *num, int size, int pow);
-t_pow					*division(char *num, int divider, int size);
-t_pow					*get_frac(char *mantissa, int exp);
-t_pow					*get_last(t_pow *lst);
-int						ft_putnum(t_res res, int precision, t_f *format);
-int						entlen(char *num);
-char					*ft_numjoin(t_pow *entire, t_pow *frac);
-char					*entirestr(t_pow *entire);
-char					*fracstr(t_pow *frac);
-void					*ft_ncpy(void *destination,
-		const void *source, size_t n);
-void					ft_round(char *num, int precision);
-void					ft_free_pow(t_pow *lst);
-void					ft_free_vars(t_vars vars);
-int						ft_parse_float(va_list vaptr, t_f *list);
-void					handle_fl_spec(t_f *format, char c, int *len);
-void					handle_w_spec(t_f *format, int len);
-char					*check(char *str);
+/*
+** printnbr int
+*/
 
+size_t						incd(t_format *mod, int len, int f, size_t n);
+void						ft_format_d(t_format *p, t_format_d *d, int f);
+size_t						ft_printnbr(t_format *p, long long k);
+size_t						ft_printnbru(t_format *p, unsigned long long k);
+size_t						ft_flag_d_i(t_format *p);
+size_t						ft_flag_u(t_format *p);
+
+/*
+** print x
+*/
+
+size_t						ft_flag_x(t_format *mod);
+size_t						ft_printx(t_format *p,
+		unsigned long long int k, int f);
+
+size_t						ft_charu(t_format *p, wint_t c);
+size_t						ft_printstru(t_format *p);
+size_t						ft_float(t_format *p);
+size_t						ft_floatlong(t_format *p);
+void						ft_sborfloat(t_format *p, t_format_d *d,
+		int f, char *okr);
+void						ft_incf(t_format *p, t_format_d *d, int f);
+size_t						ft_nan(t_format *p, double c);
 #endif

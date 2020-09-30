@@ -13,10 +13,10 @@
 #ifndef VM_H
 # define VM_H
 
-# include "libft/libft.h"
+# include "../libft/libft.h"
 # include "op.h"
-# include <stdio.h>
 # include <stdbool.h>
+# include <stdio.h>
 
 # define OP_CODE_SIZE	    1
 # define OP_ARGS_CODE_SIZE	2
