@@ -23,13 +23,12 @@ LHS_DIR	=		$(LFT_DIR)
 
 
 SRC_FLS	=		vm.c check_arena.c create_arena.c\
-                      determine_value.c output.c pars_args.c\
-                      pars_bit.c pars_champo.c pars_flag.c\
-                      run_vm.c add.c aff.c and.c\
-                      fork.c ld.c ldi.c lfork.c\
-                      live.c lld.c lldi.c or.c\
-                      st.c sti.c sub.c xor.c\
-                      zjmp.c
+                determine_value.c output.c pars_args.c\
+                pars_bit.c pars_champo.c pars_flag.c\
+                run_vm.c add.c aff.c and.c\
+                fork.c ld.c ldi.c lfork.c\
+                live.c lld.c lldi.c or.c\
+                st.c sti.c sub.c xor.c zjmp.c
 
 
 SRCS	=		$(addprefix $(SRC_DIR)/, $(SRC_FLS))

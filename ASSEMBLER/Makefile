@@ -11,31 +11,25 @@
 # **************************************************************************** #
 
 
-# ------------  PROJECT  ----------------------------------------------------- #
 NAME	=		../asm
 
-# ------------  DIRECTORIES  ------------------------------------------------- #
+
 SRC_DIR	=		src
 HDR_DIR	=		includes
 OBJ_DIR	=		obj
 LIB_DIR =	    libft
 
-# ------------  LIBFT  ------------------------------------------------------- #
+
 LFT		=		libftprintf.a
 LFT_DIR	=		$(LIB_DIR)
 LHS_DIR	=		$(LFT_DIR)/includes
 
-# ------------  SOURCE FILES  ------------------------------------------------ #
 SRC_FLS	=		asm.c errors.c join_args_to_oper.c\
                 parse_args.c parse_data.c\
                 parse_instructions.c parse_lbl.c\
-                          parse_name.c\
-                          parse_op.c\
-                          parser.c\
-                          set_args.c\
-                          translator.c\
-                          translator_utils.c\
-                          utilities.c
+                parse_name.c parse_op.c parser.c\
+                set_args.c translator.c\
+                translator_utils.c utilities.c
 
 
 SRCS	=		$(addprefix $(SRC_DIR)/, $(SRC_FLS))
