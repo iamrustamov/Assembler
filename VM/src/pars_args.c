@@ -6,7 +6,7 @@
 /*   By: tyasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 22:20:48 by tyasmine          #+#    #+#             */
-/*   Updated: 2020/09/29 11:45:10 by doberyn          ###   ########.fr       */
+/*   Updated: 2020/02/14 22:20:52 by tyasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	pars_flag(t_pars *pars, t_vm *vm)
 		aff_flag(pars, vm);
 	else if (!ft_strcmp(*(pars->arg), "-live"))
 		live_flag(pars, vm);
-	else if (!ft_strcmp(*(pars->arg), "-v 30"))
+	else if (!ft_strcmp(*(pars->arg), "-v"))
 		logs_flag(pars, vm);
 	else
 		pars_chemp(pars, vm);
@@ -47,7 +47,7 @@ void	add_id(t_vm *vm)
 	t_champ	*tmp_champ;
 	int		id;
 	int		flag;
-	int		player;
+	int 	player;
 
 	flag = 0;
 	player = 0;
@@ -73,7 +73,7 @@ void	add_id(t_vm *vm)
 void	add_champions(t_vm *vm)
 {
 	int		id;
-	int		player;
+	int 	player;
 	t_champ	*tmp_champ;
 
 	id = 1;

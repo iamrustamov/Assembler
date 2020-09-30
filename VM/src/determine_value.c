@@ -6,7 +6,7 @@
 /*   By: tyasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 22:20:48 by tyasmine          #+#    #+#             */
-/*   Created: 2020/02/14 22:20:48 by tyasmine        ###   ########.fr       */
+/*   Created: 2020/02/14 22:20:48 by tyasmine        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int		determine_value(unsigned char arg, t_vm *vm, t_carriage *cursor)
 	int value;
 	int addr;
 
+	value = 0;
 	if (arg == REG_CODE)
 	{
 		value = cursor->reg[(vm->arena[address(cursor)]) - 1];
@@ -55,6 +56,7 @@ int		determine_value_lld(unsigned char arg, t_vm *vm, t_carriage *cursor)
 	int value;
 	int addr;
 
+	value = 0;
 	if (arg == DIR_CODE)
 	{
 		value = bit_args(vm, address(cursor), 4);
@@ -75,6 +77,7 @@ char	kod_args(unsigned char b, int f)
 {
 	char res;
 
+	res = 0;
 	if (f == 0)
 		res = (char)((b & 0xC0) >> 6);
 	else if (f == 1)

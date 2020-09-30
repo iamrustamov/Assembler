@@ -62,7 +62,7 @@ typedef struct			s_vm
 	t_carriage			*cursor;
 	t_carriage			*prev;
 	size_t				cursor_num;
-	size_t				player_num;
+	int					player_num;
 	ssize_t				cycles;
 	size_t				live_num_to_die;
 	ssize_t				cycles_to_die;

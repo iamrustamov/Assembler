@@ -14,7 +14,7 @@
 
 void		create_arena(t_vm *vm)
 {
-	int				id;
+	int 			id;
 	unsigned int	pos;
 
 	id = 0;
@@ -31,7 +31,7 @@ void		create_arena(t_vm *vm)
 void		create_cursor(t_vm *vm)
 {
 	unsigned int	pos;
-	int				id;
+	int 			id;
 
 	pos = 0;
 	id = 0;
