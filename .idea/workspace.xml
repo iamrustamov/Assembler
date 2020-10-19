@@ -1,50 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SPLITTER_PROPORTION" value="0.57560354" />
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-Coverage" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_CXX_FLAGS=&quot;-fprofile-instr-generate -fcoverage-mapping&quot; -DCMAKE_C_FLAGS=&quot;-fprofile-instr-generate -fcoverage-mapping&quot;" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3db04e-cb60-4e7e-b99f-7d1f83732990" name="Default Changelist" comment="">
+    <list default="true" id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.clang-format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" beforeDir="false" afterPath="$PROJECT_DIR$/GB-ASM/assembler/srcs/parseng.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parse_lbl.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_lbl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parse_operation.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/parse_operation.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.cor" beforeDir="false" afterPath="$PROJECT_DIR$/vm_champs/champs/ex.cor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.s" beforeDir="false" afterPath="$PROJECT_DIR$/vm_champs/champs/ex.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/555.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/555.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/.Makefile.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/includes/asm.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/includes/asm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isalnum.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_isalnum.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strnequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strnequ.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/ft_strsplit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/get_next_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASSEMBLER/libft/includes/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/ASSEMBLER/libft/includes/get_next_line.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/VM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/Corewar_vm_3_Final.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/check_arena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/create_arena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/determine_value.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_bzero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_error.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_intlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_intstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isalnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_itoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_itoa_base_sig.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_itoa_base_unsig.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memlcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_frac.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_get_ent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_lst.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_parse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_putnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_round.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_spec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_sup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/f_sup2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/float.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_lib_f.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_output.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_output_csp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_output_d.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_output_x.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_pars.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_printf/ft_prt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putchar.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putchar_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putendl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putendl_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putnbr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putnbr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_putstr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strclr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_striter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_striteri.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strjoin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strmapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strncat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strncpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strnequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strsplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strsub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_strtrim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/ft_toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/get_next_line.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/includes/ft_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/libft/libft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/add.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/aff.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/and.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/fork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/ld.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/ldi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/lfork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/live.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/lld.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/lldi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/or.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/st.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/sti.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/sub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/xor.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/op/zjmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/output.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/pars_args.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/pars_bit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/pars_champo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/pars_flag.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/run_vm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/test.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/test.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/vm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Corewar_vm_3_Final/vm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/VM/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/check_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/check_arena.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/create_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/create_arena.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/determine_value.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/determine_value.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_frac.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_get_ent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_lst.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_parse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_putnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_round.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_spec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_sup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/f_sup2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/float.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_printf/float.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_lib_f.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_output.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_output_csp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_output_d.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_output_x.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_pars.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_printf/ft_printf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_printf/ft_prt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_strcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_strcmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_strjoin.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_strjoin.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/ft_strnequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/ft_strnequ.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/libft/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/includes/op.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/add.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/add.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/aff.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/aff.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/and.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/and.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/fork.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/fork.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/ld.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/ld.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/ldi.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/ldi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/lfork.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/lfork.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/live.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/live.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/lld.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/lld.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/lldi.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/lldi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/or.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/or.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/st.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/st.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/sti.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/sti.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/sub.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/sub.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/xor.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/xor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/op/zjmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/zjmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/output.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/output.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/pars_args.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_bit.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/pars_bit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_champo.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/pars_champo.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/pars_flag.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/pars_flag.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/run_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/run_vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/test.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/test.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/VM/src/vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VM/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/VM/includes/vm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-coverage/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corewar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1f7xOM14jKD9GiDutWVzLHSDIAV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1i3RyyCxZ1DQkIoU7AwXG3kK7zU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.advertisement.text.overridden" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/VM/libft" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,11 +259,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/VM/includes" />
+      <recent name="$PROJECT_DIR$/VM/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/libft" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/VM/libft" />
+      <recent name="$PROJECT_DIR$/libft/includes" />
+      <recent name="$PROJECT_DIR$/libft" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Assembler" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;ex.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/vm_champs/champs" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="Assembler" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration name="1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;barriere.s&quot;" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -72,171 +291,142 @@
       </method>
     </configuration>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fb3db04e-cb60-4e7e-b99f-7d1f83732990" name="Default Changelist" comment="" />
-      <created>1595582898250</created>
+      <changelist id="b25a3259-868b-49d2-8399-2b1d5597fd04" name="Default Changelist" comment="" />
+      <created>1601134547051</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595582898250</updated>
-      <workItem from="1595582900085" duration="222000" />
-      <workItem from="1595583124004" duration="1153000" />
-      <workItem from="1595584279661" duration="1463000" />
-      <workItem from="1595660548489" duration="371000" />
-      <workItem from="1595661057620" duration="3593000" />
-      <workItem from="1595665781774" duration="258000" />
-      <workItem from="1595666041234" duration="3396000" />
-      <workItem from="1595673885123" duration="5439000" />
-      <workItem from="1595835328272" duration="1578000" />
-      <workItem from="1595836937215" duration="6216000" />
-      <workItem from="1595843306833" duration="7218000" />
-      <workItem from="1595935935883" duration="14000" />
-      <workItem from="1595935951396" duration="1025000" />
-      <workItem from="1596021230000" duration="5583000" />
-      <workItem from="1596116401780" duration="954000" />
-      <workItem from="1596618332566" duration="30000" />
-      <workItem from="1596618364052" duration="1063000" />
-      <workItem from="1596622898220" duration="159000" />
-      <workItem from="1596623487772" duration="2556000" />
-      <workItem from="1596633721934" duration="7972000" />
-      <workItem from="1596705836007" duration="5305000" />
-      <workItem from="1596715853127" duration="934000" />
-      <workItem from="1596725319206" duration="835000" />
-      <workItem from="1596897803531" duration="9304000" />
-      <workItem from="1597081013773" duration="6371000" />
+      <updated>1601134547051</updated>
+      <workItem from="1601134548322" duration="80000" />
+      <workItem from="1601134628945" duration="8661000" />
+      <workItem from="1601227179419" duration="1485000" />
+      <workItem from="1601321234565" duration="232000" />
+      <workItem from="1601321486110" duration="702000" />
+      <workItem from="1601322611645" duration="2835000" />
+      <workItem from="1601387421125" duration="4043000" />
+      <workItem from="1601396095588" duration="1819000" />
+      <workItem from="1601400561432" duration="3886000" />
+      <workItem from="1601486645979" duration="8569000" />
+      <workItem from="1601495685090" duration="2287000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1088" y="506" key="#Assembler" timestamp="1596618391289">
+    <state x="803" y="366" key="#C/C++" timestamp="1601321625147">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1088" y="506" key="#Assembler/0.23.2560.1337@0.23.2560.1337" timestamp="1596618391289" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597086362612">
+    <state x="803" y="366" key="#C/C++/0.23.2560.1337@0.23.2560.1337" timestamp="1601321625147" />
+    <state x="332" y="540" key="#Other_File_Types" timestamp="1601397776209">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="595" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1595849506304" />
-    <state x="744" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1597086362612" />
-    <state x="558" y="287" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936975613" />
-    <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1595666085371">
+    <state x="332" y="540" key="#Other_File_Types/0.23.2560.1337@0.23.2560.1337" timestamp="1601397776209" />
+    <state x="1056" y="394" key="#YAML" timestamp="1601495669072">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1067" y="403" key="#com.intellij.ide.macro.MacrosDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595666085371" />
-    <state x="346" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1595935943625">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="346" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595935943625" />
-    <state width="1085" height="405" key="GridCell.Tab.0.bottom" timestamp="1597089764659">
+    <state x="1056" y="394" key="#YAML/0.23.2560.1337@0.23.2560.1337" timestamp="1601495669072" />
+    <state x="745" y="408" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601145564579">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2006" height="245" key="GridCell.Tab.0.bottom/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489802" />
-    <state width="897" height="279" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1595853087035" />
-    <state width="1085" height="405" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1597089764659" />
-    <state width="1806" height="331" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936433946" />
-    <state width="1085" height="405" key="GridCell.Tab.0.center" timestamp="1597089764659">
+    <state x="745" y="408" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1601145564579" />
+    <state x="1018" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601144026212">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2006" height="245" key="GridCell.Tab.0.center/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489801" />
-    <state width="897" height="279" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1595853087034" />
-    <state width="1085" height="405" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1597089764659" />
-    <state width="1806" height="331" key="GridCell.Tab.0.center/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936433946" />
-    <state width="1085" height="405" key="GridCell.Tab.0.left" timestamp="1597089764658">
+    <state x="1018" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1601144026212" />
+    <state x="1019" y="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601134592325">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2006" height="245" key="GridCell.Tab.0.left/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489800" />
-    <state width="897" height="279" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1595853087034" />
-    <state width="1085" height="405" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1597089764658" />
-    <state width="1806" height="331" key="GridCell.Tab.0.left/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936433946" />
-    <state width="1085" height="405" key="GridCell.Tab.0.right" timestamp="1597089764659">
+    <state x="1019" y="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1601134592325" />
+    <state width="2518" height="382" key="GridCell.Tab.0.bottom" timestamp="1601147559008">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2006" height="245" key="GridCell.Tab.0.right/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489802" />
-    <state width="897" height="279" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1595853087035" />
-    <state width="1085" height="405" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1597089764659" />
-    <state width="1806" height="331" key="GridCell.Tab.0.right/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936433946" />
-    <state width="1085" height="405" key="GridCell.Tab.1.bottom" timestamp="1597089765796">
+    <state width="2518" height="382" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601147559008" />
+    <state width="2518" height="382" key="GridCell.Tab.0.center" timestamp="1601147559008">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2006" height="245" key="GridCell.Tab.1.bottom/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489804" />
-    <state width="897" height="409" key="GridCell.Tab.1.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331683" />
-    <state width="1085" height="405" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1597089765796" />
-    <state width="1806" height="331" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434294" />
-    <state width="1085" height="405" key="GridCell.Tab.1.center" timestamp="1597089765796">
+    <state width="2518" height="382" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601147559008" />
+    <state width="2518" height="382" key="GridCell.Tab.0.left" timestamp="1601147559007">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2006" height="245" key="GridCell.Tab.1.center/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489803" />
-    <state width="897" height="409" key="GridCell.Tab.1.center/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331682" />
-    <state width="1085" height="405" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1597089765796" />
-    <state width="1806" height="331" key="GridCell.Tab.1.center/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434293" />
-    <state width="1085" height="405" key="GridCell.Tab.1.left" timestamp="1597089765796">
+    <state width="2518" height="382" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601147559007" />
+    <state width="2518" height="382" key="GridCell.Tab.0.right" timestamp="1601147559008">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2006" height="245" key="GridCell.Tab.1.left/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489803" />
-    <state width="897" height="409" key="GridCell.Tab.1.left/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331682" />
-    <state width="1085" height="405" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1597089765796" />
-    <state width="1806" height="331" key="GridCell.Tab.1.left/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434293" />
-    <state width="1085" height="405" key="GridCell.Tab.1.right" timestamp="1597089765796">
+    <state width="2518" height="382" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601147559008" />
+    <state width="2518" height="382" key="GridCell.Tab.1.bottom" timestamp="1601147534536">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="2006" height="245" key="GridCell.Tab.1.right/0.0.2048.1152@0.0.2048.1152" timestamp="1595840489803" />
-    <state width="897" height="409" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1595850331683" />
-    <state width="1085" height="405" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1597089765796" />
-    <state width="1806" height="331" key="GridCell.Tab.1.right/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595936434294" />
-    <state width="480" height="161" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1595935947590">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1595661053167" />
-    <state width="480" height="161" key="ImportCMakeProjectWizard.bottomPanel/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595935947590" />
-    <state width="480" height="375" key="ImportCMakeProjectWizard.topPanel" timestamp="1595935947590">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1595661053166" />
-    <state width="480" height="375" key="ImportCMakeProjectWizard.topPanel/0.27.1920.1053/1920.75.1366.768@0.27.1920.1053" timestamp="1595935947590" />
-    <state x="465" y="257" key="RollbackChangesDialog" timestamp="1595848457844">
-      <screen x="0" y="23" width="2048" height="1049" />
-    </state>
-    <state x="465" y="257" key="RollbackChangesDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1595848457844" />
-    <state x="410" y="175" key="SettingsEditor" timestamp="1596705894631">
-      <screen x="0" y="23" width="2048" height="1049" />
-    </state>
-    <state x="410" y="175" key="SettingsEditor/0.23.2048.1049@0.23.2048.1049" timestamp="1596705894631" />
-    <state x="513" y="342" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1596022865221" />
-    <state x="1005" y="483" key="refactoring.ChangeSignatureDialog" timestamp="1595669178032">
+    <state width="2518" height="382" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534536" />
+    <state width="2518" height="382" key="GridCell.Tab.1.center" timestamp="1601147534535">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1005" y="483" key="refactoring.ChangeSignatureDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1595669178032" />
-    <state x="416" y="425" width="670" height="676" key="search.everywhere.popup" timestamp="1595664932535">
+    <state width="2518" height="382" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534535" />
+    <state width="2518" height="382" key="GridCell.Tab.1.left" timestamp="1601147534535">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="416" y="425" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1595664932535" />
+    <state width="2518" height="382" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534535" />
+    <state width="2518" height="382" key="GridCell.Tab.1.right" timestamp="1601147534536">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2518" height="382" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1601147534536" />
+    <state x="789" y="330" key="SettingsEditor" timestamp="1601322574101">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="789" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601322574101" />
+    <state x="954" y="577" width="598" height="580" key="find.popup" timestamp="1601496909081">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="954" y="577" width="598" height="580" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601496909081" />
+    <state x="954" y="577" width="598" height="581" key="find.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1601490488758" />
+    <state x="954" y="578" width="624" height="582" key="find.popup/0.23.2560.1340@0.23.2560.1340" timestamp="1601493667175" />
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup" timestamp="1601143933174">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="945" y="328" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1601143933174" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/parse_lbl.c</url>
-          <line>72</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/asm.c</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/parse_lbl.c</url>
-          <line>40</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/libft/includes/libft.h</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/translator.c</url>
+          <line>108</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/VM/libft/libft.h</url>
+          <line>49</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="all-&gt;split_text[all-&gt;line][all-&gt;sym]" />
-        <watch expression="all-&gt;split_text[all-&gt;line]" />
-        <watch expression="oper_name[z]" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="../../../../Desktop/1/cmake-build-debug-coverage" NAME="1 Coverage Results" MODIFIED="1601147149631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
